@@ -27,10 +27,11 @@ After `scraping.ipynb`:
 `chunking.ipynb` reads from:
 - `data/raw/south_asian_corpus.json`
 
-and compares 3 chunking strategies:
+and compares 4 chunking strategies:
 - `CharacterTextSplitter`
 - `RecursiveCharacterTextSplitter`
 - `MarkdownHeaderTextSplitter`
+- `Semantic chunking` (embedding-based, using sentence transformers)
 
 ## Notes
 - Wikipedia API user-agent is configured as:

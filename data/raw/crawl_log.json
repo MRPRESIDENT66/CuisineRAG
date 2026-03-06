@@ -29,6 +29,93 @@
       "mughlai",
       "awadhi",
       "hyderabadi"
+    ],
+    "embedding_model_name": "BAAI/bge-base-en-v1.5",
+    "scope_margin_threshold": 0.0,
+    "positive_scope_prototypes": [
+      "Pakistani cuisine",
+      "Bangladeshi cuisine",
+      "Nepalese cuisine",
+      "Sri Lankan cuisine",
+      "Kerala cuisine",
+      "Tamil cuisine",
+      "Bengali cuisine",
+      "Andhra cuisine",
+      "Goan cuisine",
+      "Kashmiri cuisine",
+      "Newar cuisine",
+      "Sindhi cuisine",
+      "Mughlai cuisine",
+      "Hyderabadi biryani",
+      "Tibetan cuisine",
+      "Maldivian cuisine",
+      "Naan"
+    ],
+    "negative_scope_prototypes": [
+      "British cuisine",
+      "Mexican cuisine",
+      "French cuisine",
+      "Japanese cuisine",
+      "Italian cuisine",
+      "Greek cuisine",
+      "Tacos",
+      "Sushi",
+      "Baguette",
+      "Paella"
+    ],
+    "south_asia_whitelist_keywords": [
+      "india",
+      "indian",
+      "pakistan",
+      "pakistani",
+      "bangladesh",
+      "bangladeshi",
+      "sri lanka",
+      "sri lankan",
+      "nepal",
+      "nepalese",
+      "bhutan",
+      "bhutanese",
+      "tibet",
+      "tibetan",
+      "kashmir",
+      "kashmiri",
+      "bengal",
+      "bengali",
+      "punjab",
+      "punjabi",
+      "tamil",
+      "andhra",
+      "kerala",
+      "bihari",
+      "jharkhandi",
+      "chhattisgarhi",
+      "karnataka",
+      "kumaoni",
+      "newar",
+      "sindhi",
+      "mughlai",
+      "hyderabadi",
+      "goan",
+      "jaffna",
+      "garo",
+      "hazara",
+      "arunachali",
+      "maldivian",
+      "northeast india",
+      "naan",
+      "roti",
+      "biryani",
+      "dal",
+      "achar",
+      "thukpa",
+      "momo",
+      "momos",
+      "makki ki roti",
+      "gothamba roti",
+      "pol roti",
+      "kadala",
+      "wai wai"
     ]
   },
   "discovery": [
@@ -61,1170 +148,2072 @@
     {
       "title": "Acehnese cuisine",
       "url": "https://en.wikipedia.org/wiki/Acehnese_cuisine",
-      "num_characters": 4228
+      "num_characters": 4228,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Naan",
+      "url": "https://en.wikipedia.org/wiki/Naan",
+      "num_characters": 4825,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Afghan cuisine",
       "url": "https://en.wikipedia.org/wiki/Afghan_cuisine",
-      "num_characters": 10900
+      "num_characters": 10900,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "African cuisine",
+      "url": "https://en.wikipedia.org/wiki/African_cuisine",
+      "num_characters": 24871,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Andalusian cuisine",
+      "url": "https://en.wikipedia.org/wiki/Andalusian_cuisine",
+      "num_characters": 3458,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Andhra cuisine",
       "url": "https://en.wikipedia.org/wiki/Andhra_cuisine",
-      "num_characters": 27830
+      "num_characters": 27830,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Bihari cuisine",
       "url": "https://en.wikipedia.org/wiki/Bihari_cuisine",
-      "num_characters": 12208
+      "num_characters": 12208,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Anglo-Indian cuisine",
       "url": "https://en.wikipedia.org/wiki/Anglo-Indian_cuisine",
-      "num_characters": 9930
+      "num_characters": 9930,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Arab cuisine",
+      "url": "https://en.wikipedia.org/wiki/Arab_cuisine",
+      "num_characters": 20228,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Arunachali cuisine",
       "url": "https://en.wikipedia.org/wiki/Arunachali_cuisine",
-      "num_characters": 1232
+      "num_characters": 1232,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Asian cuisine",
       "url": "https://en.wikipedia.org/wiki/Asian_cuisine",
-      "num_characters": 8520
+      "num_characters": 8520,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Assamese cuisine",
       "url": "https://en.wikipedia.org/wiki/Assamese_cuisine",
-      "num_characters": 17374
+      "num_characters": 17374,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Awadhi cuisine",
       "url": "https://en.wikipedia.org/wiki/Awadhi_cuisine",
-      "num_characters": 7097
+      "num_characters": 7097,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Bahraini cuisine",
       "url": "https://en.wikipedia.org/wiki/Bahraini_cuisine",
-      "num_characters": 3633
+      "num_characters": 3633,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Balinese cuisine",
       "url": "https://en.wikipedia.org/wiki/Balinese_cuisine",
-      "num_characters": 11590
+      "num_characters": 11590,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Balochi cuisine",
       "url": "https://en.wikipedia.org/wiki/Balochi_cuisine",
-      "num_characters": 1340
-    },
-    {
-      "title": "Balti (food)",
-      "url": "https://en.wikipedia.org/wiki/Balti_(food)",
-      "num_characters": 5900
+      "num_characters": 1340,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Bangladeshi cuisine",
       "url": "https://en.wikipedia.org/wiki/Bangladeshi_cuisine",
-      "num_characters": 10362
+      "num_characters": 10362,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Banjar cuisine",
       "url": "https://en.wikipedia.org/wiki/Banjar_cuisine",
-      "num_characters": 3810
+      "num_characters": 3810,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Barbadian cuisine",
       "url": "https://en.wikipedia.org/wiki/Barbadian_cuisine",
-      "num_characters": 2458
+      "num_characters": 2458,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Batak cuisine",
       "url": "https://en.wikipedia.org/wiki/Batak_cuisine",
-      "num_characters": 7523
+      "num_characters": 7523,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Bengali cuisine",
       "url": "https://en.wikipedia.org/wiki/Bengali_cuisine",
-      "num_characters": 13486
+      "num_characters": 13486,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Betawi cuisine",
       "url": "https://en.wikipedia.org/wiki/Betawi_cuisine",
-      "num_characters": 11277
+      "num_characters": 11277,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Vada (food)",
       "url": "https://en.wikipedia.org/wiki/Vada_(food)",
-      "num_characters": 5844
+      "num_characters": 5844,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Bhojpuri cuisine",
       "url": "https://en.wikipedia.org/wiki/Bhojpuri_cuisine",
-      "num_characters": 25106
+      "num_characters": 25106,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Bhutanese cuisine",
       "url": "https://en.wikipedia.org/wiki/Bhutanese_cuisine",
-      "num_characters": 3790
+      "num_characters": 3790,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Bhutanese red rice",
+      "url": "https://en.wikipedia.org/wiki/Bhutanese_red_rice",
+      "num_characters": 1260,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Biryani",
       "url": "https://en.wikipedia.org/wiki/Biryani",
-      "num_characters": 11764
+      "num_characters": 11764,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Braj cuisine",
       "url": "https://en.wikipedia.org/wiki/Braj_cuisine",
-      "num_characters": 2413
+      "num_characters": 2413,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Brazilian cuisine",
+      "url": "https://en.wikipedia.org/wiki/Brazilian_cuisine",
+      "num_characters": 32563,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "British cuisine",
       "url": "https://en.wikipedia.org/wiki/British_cuisine",
-      "num_characters": 45432
+      "num_characters": 45432,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Bruneian cuisine",
       "url": "https://en.wikipedia.org/wiki/Bruneian_cuisine",
-      "num_characters": 1506
+      "num_characters": 1506,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Bun kebab",
       "url": "https://en.wikipedia.org/wiki/Bun_kebab",
-      "num_characters": 2526
+      "num_characters": 2526,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Burmese cuisine",
       "url": "https://en.wikipedia.org/wiki/Burmese_cuisine",
-      "num_characters": 29820
+      "num_characters": 29820,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Butter chicken",
       "url": "https://en.wikipedia.org/wiki/Butter_chicken",
-      "num_characters": 2661
+      "num_characters": 2661,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Cambodian cuisine",
       "url": "https://en.wikipedia.org/wiki/Cambodian_cuisine",
-      "num_characters": 42730
+      "num_characters": 42730,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
-      "title": "Canadian cuisine",
-      "url": "https://en.wikipedia.org/wiki/Canadian_cuisine",
-      "num_characters": 50179
+      "title": "Caribbean cuisine",
+      "url": "https://en.wikipedia.org/wiki/Caribbean_cuisine",
+      "num_characters": 2417,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Central Asian cuisine",
       "url": "https://en.wikipedia.org/wiki/Central_Asian_cuisine",
-      "num_characters": 7859
+      "num_characters": 7859,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Chaat masala",
       "url": "https://en.wikipedia.org/wiki/Chaat_masala",
-      "num_characters": 1028
+      "num_characters": 1028,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Chak-Hao black rice",
       "url": "https://en.wikipedia.org/wiki/Chak-Hao_black_rice",
-      "num_characters": 2149
+      "num_characters": 2149,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Chana masala",
       "url": "https://en.wikipedia.org/wiki/Chana_masala",
-      "num_characters": 897
+      "num_characters": 897,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Chapli kebab",
       "url": "https://en.wikipedia.org/wiki/Chapli_kebab",
-      "num_characters": 2581
+      "num_characters": 2581,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Chettinad cuisine",
       "url": "https://en.wikipedia.org/wiki/Chettinad_cuisine",
-      "num_characters": 4611
+      "num_characters": 4611,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Chhattisgarhi cuisine",
       "url": "https://en.wikipedia.org/wiki/Chhattisgarhi_cuisine",
-      "num_characters": 2145
+      "num_characters": 2145,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Manchurian (dish)",
       "url": "https://en.wikipedia.org/wiki/Manchurian_(dish)",
-      "num_characters": 2597
+      "num_characters": 2597,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Chicken curry",
       "url": "https://en.wikipedia.org/wiki/Chicken_curry",
-      "num_characters": 4605
+      "num_characters": 4605,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Chicken karahi",
       "url": "https://en.wikipedia.org/wiki/Chicken_karahi",
-      "num_characters": 1595
+      "num_characters": 1595,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Chicken lollipop",
       "url": "https://en.wikipedia.org/wiki/Chicken_lollipop",
-      "num_characters": 881
+      "num_characters": 881,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Chicken tikka",
       "url": "https://en.wikipedia.org/wiki/Chicken_tikka",
-      "num_characters": 1952
+      "num_characters": 1952,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Chicken tikka masala",
       "url": "https://en.wikipedia.org/wiki/Chicken_tikka_masala",
-      "num_characters": 10377
+      "num_characters": 10377,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Chilli chicken",
       "url": "https://en.wikipedia.org/wiki/Chilli_chicken",
-      "num_characters": 1011
+      "num_characters": 1011,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Chinese Islamic cuisine",
       "url": "https://en.wikipedia.org/wiki/Chinese_Islamic_cuisine",
-      "num_characters": 8617
+      "num_characters": 8617,
+      "scope_positive_score": 0.6087,
+      "scope_negative_score": 0.5866,
+      "scope_margin": 0.0221
     },
     {
       "title": "Chingri malai curry",
       "url": "https://en.wikipedia.org/wiki/Chingri_malai_curry",
-      "num_characters": 556
+      "num_characters": 556,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Chirote",
       "url": "https://en.wikipedia.org/wiki/Chirote",
-      "num_characters": 854
+      "num_characters": 854,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Chitrali cuisine",
       "url": "https://en.wikipedia.org/wiki/Chitrali_cuisine",
-      "num_characters": 3914
+      "num_characters": 3914,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Christmas Island cuisine",
       "url": "https://en.wikipedia.org/wiki/Christmas_Island_cuisine",
-      "num_characters": 3609
+      "num_characters": 3609,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Chutney",
       "url": "https://en.wikipedia.org/wiki/Chutney",
-      "num_characters": 8365
+      "num_characters": 8365,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Cooked rice",
+      "url": "https://en.wikipedia.org/wiki/Cooked_rice",
+      "num_characters": 4077,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Corn soup",
       "url": "https://en.wikipedia.org/wiki/Corn_soup",
-      "num_characters": 1460
+      "num_characters": 1460,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Croatian cuisine",
+      "url": "https://en.wikipedia.org/wiki/Croatian_cuisine",
+      "num_characters": 11172,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Cuban cuisine",
       "url": "https://en.wikipedia.org/wiki/Cuban_cuisine",
-      "num_characters": 5625
+      "num_characters": 5625,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Cuisine of Haryana",
       "url": "https://en.wikipedia.org/wiki/Cuisine_of_Haryana",
-      "num_characters": 1157
+      "num_characters": 1157,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Jharkhandi cuisine",
       "url": "https://en.wikipedia.org/wiki/Jharkhandi_cuisine",
-      "num_characters": 3040
+      "num_characters": 3040,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Cuisine of Karachi",
       "url": "https://en.wikipedia.org/wiki/Cuisine_of_Karachi",
-      "num_characters": 1279
+      "num_characters": 1279,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Karnataka cuisine",
       "url": "https://en.wikipedia.org/wiki/Karnataka_cuisine",
-      "num_characters": 1527
+      "num_characters": 1527,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Kerala cuisine",
       "url": "https://en.wikipedia.org/wiki/Kerala_cuisine",
-      "num_characters": 6759
+      "num_characters": 6759,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Cuisine of North Bengal",
       "url": "https://en.wikipedia.org/wiki/Cuisine_of_North_Bengal",
-      "num_characters": 4235
+      "num_characters": 4235,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Cuisine of Odisha",
       "url": "https://en.wikipedia.org/wiki/Cuisine_of_Odisha",
-      "num_characters": 14144
+      "num_characters": 14144,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Cuisine of Réunion",
       "url": "https://en.wikipedia.org/wiki/Cuisine_of_R%C3%A9union",
-      "num_characters": 6506
+      "num_characters": 6506,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Tamil cuisine",
       "url": "https://en.wikipedia.org/wiki/Tamil_cuisine",
-      "num_characters": 18146
+      "num_characters": 18146,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Uttar Pradesh cuisine",
       "url": "https://en.wikipedia.org/wiki/Uttar_Pradesh_cuisine",
-      "num_characters": 2120
+      "num_characters": 2120,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Cuisine of the Thirteen Colonies",
       "url": "https://en.wikipedia.org/wiki/Cuisine_of_the_Thirteen_Colonies",
-      "num_characters": 28592
+      "num_characters": 28592,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Curd rice",
       "url": "https://en.wikipedia.org/wiki/Curd_rice",
-      "num_characters": 3399
+      "num_characters": 3399,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Curry",
       "url": "https://en.wikipedia.org/wiki/Curry",
-      "num_characters": 19870
+      "num_characters": 19870,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Curry in the United Kingdom",
       "url": "https://en.wikipedia.org/wiki/Curry_in_the_United_Kingdom",
-      "num_characters": 16988
+      "num_characters": 16988,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Curry tree",
       "url": "https://en.wikipedia.org/wiki/Curry_tree",
-      "num_characters": 6761
+      "num_characters": 6761,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Raita",
       "url": "https://en.wikipedia.org/wiki/Raita",
-      "num_characters": 2152
+      "num_characters": 2152,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Dal",
       "url": "https://en.wikipedia.org/wiki/Dal",
-      "num_characters": 7792
+      "num_characters": 7506,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Dal bati",
       "url": "https://en.wikipedia.org/wiki/Dal_bati",
-      "num_characters": 4429
+      "num_characters": 4429,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Dal bhat",
       "url": "https://en.wikipedia.org/wiki/Dal_bhat",
-      "num_characters": 2141
+      "num_characters": 2141,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Dal makhani",
       "url": "https://en.wikipedia.org/wiki/Dal_makhani",
-      "num_characters": 2030
+      "num_characters": 2030,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Dalit",
       "url": "https://en.wikipedia.org/wiki/Dalit",
-      "num_characters": 48689
+      "num_characters": 48689,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Dalit literature",
       "url": "https://en.wikipedia.org/wiki/Dalit_literature",
-      "num_characters": 29519
+      "num_characters": 29519,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Dalle Khursani",
       "url": "https://en.wikipedia.org/wiki/Dalle_Khursani",
-      "num_characters": 2357
+      "num_characters": 2357,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Maldivian cuisine",
       "url": "https://en.wikipedia.org/wiki/Maldivian_cuisine",
-      "num_characters": 5586
+      "num_characters": 5586,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Djiboutian cuisine",
       "url": "https://en.wikipedia.org/wiki/Djiboutian_cuisine",
-      "num_characters": 3225
+      "num_characters": 3225,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Dosa (food)",
       "url": "https://en.wikipedia.org/wiki/Dosa_(food)",
-      "num_characters": 6756
+      "num_characters": 6756,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Dosi (food)",
       "url": "https://en.wikipedia.org/wiki/Dosi_(food)",
-      "num_characters": 2146
+      "num_characters": 2146,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Early modern European cuisine",
+      "url": "https://en.wikipedia.org/wiki/Early_modern_European_cuisine",
+      "num_characters": 21209,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "English cuisine",
       "url": "https://en.wikipedia.org/wiki/English_cuisine",
-      "num_characters": 34813
+      "num_characters": 34813,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Epirotic cuisine",
+      "url": "https://en.wikipedia.org/wiki/Epirotic_cuisine",
+      "num_characters": 796,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Ethiopian Jewish cuisine",
       "url": "https://en.wikipedia.org/wiki/Ethiopian_Jewish_cuisine",
-      "num_characters": 6618
+      "num_characters": 6618,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Eurasian cuisine of Singapore and Malaysia",
       "url": "https://en.wikipedia.org/wiki/Eurasian_cuisine_of_Singapore_and_Malaysia",
-      "num_characters": 3117
+      "num_characters": 3117,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Feudalism in Pakistan",
       "url": "https://en.wikipedia.org/wiki/Feudalism_in_Pakistan",
-      "num_characters": 14323
+      "num_characters": 14323,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Fijian cuisine",
       "url": "https://en.wikipedia.org/wiki/Fijian_cuisine",
-      "num_characters": 9867
+      "num_characters": 9867,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Flattened rice",
       "url": "https://en.wikipedia.org/wiki/Flattened_rice",
-      "num_characters": 4065
+      "num_characters": 4065,
+      "scope_positive_score": 0.5117,
+      "scope_negative_score": 0.4916,
+      "scope_margin": 0.0202
     },
     {
       "title": "Food industry in Bangladesh",
       "url": "https://en.wikipedia.org/wiki/Food_industry_in_Bangladesh",
-      "num_characters": 2203
+      "num_characters": 2203,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Fried rice",
       "url": "https://en.wikipedia.org/wiki/Fried_rice",
-      "num_characters": 5771
-    },
-    {
-      "title": "Fusion cuisine",
-      "url": "https://en.wikipedia.org/wiki/Fusion_cuisine",
-      "num_characters": 13188
+      "num_characters": 5771,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Garam masala",
       "url": "https://en.wikipedia.org/wiki/Garam_masala",
-      "num_characters": 2297
+      "num_characters": 2297,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Chaas",
       "url": "https://en.wikipedia.org/wiki/Chaas",
-      "num_characters": 3257
+      "num_characters": 3257,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Gibraltarian cuisine",
+      "url": "https://en.wikipedia.org/wiki/Gibraltarian_cuisine",
+      "num_characters": 2649,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Glutinous rice",
       "url": "https://en.wikipedia.org/wiki/Glutinous_rice",
-      "num_characters": 33123
+      "num_characters": 33123,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Goan Catholic cuisine",
+      "url": "https://en.wikipedia.org/wiki/Goan_Catholic_cuisine",
+      "num_characters": 2613,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Goan cuisine",
       "url": "https://en.wikipedia.org/wiki/Goan_cuisine",
-      "num_characters": 7482
+      "num_characters": 7482,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Gujarati cuisine",
       "url": "https://en.wikipedia.org/wiki/Gujarati_cuisine",
-      "num_characters": 14807
+      "num_characters": 14807,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Guyanese cuisine",
       "url": "https://en.wikipedia.org/wiki/Guyanese_cuisine",
-      "num_characters": 3203
+      "num_characters": 3203,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Haji biryani",
       "url": "https://en.wikipedia.org/wiki/Haji_biryani",
-      "num_characters": 1968
+      "num_characters": 1968,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Handia (drink)",
       "url": "https://en.wikipedia.org/wiki/Handia_(drink)",
-      "num_characters": 1988
+      "num_characters": 1988,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Haryanvis",
       "url": "https://en.wikipedia.org/wiki/Haryanvis",
-      "num_characters": 3636
+      "num_characters": 3636,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Hazara cuisine",
       "url": "https://en.wikipedia.org/wiki/Hazara_cuisine",
-      "num_characters": 3057
+      "num_characters": 3057,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Hyderabadi biryani",
       "url": "https://en.wikipedia.org/wiki/Hyderabadi_biryani",
-      "num_characters": 3159
+      "num_characters": 3159,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Hyderabadi cuisine",
       "url": "https://en.wikipedia.org/wiki/Hyderabadi_cuisine",
-      "num_characters": 8962
+      "num_characters": 8962,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Indian Chinese cuisine",
+      "url": "https://en.wikipedia.org/wiki/Indian_Chinese_cuisine",
+      "num_characters": 10597,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Indian Indonesian cuisine",
+      "url": "https://en.wikipedia.org/wiki/Indian_Indonesian_cuisine",
+      "num_characters": 4693,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Indian Singaporean cuisine",
       "url": "https://en.wikipedia.org/wiki/Indian_Singaporean_cuisine",
-      "num_characters": 4296
+      "num_characters": 4296,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Indian bread",
       "url": "https://en.wikipedia.org/wiki/Indian_bread",
-      "num_characters": 10601
+      "num_characters": 10601,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Indian cuisine",
       "url": "https://en.wikipedia.org/wiki/Indian_cuisine",
-      "num_characters": 75329
+      "num_characters": 75329,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Indian fast food",
       "url": "https://en.wikipedia.org/wiki/Indian_fast_food",
-      "num_characters": 5066
+      "num_characters": 5066,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Indigenous cuisine of the Americas",
       "url": "https://en.wikipedia.org/wiki/Indigenous_cuisine_of_the_Americas",
-      "num_characters": 28304
+      "num_characters": 28304,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Indonesian cuisine",
+      "url": "https://en.wikipedia.org/wiki/Indonesian_cuisine",
+      "num_characters": 82318,
+      "scope_positive_score": 0.5939,
+      "scope_negative_score": 0.5711,
+      "scope_margin": 0.0228
+    },
+    {
+      "title": "Iranian cuisine",
+      "url": "https://en.wikipedia.org/wiki/Iranian_cuisine",
+      "num_characters": 16822,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Jamaican cuisine",
       "url": "https://en.wikipedia.org/wiki/Jamaican_cuisine",
-      "num_characters": 8993
+      "num_characters": 8993,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Jewish cuisine",
+      "url": "https://en.wikipedia.org/wiki/Jewish_cuisine",
+      "num_characters": 34809,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Kaak (bread)",
       "url": "https://en.wikipedia.org/wiki/Kaak_(bread)",
-      "num_characters": 2255
+      "num_characters": 2255,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Jaffna crab curry",
       "url": "https://en.wikipedia.org/wiki/Jaffna_crab_curry",
-      "num_characters": 785
+      "num_characters": 785,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Kalash cuisine",
       "url": "https://en.wikipedia.org/wiki/Kalash_cuisine",
-      "num_characters": 3379
+      "num_characters": 3379,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Kanika (food)",
       "url": "https://en.wikipedia.org/wiki/Kanika_(food)",
-      "num_characters": 635
+      "num_characters": 635,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Kapampangan cuisine",
+      "url": "https://en.wikipedia.org/wiki/Kapampangan_cuisine",
+      "num_characters": 2836,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Kashmiri cuisine",
       "url": "https://en.wikipedia.org/wiki/Kashmiri_cuisine",
-      "num_characters": 40167
+      "num_characters": 40167,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Kebab",
       "url": "https://en.wikipedia.org/wiki/Kebab",
-      "num_characters": 12271
+      "num_characters": 12271,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Khichdi (dish)",
       "url": "https://en.wikipedia.org/wiki/Khichdi_(dish)",
-      "num_characters": 5020
+      "num_characters": 5020,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Malvani cuisine",
       "url": "https://en.wikipedia.org/wiki/Malvani_cuisine",
-      "num_characters": 3819
+      "num_characters": 3819,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Kottu",
       "url": "https://en.wikipedia.org/wiki/Kottu",
-      "num_characters": 2426
+      "num_characters": 2426,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Kumaoni cuisine",
       "url": "https://en.wikipedia.org/wiki/Kumaoni_cuisine",
-      "num_characters": 853
+      "num_characters": 853,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Kuwaiti cuisine",
       "url": "https://en.wikipedia.org/wiki/Kuwaiti_cuisine",
-      "num_characters": 5038
+      "num_characters": 5038,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Kwati (soup)",
       "url": "https://en.wikipedia.org/wiki/Kwati_(soup)",
-      "num_characters": 1358
+      "num_characters": 1358,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Lahori cuisine",
       "url": "https://en.wikipedia.org/wiki/Lahori_cuisine",
-      "num_characters": 2786
-    },
-    {
-      "title": "Lamb and mutton",
-      "url": "https://en.wikipedia.org/wiki/Lamb_and_mutton",
-      "num_characters": 15791
+      "num_characters": 2786,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Lentil",
       "url": "https://en.wikipedia.org/wiki/Lentil",
-      "num_characters": 17471
+      "num_characters": 17471,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Levantine cuisine",
+      "url": "https://en.wikipedia.org/wiki/Levantine_cuisine",
+      "num_characters": 2707,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Litti (dish)",
       "url": "https://en.wikipedia.org/wiki/Litti_(dish)",
-      "num_characters": 5174
+      "num_characters": 5174,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Nutmeg",
+      "url": "https://en.wikipedia.org/wiki/Nutmeg",
+      "num_characters": 14117,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Maharashtrian cuisine",
       "url": "https://en.wikipedia.org/wiki/Maharashtrian_cuisine",
-      "num_characters": 27757
+      "num_characters": 27757,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Maithil cuisine",
       "url": "https://en.wikipedia.org/wiki/Maithil_cuisine",
-      "num_characters": 5250
+      "num_characters": 5250,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Makki ki roti",
       "url": "https://en.wikipedia.org/wiki/Makki_ki_roti",
-      "num_characters": 1600
+      "num_characters": 1600,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Malagasy cuisine",
       "url": "https://en.wikipedia.org/wiki/Malagasy_cuisine",
-      "num_characters": 27621
+      "num_characters": 27621,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Malay cuisine",
       "url": "https://en.wikipedia.org/wiki/Malay_cuisine",
-      "num_characters": 38817
+      "num_characters": 38817,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Malaysian Indian cuisine",
       "url": "https://en.wikipedia.org/wiki/Malaysian_Indian_cuisine",
-      "num_characters": 17465
+      "num_characters": 17465,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Malaysian cuisine",
+      "url": "https://en.wikipedia.org/wiki/Malaysian_cuisine",
+      "num_characters": 120613,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Manchow soup",
       "url": "https://en.wikipedia.org/wiki/Manchow_soup",
-      "num_characters": 963
+      "num_characters": 963,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Mangalorean Catholic cuisine",
       "url": "https://en.wikipedia.org/wiki/Mangalorean_Catholic_cuisine",
-      "num_characters": 5042
+      "num_characters": 5042,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Manipuri cuisine",
       "url": "https://en.wikipedia.org/wiki/Manipuri_cuisine",
-      "num_characters": 7291
+      "num_characters": 7291,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Manti (food)",
+      "url": "https://en.wikipedia.org/wiki/Manti_(food)",
+      "num_characters": 9669,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Spice mix",
       "url": "https://en.wikipedia.org/wiki/Spice_mix",
-      "num_characters": 5592
+      "num_characters": 5592,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Masala chai",
       "url": "https://en.wikipedia.org/wiki/Masala_chai",
-      "num_characters": 5723
+      "num_characters": 5723,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Masala dosa",
       "url": "https://en.wikipedia.org/wiki/Masala_dosa",
-      "num_characters": 1766
+      "num_characters": 1766,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Mauritian cuisine",
       "url": "https://en.wikipedia.org/wiki/Mauritian_cuisine",
-      "num_characters": 7243
+      "num_characters": 7243,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Meghalayan cuisine",
       "url": "https://en.wikipedia.org/wiki/Meghalayan_cuisine",
-      "num_characters": 1856
+      "num_characters": 1856,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Meitei people",
       "url": "https://en.wikipedia.org/wiki/Meitei_people",
-      "num_characters": 12779
+      "num_characters": 12779,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Mizo cuisine",
       "url": "https://en.wikipedia.org/wiki/Mizo_cuisine",
-      "num_characters": 2522
+      "num_characters": 2522,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Momo (food)",
       "url": "https://en.wikipedia.org/wiki/Momo_(food)",
-      "num_characters": 7666
+      "num_characters": 7666,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Moroccan cuisine",
+      "url": "https://en.wikipedia.org/wiki/Moroccan_cuisine",
+      "num_characters": 9615,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Mozambican cuisine",
       "url": "https://en.wikipedia.org/wiki/Mozambican_cuisine",
-      "num_characters": 3496
+      "num_characters": 3496,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Mughlai cuisine",
       "url": "https://en.wikipedia.org/wiki/Mughlai_cuisine",
-      "num_characters": 9005
+      "num_characters": 9005,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Muhajir cuisine",
       "url": "https://en.wikipedia.org/wiki/Muhajir_cuisine",
-      "num_characters": 2371
+      "num_characters": 2371,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Mulligatawny",
       "url": "https://en.wikipedia.org/wiki/Mulligatawny",
-      "num_characters": 3166
+      "num_characters": 3166,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Mutton curry",
       "url": "https://en.wikipedia.org/wiki/Mutton_curry",
-      "num_characters": 5410
+      "num_characters": 5410,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Naga cuisine",
       "url": "https://en.wikipedia.org/wiki/Naga_cuisine",
-      "num_characters": 4271
+      "num_characters": 4271,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "National dish",
       "url": "https://en.wikipedia.org/wiki/National_dish",
-      "num_characters": 12879
+      "num_characters": 12879,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Nepalese cuisine",
       "url": "https://en.wikipedia.org/wiki/Nepalese_cuisine",
-      "num_characters": 15863
-    },
-    {
-      "title": "New Zealand cuisine",
-      "url": "https://en.wikipedia.org/wiki/New_Zealand_cuisine",
-      "num_characters": 25449
+      "num_characters": 15863,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Newar cuisine",
       "url": "https://en.wikipedia.org/wiki/Newar_cuisine",
-      "num_characters": 5408
+      "num_characters": 5408,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "North Indian cuisine",
       "url": "https://en.wikipedia.org/wiki/North_Indian_cuisine",
-      "num_characters": 762
+      "num_characters": 762,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Odisha",
       "url": "https://en.wikipedia.org/wiki/Odisha",
-      "num_characters": 37506
+      "num_characters": 37506,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Omani cuisine",
       "url": "https://en.wikipedia.org/wiki/Omani_cuisine",
-      "num_characters": 2970
+      "num_characters": 2970,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Origins of North Indian and Pakistani foods",
       "url": "https://en.wikipedia.org/wiki/Origins_of_North_Indian_and_Pakistani_foods",
-      "num_characters": 844
+      "num_characters": 844,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Padang cuisine",
       "url": "https://en.wikipedia.org/wiki/Padang_cuisine",
-      "num_characters": 10562
+      "num_characters": 10562,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Pakistani Chinese cuisine",
+      "url": "https://en.wikipedia.org/wiki/Pakistani_Chinese_cuisine",
+      "num_characters": 3395,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Pakistani cuisine",
       "url": "https://en.wikipedia.org/wiki/Pakistani_cuisine",
-      "num_characters": 20557
+      "num_characters": 20557,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Pakistani meat dishes",
       "url": "https://en.wikipedia.org/wiki/Pakistani_meat_dishes",
-      "num_characters": 5574
+      "num_characters": 5574,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Pakistani rice dishes",
       "url": "https://en.wikipedia.org/wiki/Pakistani_rice_dishes",
-      "num_characters": 1766
+      "num_characters": 1766,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Sweets from the Indian subcontinent",
       "url": "https://en.wikipedia.org/wiki/Sweets_from_the_Indian_subcontinent",
-      "num_characters": 15203
-    },
-    {
-      "title": "Palembang cuisine",
-      "url": "https://en.wikipedia.org/wiki/Palembang_cuisine",
-      "num_characters": 9228
+      "num_characters": 15203,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Paneer",
       "url": "https://en.wikipedia.org/wiki/Paneer",
-      "num_characters": 7576
+      "num_characters": 7576,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Parsi cuisine",
       "url": "https://en.wikipedia.org/wiki/Parsi_cuisine",
-      "num_characters": 2945
+      "num_characters": 2945,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Pashtun cuisine",
       "url": "https://en.wikipedia.org/wiki/Pashtun_cuisine",
-      "num_characters": 4053
+      "num_characters": 4053,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Pat Chapman (food writer)",
       "url": "https://en.wikipedia.org/wiki/Pat_Chapman_(food_writer)",
-      "num_characters": 7706
+      "num_characters": 7706,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Paya (food)",
       "url": "https://en.wikipedia.org/wiki/Paya_(food)",
-      "num_characters": 1939
+      "num_characters": 1939,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Peanut soup",
+      "url": "https://en.wikipedia.org/wiki/Peanut_soup",
+      "num_characters": 1417,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Peasant foods",
+      "url": "https://en.wikipedia.org/wiki/Peasant_foods",
+      "num_characters": 6846,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Peranakan cuisine",
       "url": "https://en.wikipedia.org/wiki/Peranakan_cuisine",
-      "num_characters": 10597
+      "num_characters": 10597,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Pongal (dish)",
       "url": "https://en.wikipedia.org/wiki/Pongal_(dish)",
-      "num_characters": 1588
+      "num_characters": 1588,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Puffed rice",
       "url": "https://en.wikipedia.org/wiki/Puffed_rice",
-      "num_characters": 5546
+      "num_characters": 5546,
+      "scope_positive_score": 0.5095,
+      "scope_negative_score": 0.5059,
+      "scope_margin": 0.0036
     },
     {
       "title": "Punjabi cuisine",
       "url": "https://en.wikipedia.org/wiki/Punjabi_cuisine",
-      "num_characters": 15276
+      "num_characters": 15276,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Puri (food)",
       "url": "https://en.wikipedia.org/wiki/Puri_(food)",
-      "num_characters": 14599
+      "num_characters": 14599,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Rajasthani cuisine",
       "url": "https://en.wikipedia.org/wiki/Rajasthani_cuisine",
-      "num_characters": 19818
+      "num_characters": 19818,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Rasam (dish)",
       "url": "https://en.wikipedia.org/wiki/Rasam_(dish)",
-      "num_characters": 1872
+      "num_characters": 1872,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Red rice",
       "url": "https://en.wikipedia.org/wiki/Red_rice",
-      "num_characters": 3043
+      "num_characters": 3043,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Religious significance of rice in India",
       "url": "https://en.wikipedia.org/wiki/Religious_significance_of_rice_in_India",
-      "num_characters": 3617
+      "num_characters": 3617,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Rice",
       "url": "https://en.wikipedia.org/wiki/Rice",
-      "num_characters": 29067
+      "num_characters": 29067,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Rice and curry",
       "url": "https://en.wikipedia.org/wiki/Rice_and_curry",
-      "num_characters": 1528
+      "num_characters": 1528,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
-      "title": "Rice wine",
-      "url": "https://en.wikipedia.org/wiki/Rice_wine",
-      "num_characters": 3005
+      "title": "Rice cake",
+      "url": "https://en.wikipedia.org/wiki/Rice_cake",
+      "num_characters": 18622,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Rice flour",
+      "url": "https://en.wikipedia.org/wiki/Rice_flour",
+      "num_characters": 3441,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Rice production in Bangladesh",
       "url": "https://en.wikipedia.org/wiki/Rice_production_in_Bangladesh",
-      "num_characters": 12876
+      "num_characters": 12876,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Rice production in Pakistan",
       "url": "https://en.wikipedia.org/wiki/Rice_production_in_Pakistan",
-      "num_characters": 5129
+      "num_characters": 5129,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Roast chicken",
+      "url": "https://en.wikipedia.org/wiki/Roast_chicken",
+      "num_characters": 4038,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Roti",
       "url": "https://en.wikipedia.org/wiki/Roti",
-      "num_characters": 7666
+      "num_characters": 7666,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Roti canai",
       "url": "https://en.wikipedia.org/wiki/Roti_canai",
-      "num_characters": 7574
+      "num_characters": 7574,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Rotisserie",
+      "url": "https://en.wikipedia.org/wiki/Rotisserie",
+      "num_characters": 5329,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Manda roti",
       "url": "https://en.wikipedia.org/wiki/Manda_roti",
-      "num_characters": 1177
+      "num_characters": 1177,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Rwandan cuisine",
       "url": "https://en.wikipedia.org/wiki/Rwandan_cuisine",
-      "num_characters": 4079
+      "num_characters": 4079,
+      "scope_positive_score": 0.5741,
+      "scope_negative_score": 0.5567,
+      "scope_margin": 0.0174
     },
     {
       "title": "Saint Lucian cuisine",
       "url": "https://en.wikipedia.org/wiki/Saint_Lucian_cuisine",
-      "num_characters": 1555
+      "num_characters": 1555,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Salvadoran cuisine",
       "url": "https://en.wikipedia.org/wiki/Salvadoran_cuisine",
-      "num_characters": 8001
+      "num_characters": 8001,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Sambar (dish)",
       "url": "https://en.wikipedia.org/wiki/Sambar_(dish)",
-      "num_characters": 2683
+      "num_characters": 2683,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Samosa",
       "url": "https://en.wikipedia.org/wiki/Samosa",
-      "num_characters": 7976
+      "num_characters": 7976,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Sandalwood",
       "url": "https://en.wikipedia.org/wiki/Sandalwood",
-      "num_characters": 18243
+      "num_characters": 18243,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Saraiki cuisine",
       "url": "https://en.wikipedia.org/wiki/Saraiki_cuisine",
-      "num_characters": 2715
+      "num_characters": 2715,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Saraswat cuisine",
       "url": "https://en.wikipedia.org/wiki/Saraswat_cuisine",
-      "num_characters": 6638
+      "num_characters": 6638,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Seekh kebab",
       "url": "https://en.wikipedia.org/wiki/Seekh_kebab",
-      "num_characters": 1122
+      "num_characters": 1122,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Sel roti",
       "url": "https://en.wikipedia.org/wiki/Sel_roti",
-      "num_characters": 5295
+      "num_characters": 5295,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Seychellois cuisine",
       "url": "https://en.wikipedia.org/wiki/Seychellois_cuisine",
-      "num_characters": 4135
+      "num_characters": 4135,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Shahi paneer",
       "url": "https://en.wikipedia.org/wiki/Shahi_paneer",
-      "num_characters": 746
+      "num_characters": 746,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Shami kebab",
       "url": "https://en.wikipedia.org/wiki/Shami_kebab",
-      "num_characters": 2582
+      "num_characters": 2582,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Sharbat (drink)",
       "url": "https://en.wikipedia.org/wiki/Sharbat_(drink)",
-      "num_characters": 10310
+      "num_characters": 10310,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Shrimp and prawn as food",
       "url": "https://en.wikipedia.org/wiki/Shrimp_and_prawn_as_food",
-      "num_characters": 7935
+      "num_characters": 7935,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Sikkimese cuisine",
       "url": "https://en.wikipedia.org/wiki/Sikkimese_cuisine",
-      "num_characters": 4800
+      "num_characters": 4800,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Sindhi cuisine",
       "url": "https://en.wikipedia.org/wiki/Sindhi_cuisine",
-      "num_characters": 9738
+      "num_characters": 9738,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Singaporean cuisine",
       "url": "https://en.wikipedia.org/wiki/Singaporean_cuisine",
-      "num_characters": 32257
+      "num_characters": 32257,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Sinki (food)",
       "url": "https://en.wikipedia.org/wiki/Sinki_(food)",
-      "num_characters": 2358
+      "num_characters": 2358,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Somali cuisine",
       "url": "https://en.wikipedia.org/wiki/Somali_cuisine",
-      "num_characters": 9913
+      "num_characters": 9913,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "South American cuisine",
+      "url": "https://en.wikipedia.org/wiki/South_American_cuisine",
+      "num_characters": 5565,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "South Asian cuisine",
       "url": "https://en.wikipedia.org/wiki/South_Asian_cuisine",
-      "num_characters": 9391
+      "num_characters": 9391,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "South Indian cuisine",
       "url": "https://en.wikipedia.org/wiki/South_Indian_cuisine",
-      "num_characters": 4471
+      "num_characters": 4471,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Spice",
       "url": "https://en.wikipedia.org/wiki/Spice",
-      "num_characters": 13467
+      "num_characters": 13467,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Spice trade",
       "url": "https://en.wikipedia.org/wiki/Spice_trade",
-      "num_characters": 18167
+      "num_characters": 18167,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Sri Lankan cuisine",
       "url": "https://en.wikipedia.org/wiki/Sri_Lankan_cuisine",
-      "num_characters": 13956
+      "num_characters": 13956,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Street food of Chennai",
       "url": "https://en.wikipedia.org/wiki/Street_food_of_Chennai",
-      "num_characters": 7037
+      "num_characters": 7037,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Street food of Mumbai",
       "url": "https://en.wikipedia.org/wiki/Street_food_of_Mumbai",
-      "num_characters": 5140
+      "num_characters": 5140,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Taftan (bread)",
       "url": "https://en.wikipedia.org/wiki/Taftan_(bread)",
-      "num_characters": 551
+      "num_characters": 551,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Tandoor bread",
       "url": "https://en.wikipedia.org/wiki/Tandoor_bread",
-      "num_characters": 5438
+      "num_characters": 5438,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Tandoori chicken",
       "url": "https://en.wikipedia.org/wiki/Tandoori_chicken",
-      "num_characters": 3547
+      "num_characters": 3547,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Telangana cuisine",
       "url": "https://en.wikipedia.org/wiki/Telangana_cuisine",
-      "num_characters": 2115
+      "num_characters": 2115,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Thadal",
       "url": "https://en.wikipedia.org/wiki/Thadal",
-      "num_characters": 429
+      "num_characters": 429,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Thalassery cuisine",
       "url": "https://en.wikipedia.org/wiki/Thalassery_cuisine",
-      "num_characters": 15893
+      "num_characters": 15893,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Tibetan cuisine",
       "url": "https://en.wikipedia.org/wiki/Tibetan_cuisine",
-      "num_characters": 12523
+      "num_characters": 12523,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Tikka (food)",
       "url": "https://en.wikipedia.org/wiki/Tikka_(food)",
-      "num_characters": 3154
+      "num_characters": 3154,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Tomato chutney",
       "url": "https://en.wikipedia.org/wiki/Tomato_chutney",
-      "num_characters": 1202
+      "num_characters": 1202,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Traditional rice of Sri Lanka",
       "url": "https://en.wikipedia.org/wiki/Traditional_rice_of_Sri_Lanka",
-      "num_characters": 4520
+      "num_characters": 4520,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Trinidad and Tobago cuisine",
       "url": "https://en.wikipedia.org/wiki/Trinidad_and_Tobago_cuisine",
-      "num_characters": 12782
+      "num_characters": 12782,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Tripuri cuisine",
       "url": "https://en.wikipedia.org/wiki/Tripuri_cuisine",
-      "num_characters": 753
+      "num_characters": 753,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Tunisian cuisine",
+      "url": "https://en.wikipedia.org/wiki/Tunisian_cuisine",
+      "num_characters": 16047,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Udupi cuisine",
       "url": "https://en.wikipedia.org/wiki/Udupi_cuisine",
-      "num_characters": 5144
+      "num_characters": 5144,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Ugandan cuisine",
       "url": "https://en.wikipedia.org/wiki/Ugandan_cuisine",
-      "num_characters": 5088
+      "num_characters": 5088,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Uruguayan cuisine",
       "url": "https://en.wikipedia.org/wiki/Uruguayan_cuisine",
-      "num_characters": 35152
+      "num_characters": 35152,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Uttarakhand",
       "url": "https://en.wikipedia.org/wiki/Uttarakhand",
-      "num_characters": 52386
+      "num_characters": 52386,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Uzbek cuisine",
       "url": "https://en.wikipedia.org/wiki/Uzbek_cuisine",
-      "num_characters": 9551
+      "num_characters": 9551,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Vindaloo",
       "url": "https://en.wikipedia.org/wiki/Vindaloo",
-      "num_characters": 6776
+      "num_characters": 6776,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
+    },
+    {
+      "title": "Wai Wai (food brand)",
+      "url": "https://en.wikipedia.org/wiki/Wai_Wai_(food_brand)",
+      "num_characters": 931,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Yemeni cuisine",
       "url": "https://en.wikipedia.org/wiki/Yemeni_cuisine",
-      "num_characters": 8690
+      "num_characters": 8690,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Zanzibari cuisine",
       "url": "https://en.wikipedia.org/wiki/Zanzibari_cuisine",
-      "num_characters": 2680
+      "num_characters": 2680,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     },
     {
       "title": "Zarda (food)",
       "url": "https://en.wikipedia.org/wiki/Zarda_(food)",
-      "num_characters": 1472
+      "num_characters": 1472,
+      "scope_positive_score": 1.0,
+      "scope_negative_score": 0.0,
+      "scope_margin": 1.0
     }
   ],
   "skipped": [
     {
       "title": "Georgian cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Acadian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Achari paneer tikka",
       "reason": "page_not_found"
-    },
-    {
-      "title": "Naan",
-      "reason": "out_of_scope_south_asia"
     },
     {
       "title": "Afghan cuisine",
@@ -1232,72 +2221,64 @@
       "url": "https://en.wikipedia.org/wiki/Afghan_cuisine"
     },
     {
-      "title": "African cuisine",
-      "reason": "out_of_scope_title"
-    },
-    {
       "title": "Ainu cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Albanian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Alcoholic beverage",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Alcoholic beverage",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Algerian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "American Chinese cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "American Jewish cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "American cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Ancient Egyptian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Ancient Greek cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Ancient Israelite cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Ancient Maya cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Ancient Roman cuisine",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Andalusian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Angolan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Anguillian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Apple curry",
@@ -1305,27 +2286,23 @@
     },
     {
       "title": "Apulian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Arab Indonesian cuisine",
-      "reason": "out_of_scope_title"
-    },
-    {
-      "title": "Arab cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Argentine cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Armenian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Aromanian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Arunachali cuisine",
@@ -1334,48 +2311,55 @@
     },
     {
       "title": "Ashkenazi Jewish cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Assyrian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Asturian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Australian Chinese cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Australian cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "embedding_scope_reject",
+      "scope_positive_score": 0.5603,
+      "scope_negative_score": 0.5722,
+      "scope_margin": -0.0119
     },
     {
       "title": "Austrian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Azerbaijani cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Aztec cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Balearic cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Balkan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Balochi cuisine",
       "reason": "duplicate_url",
       "url": "https://en.wikipedia.org/wiki/Balochi_cuisine"
+    },
+    {
+      "title": "Balti (food)",
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Bangladeshi Chinese cuisine",
@@ -1391,11 +2375,11 @@
     },
     {
       "title": "Bashkir cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Basque cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Beetroot curry",
@@ -1403,31 +2387,27 @@
     },
     {
       "title": "Beijing cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Belarusian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Belgian cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Belizean cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of Benin",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Berber cuisine",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Bhutanese red rice",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Bihari cuisine",
@@ -1436,31 +2416,27 @@
     },
     {
       "title": "Bolivian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Bosnia and Herzegovina cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Botswana cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Brain as food",
       "reason": "out_of_scope_title"
     },
     {
-      "title": "Brazilian cuisine",
-      "reason": "out_of_scope_title"
-    },
-    {
       "title": "Bread",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Breadfruit",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Brinjal paal curry",
@@ -1468,7 +2444,7 @@
     },
     {
       "title": "British Chinese cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "British Indian Ocean Territory cuisine",
@@ -1476,67 +2452,70 @@
     },
     {
       "title": "Buddhist cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Bukharan Jewish cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Bulgarian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Burkinabe cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Burundian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Buryat cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Byzantine cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cajun cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cambodian Chinese cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cameroonian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Campanian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Canadian Chinese cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
+    },
+    {
+      "title": "Canadian cuisine",
+      "reason": "embedding_scope_reject",
+      "scope_positive_score": 0.5643,
+      "scope_negative_score": 0.6,
+      "scope_margin": -0.0358
     },
     {
       "title": "Canarian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cantabrian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cantonese cuisine",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Caribbean cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cashew curry",
@@ -1544,15 +2523,15 @@
     },
     {
       "title": "Catalan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "List of Asian cuisines",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Central European cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Ceylon (curry)",
@@ -1561,15 +2540,15 @@
     },
     {
       "title": "Chadian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Channel Islands cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Chechen cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Chicken as food",
@@ -1585,15 +2564,15 @@
     },
     {
       "title": "Chilean cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Chinese Indonesian cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Chinese cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Bangladeshi cuisine",
@@ -1602,55 +2581,47 @@
     },
     {
       "title": "Circassian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of the Cocos (Keeling) Islands",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Colombian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Comfort food",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Congolese cuisine",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Cooked rice",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cooking",
-      "reason": "out_of_scope_south_asia"
+      "reason": "out_of_scope_title"
     },
     {
       "title": "Cooking banana",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cossack cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Crayfish as food",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cretan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Crimean Tatar cuisine",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Croatian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine",
@@ -1658,15 +2629,15 @@
     },
     {
       "title": "Haute cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of Abruzzo",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of Antebellum America",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Arunachali cuisine",
@@ -1675,7 +2646,7 @@
     },
     {
       "title": "Cuisine of Basilicata",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Chhattisgarhi cuisine",
@@ -1684,91 +2655,91 @@
     },
     {
       "title": "Cuisine of Chiapas",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of Corsica",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of Timor-Leste",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of Equatorial Guinea",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of Eswatini",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of Guinea",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of Lesotho",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of Liguria",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of Luxembourg",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of Mexico City",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of Niger",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of Nuevo León",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of Quebec",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of Saint Helena",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of Sardinia",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of Svalbard",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of São Tomé and Príncipe",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of Veracruz",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of the Americas",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of the Central African Republic",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of the Ionian Islands",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of the Pennsylvania Dutch",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Curry tree",
@@ -1777,31 +2748,31 @@
     },
     {
       "title": "Cypriot cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Czech cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Danish cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Dessert",
-      "reason": "out_of_scope_south_asia"
+      "reason": "out_of_scope_title"
     },
     {
       "title": "Dominica cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Dominican Republic cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Drink",
-      "reason": "out_of_scope_south_asia"
+      "reason": "out_of_scope_title"
     },
     {
       "title": "Duck as food",
@@ -1814,31 +2785,28 @@
     },
     {
       "title": "Dutch cuisine",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Early modern European cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "African cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "duplicate_url",
+      "url": "https://en.wikipedia.org/wiki/African_cuisine"
     },
     {
       "title": "List of Asian cuisines",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of Timor-Leste",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Eastern European cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Ecuadorian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Eggs as food",
@@ -1850,131 +2818,131 @@
     },
     {
       "title": "Egyptian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Emilian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Emirati cuisine",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Epirotic cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Eritrean cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Estonian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Ethiopian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "European cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Extremaduran cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Faroese cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Fast food",
-      "reason": "out_of_scope_south_asia"
+      "reason": "out_of_scope_title"
     },
     {
       "title": "Fermentation in food processing",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Filipino Chinese cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Filipino cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Finnish cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Fish as food",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Fish as food",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Flatbread",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Flatbread",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Flatbread",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Food",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Food Standards Agency",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Food and the Scottish royal household",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Crop",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Food history",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Food in Antarctica",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "French Guianan cuisine",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "French cuisine",
       "reason": "out_of_scope_title"
     },
     {
+      "title": "Food Standards Agency",
+      "reason": "keyword_scope_reject"
+    },
+    {
+      "title": "Food and the Scottish royal household",
+      "reason": "keyword_scope_reject"
+    },
+    {
+      "title": "Crop",
+      "reason": "keyword_scope_reject"
+    },
+    {
+      "title": "Food history",
+      "reason": "keyword_scope_reject"
+    },
+    {
+      "title": "Food in Antarctica",
+      "reason": "keyword_scope_reject"
+    },
+    {
+      "title": "French Guianan cuisine",
+      "reason": "keyword_scope_reject"
+    },
+    {
+      "title": "French cuisine",
+      "reason": "keyword_scope_reject"
+    },
+    {
+      "title": "Fusion cuisine",
+      "reason": "keyword_scope_reject"
+    },
+    {
       "title": "Gabonese cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Gagauz cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Galician cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Gambian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Garo cuisine",
@@ -1982,31 +2950,23 @@
     },
     {
       "title": "Georgian cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "German cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Ghanaian cuisine",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Gibraltarian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Global cuisine",
       "reason": "out_of_scope_title"
     },
     {
-      "title": "Goan Catholic cuisine",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
       "title": "Gorontalese cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Gothamba roti",
@@ -2014,43 +2974,43 @@
     },
     {
       "title": "Greek Macedonian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Greek cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Greek-American cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Greenlandic cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Guatemalan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Guinea-Bissauan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Haitian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Hakka cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Hausa cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Haute cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Hazara cuisine",
@@ -2059,27 +3019,27 @@
     },
     {
       "title": "Hittite cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Hmong cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Honduran cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Hong Kong cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Hunan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Hungarian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Hyderabadi biryani",
@@ -2088,63 +3048,48 @@
     },
     {
       "title": "Icelandic cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Inca cuisine",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Indian Chinese cuisine",
-      "reason": "out_of_scope_title"
-    },
-    {
-      "title": "Indian Indonesian cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Indo cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Indian Chinese cuisine",
-      "reason": "out_of_scope_title"
-    },
-    {
-      "title": "Indonesian cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "duplicate_url",
+      "url": "https://en.wikipedia.org/wiki/Indian_Chinese_cuisine"
     },
     {
       "title": "Inuit cuisine",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Iranian cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Iraqi cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Irish cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Israeli cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Italian cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Italian-American cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Ivorian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Jaffna lamb curry",
@@ -2152,15 +3097,11 @@
     },
     {
       "title": "Japanese cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Javanese cuisine",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Jewish cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Jharkhandi cuisine",
@@ -2169,15 +3110,11 @@
     },
     {
       "title": "Jordanian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Kadala",
       "reason": "page_not_found"
-    },
-    {
-      "title": "Kapampangan cuisine",
-      "reason": "out_of_scope_south_asia"
     },
     {
       "title": "Karnataka cuisine",
@@ -2186,11 +3123,11 @@
     },
     {
       "title": "Kazakh cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Culture of Kenya",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Kerala cuisine",
@@ -2199,23 +3136,23 @@
     },
     {
       "title": "Komi cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Korean cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Korean royal court cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Kosher foods",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Kosovar cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Kumaoni cuisine",
@@ -2224,55 +3161,58 @@
     },
     {
       "title": "Kurdish cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Kyrgyz cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
+    },
+    {
+      "title": "Lamb and mutton",
+      "reason": "embedding_scope_reject",
+      "scope_positive_score": 0.5454,
+      "scope_negative_score": 0.5687,
+      "scope_margin": -0.0233
     },
     {
       "title": "Lao cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Lao cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Latin American cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Latvian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Leaf vegetable",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Lebanese cuisine",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Levantine cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Liberian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Libyan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Liechtenstein cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Lists of foods",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Lists of prepared foods",
@@ -2280,43 +3220,39 @@
     },
     {
       "title": "Lithuanian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Livonian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Lombard cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Louisiana Creole cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Macanese cuisine",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Nutmeg",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Macedonian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Mackerel as food",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Mackerel as food",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Madurese cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Bihari cuisine",
@@ -2325,11 +3261,11 @@
     },
     {
       "title": "Maghrebi cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Makassar cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Makki ki roti",
@@ -2338,15 +3274,11 @@
     },
     {
       "title": "Malawian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Malaysian Chinese cuisine",
-      "reason": "out_of_scope_title"
-    },
-    {
-      "title": "Malaysian cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Maldivian cuisine",
@@ -2355,11 +3287,11 @@
     },
     {
       "title": "Malian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Maltese cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Malvani cuisine",
@@ -2368,51 +3300,47 @@
     },
     {
       "title": "Manchego cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Mango curry",
       "reason": "page_not_found"
     },
     {
-      "title": "Manti (food)",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
       "title": "Marshallese cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Mauritanian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Meat",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Medieval cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Mediterranean cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Mennonite cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Mexican cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Middle Eastern cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Minahasan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Mixed rice dish",
@@ -2420,7 +3348,7 @@
     },
     {
       "title": "Mizrahi Jewish cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Moju curry",
@@ -2428,35 +3356,31 @@
     },
     {
       "title": "Moldovan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Mongolian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Montenegrin cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Monégasque cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Moravian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Mordovian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Moroccan Jewish cuisine",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Moroccan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Mughlai cuisine",
@@ -2465,7 +3389,7 @@
     },
     {
       "title": "Muisca cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Murunga curry",
@@ -2473,16 +3397,19 @@
     },
     {
       "title": "Lamb and mutton",
-      "reason": "duplicate_url",
-      "url": "https://en.wikipedia.org/wiki/Lamb_and_mutton"
+      "reason": "embedding_scope_reject",
+      "scope_positive_score": 0.5454,
+      "scope_negative_score": 0.5687,
+      "scope_margin": -0.0233
     },
     {
       "title": "Naan",
-      "reason": "out_of_scope_south_asia"
+      "reason": "duplicate_url",
+      "url": "https://en.wikipedia.org/wiki/Naan"
     },
     {
       "title": "Namibian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Nappi cuisine",
@@ -2490,19 +3417,26 @@
     },
     {
       "title": "Native cuisine of Hawaii",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Nauruan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Neapolitan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "New American cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
+    },
+    {
+      "title": "New Zealand cuisine",
+      "reason": "embedding_scope_reject",
+      "scope_positive_score": 0.5554,
+      "scope_negative_score": 0.5724,
+      "scope_margin": -0.017
     },
     {
       "title": "Newar cuisine",
@@ -2511,19 +3445,19 @@
     },
     {
       "title": "Nicaraguan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Nigerian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Niuean cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "North American cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Northeast India",
@@ -2532,39 +3466,39 @@
     },
     {
       "title": "North Korean cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Northern Irish cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Norwegian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Note by Note cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Nouvelle cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Oaxacan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Occitan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Oceanian cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Oceanian cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Cuisine of Odisha",
@@ -2573,7 +3507,7 @@
     },
     {
       "title": "Okinawan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Origins of North Indian and Pakistani foods",
@@ -2582,19 +3516,15 @@
     },
     {
       "title": "Ossetian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Ottoman cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Oxtail soup",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Pakistani Chinese cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Pakistani cuisine",
@@ -2607,28 +3537,24 @@
       "num_characters": 361
     },
     {
+      "title": "Palembang cuisine",
+      "reason": "keyword_scope_reject"
+    },
+    {
       "title": "Palestinian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Panamanian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Papua New Guinean cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Paraguayan cuisine",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Peanut soup",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Peasant foods",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Pelka cuisine",
@@ -2636,15 +3562,15 @@
     },
     {
       "title": "Peruvian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Filipino cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Piedmontese cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Flattened rice",
@@ -2657,7 +3583,7 @@
     },
     {
       "title": "Polish cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Polos curry",
@@ -2665,11 +3591,11 @@
     },
     {
       "title": "Pontic Greek cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Portuguese cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Potato curry",
@@ -2677,7 +3603,7 @@
     },
     {
       "title": "Puerto Rican cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Pumpkin curry",
@@ -2685,124 +3611,117 @@
     },
     {
       "title": "Puto (food)",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Qatari cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Radish",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Regional cuisine",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Rice cake",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Rice flour",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Rice pudding",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Rice wine",
-      "reason": "duplicate_url",
-      "url": "https://en.wikipedia.org/wiki/Rice_wine"
-    },
-    {
-      "title": "Roast chicken",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Roman cuisine",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Romani cuisine",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Romanian cuisine",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Rotisserie",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Russian cuisine",
       "reason": "out_of_scope_title"
     },
     {
+      "title": "Rice wine",
+      "reason": "embedding_scope_reject",
+      "scope_positive_score": 0.5177,
+      "scope_negative_score": 0.5195,
+      "scope_margin": -0.0017
+    },
+    {
+      "title": "Rice pudding",
+      "reason": "keyword_scope_reject"
+    },
+    {
+      "title": "Rice wine",
+      "reason": "embedding_scope_reject",
+      "scope_positive_score": 0.5177,
+      "scope_negative_score": 0.5195,
+      "scope_margin": -0.0017
+    },
+    {
+      "title": "Roman cuisine",
+      "reason": "keyword_scope_reject"
+    },
+    {
+      "title": "Romani cuisine",
+      "reason": "keyword_scope_reject"
+    },
+    {
+      "title": "Romanian cuisine",
+      "reason": "keyword_scope_reject"
+    },
+    {
+      "title": "Russian cuisine",
+      "reason": "keyword_scope_reject"
+    },
+    {
       "title": "Sabahan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Sakha cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Salad",
-      "reason": "out_of_scope_south_asia"
+      "reason": "out_of_scope_title"
     },
     {
       "title": "Sammarinese cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Sarawakian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Saudi Arabian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Scottish cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Seafood",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Senegalese cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Sephardic Jewish cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Serbian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Shandong cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Sichuan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Sicilian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Side dish",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Sierra Leonean cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Sindhi biryani",
@@ -2811,39 +3730,35 @@
     },
     {
       "title": "Slovak cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Slovenian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Snack",
-      "reason": "out_of_scope_south_asia"
+      "reason": "out_of_scope_title"
     },
     {
       "title": "Sociology of food",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Soft drink",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Soul food",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Soup",
-      "reason": "out_of_scope_south_asia"
+      "reason": "out_of_scope_title"
     },
     {
       "title": "South African cuisine",
-      "reason": "out_of_scope_title"
-    },
-    {
-      "title": "South American cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Sweets from the Indian subcontinent",
@@ -2852,27 +3767,27 @@
     },
     {
       "title": "South Korean cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Ossetian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "List of Asian cuisines",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Soviet cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Spanish cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Specialty food",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Spice mix",
@@ -2886,19 +3801,19 @@
     },
     {
       "title": "Sprite (drink)",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Squash (drink)",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Squid as food",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Staple food",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Glutinous rice",
@@ -2907,31 +3822,31 @@
     },
     {
       "title": "Street food",
-      "reason": "out_of_scope_south_asia"
+      "reason": "out_of_scope_title"
     },
     {
       "title": "Sudanese cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Sundanese cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Swedish cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Sweet potato",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Sweet potato",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Swiss cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Bangladeshi cuisine",
@@ -2940,27 +3855,27 @@
     },
     {
       "title": "Syrian Jewish cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Syrian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Sámi cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Food and drink prohibitions",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Taiwanese cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Tajik cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Tamil cuisine",
@@ -2969,11 +3884,11 @@
     },
     {
       "title": "Culture of Tanzania",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Tatar cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Andhra cuisine",
@@ -2982,7 +3897,7 @@
     },
     {
       "title": "Thai cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Sindhi cuisine",
@@ -2991,7 +3906,7 @@
     },
     {
       "title": "The Oxford Companion to Food",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Tibetan cuisine",
@@ -3000,19 +3915,15 @@
     },
     {
       "title": "Togolese cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Transylvanian Saxon cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Tuna",
-      "reason": "out_of_scope_south_asia"
-    },
-    {
-      "title": "Tunisian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Northern Cyprus",
@@ -3021,27 +3932,27 @@
     },
     {
       "title": "Turkish cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Turkmen cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Tuscan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Tuvaluan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Udmurt cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Ukrainian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Uraippu roti",
@@ -3054,7 +3965,7 @@
     },
     {
       "title": "Uyghur cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Vada (food)",
@@ -3063,75 +3974,72 @@
     },
     {
       "title": "Valencian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Vanuatuan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Vegetable",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Vegetable oil",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Vegetarian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "out_of_scope_title"
     },
     {
       "title": "Venetian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Venezuelan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Vietnamese cuisine",
-      "reason": "out_of_scope_title"
-    },
-    {
-      "title": "Wai Wai (food brand)",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Welsh cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "West African cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Middle Eastern cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Caribbean cuisine",
-      "reason": "out_of_scope_title"
+      "reason": "duplicate_url",
+      "url": "https://en.wikipedia.org/wiki/Caribbean_cuisine"
     },
     {
       "title": "Western Saharan cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "White rice",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Yamal cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Yupʼik cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Zambian cuisine",
-      "reason": "out_of_scope_south_asia"
+      "reason": "keyword_scope_reject"
     },
     {
       "title": "Zimbabwe",
