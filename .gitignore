@@ -1,0 +1,7 @@
+# Ignore these folder
+__pycache__/
+.idea/
+.vscode/
+anaconda_projects/
+ragenv/
+.ipynb_checkpoints/
