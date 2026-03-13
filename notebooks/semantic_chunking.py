@@ -1,9 +1,9 @@
+import importlib.metadata
 import re
-from typing import Iterable
+from typing import Any, Iterable
 
 import numpy as np
 from langchain_core.documents import Document
-from sentence_transformers import SentenceTransformer
 
 
 HEADER_PATTERN = re.compile(r"^\s*#{1,6}\s+")
@@ -39,10 +39,35 @@ def cosine_similarity(left: np.ndarray, right: np.ndarray) -> float:
     return float(np.dot(left, right) / denominator)
 
 
+def _package_version(package_name: str) -> str:
+    try:
+        return importlib.metadata.version(package_name)
+    except importlib.metadata.PackageNotFoundError:
+        return "not installed"
+
+
+def load_sentence_transformer(model_name: str) -> Any:
+    try:
+        from sentence_transformers import SentenceTransformer
+
+        return SentenceTransformer(model_name)
+    except Exception as exc:
+        st_version = _package_version("sentence-transformers")
+        transformers_version = _package_version("transformers")
+        raise RuntimeError(
+            "Failed to initialize SentenceTransformer. "
+            f"Installed versions: sentence-transformers={st_version}, "
+            f"transformers={transformers_version}. "
+            "This usually means the notebook kernel is using stale or incompatible "
+            "packages. Restart the kernel after reinstalling dependencies and make "
+            "sure these two packages come from the same environment."
+        ) from exc
+
+
 def _chunk_text(
     text: str,
     metadata: dict,
-    model: SentenceTransformer,
+    model: Any,
     similarity_threshold: float,
     min_chunk_size: int,
     max_chunk_size: int,
@@ -102,7 +127,7 @@ def semantic_chunk_documents(
     max_chunk_size: int = 450,
     overlap_units: int = 1,
 ) -> list[Document]:
-    model = SentenceTransformer(model_name)
+    model = load_sentence_transformer(model_name)
     chunks: list[Document] = []
 
     for text, metadata in zip(texts, metadatas):
