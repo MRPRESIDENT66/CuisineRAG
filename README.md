@@ -8,6 +8,32 @@ The project is structured to allow experimentation with different **chunking met
 
 ---
 
+## Setup
+
+### 1) Install dependencies (pip)
+
+> Use `requirements-pip.txt` for a pip-installable dependency list.
+
+```bash
+python -m venv myenv
+source myenv/bin/activate
+pip install -r requirements-pip.txt
+```
+
+### 2) (Optional) Full Conda environment
+
+The original `requirements.txt` includes packages that are only available via conda (e.g., `conda`, `anaconda-*`). If you want the full conda-based environment, use:
+
+```bash
+conda create -n cuisine_rag python=3.13
+conda activate cuisine_rag
+conda install --file requirements.txt
+```
+
+> Note: Running `pip install -r requirements.txt` will fail because some packages are not on PyPI.
+
+---
+
 # Project Overview
 
 The system processes a **text-based knowledge base** about South Asian cuisine and enables users to ask natural language questions about dishes, ingredients, cooking techniques, spices, and culinary traditions.

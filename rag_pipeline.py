@@ -35,13 +35,16 @@ class RAGPipeline:
             chunks
         )
 
+        self.chunks = chunks   # stored so Retriever can build BM25 index
+
 
     def query(self, question):
 
         query_embedding = self.embedder.embed_query(question)
 
         retrieved_docs = self.retriever.retrieve(
-            query_embedding
+            question,          # raw text — needed for BM25
+            query_embedding    # vector   — needed for dense search
         )
 
         prompt = self.prompt_builder.build_prompt(

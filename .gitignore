@@ -3,6 +3,7 @@ __pycache__/
 .idea/
 .vscode/
 anaconda_projects/
+myenv/
 ragenv/
 .ipynb_checkpoints/
 .DS_Store
