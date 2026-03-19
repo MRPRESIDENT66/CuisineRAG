@@ -1,3 +1,5 @@
+import json
+
 class RAGPipeline:
 
     def __init__(self, chunker, embedder, vectordb, retriever, prompt_builder, llm):
@@ -10,32 +12,39 @@ class RAGPipeline:
         self.llm = llm
 
 
-    def load_text(self, filepath):
+    def index_data(self, filepaths):
+        """Load and index one or more JSON corpus files.
 
-        with open(filepath, "r", encoding="utf-8") as f:
-            text = f.read()
+        Args:
+            filepaths: a single path string or a list of path strings.
+        """
+        if isinstance(filepaths, str):
+            filepaths = [filepaths]
 
-        return text
+        # 1. Load and merge all corpora
+        corpus = []
+        for fp in filepaths:
+            with open(fp, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            corpus.extend(data)
+            print(f"Loaded {len(data):,} docs from {fp}")
 
+        if not corpus:
+            raise ValueError("All corpora are empty!")
 
-    def index_data(self, filepath):
+        # 2. Chunk documents — returns list[Document]
+        print(f"Indexing {len(corpus):,} documents total...")
+        self.chunks = self.chunker.chunk(corpus)
+        for idx, chunk in enumerate(self.chunks):
+            chunk.metadata['chunk_id'] = idx
 
-        text = self.load_text(filepath)
+        # 3. Extract text and generate embeddings
+        texts = [doc.page_content for doc in self.chunks]
+        embeddings = self.embedder.embed_documents(texts)
 
-        chunks = self.chunker.chunk(text)
-
-        print(f"Total chunks: {len(chunks)}")
-
-        embeddings = self.embedder.embed_documents(chunks)
-
-        print("Adding to vector database...")
-
-        self.vectordb.add_documents(
-            embeddings,
-            chunks
-        )
-
-        self.chunks = chunks   # stored so Retriever can build BM25 index
+        # 4. Store Document objects + embeddings so metadata is available at retrieval time
+        self.vectordb.add_documents(embeddings, self.chunks)
+        print(f"Finished! Total chunks: {len(self.chunks)}")
 
 
     def query(self, question):

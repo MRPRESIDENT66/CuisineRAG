@@ -1,4 +1,5 @@
-from chunking import SimpleChunker
+import torch
+from chunking import SectionAwareChunker
 from embeddings import MiniLMEmbedding, QwenEmbedding
 from vectore_store import FAISSVectorDB, ChromaVectorDB
 from ranking_n_retrieval import Retriever
@@ -9,13 +10,23 @@ from rag_pipeline import RAGPipeline
 # ==============================================================
 # CONFIGURATION — change these to test different combinations
 # ==============================================================
+def get_device():
+    if torch.cuda.is_available():
+        return "cuda"
+    elif torch.backends.mps.is_available():
+        return "mps"
+    else:
+        return "cpu"
 
 CHUNKER  = "simple"   # only one implemented for now
 EMBEDDING  = "minilm"   # "minilm"  or  "qwen"
 VECTORDB   = "faiss"    # "faiss"   or  "chroma"
-RETRIEVAL  = "combo5"   # "combo4"  or  "combo5"
-DEVICE     = "cpu"      # "cpu"     or  "cuda"
-FILEPATH   = "data/south_asian_cuisine.txt"
+RETRIEVAL  = "combo2"   # "combo1"  or  "combo2"
+DEVICE     = get_device()
+FILEPATHS  = [
+    "data/raw/south_asian_corpus.json",
+    "data/raw/saved_wikibook_data.json",
+]
 
 # ==============================================================
 
@@ -57,7 +68,7 @@ def main():
     print("="*50 + "\n")
 
     # --- build components based on config ---
-    chunker       = SimpleChunker()
+    chunker       = SectionAwareChunker()
     embedder, dim = build_embedder(EMBEDDING)
     vectordb      = build_vectordb(VECTORDB, dim)
     prompt_builder = PromptTemplate()
@@ -76,8 +87,7 @@ def main():
 
     # --- index the cuisine data ---
 
-    print(f"\nIndexing: {FILEPATH}")
-    pipeline.index_data(FILEPATH)
+    pipeline.index_data(FILEPATHS)
 
     # --- build retriever with chunks for BM25 ---
 
@@ -106,8 +116,9 @@ def main():
         print(f"ChefBot: {answer}")
 
         print("\n--- Retrieved chunks ---")
-        for i, doc in enumerate(docs, 1):
-            print(f"[{i}] {doc[:120]}...")
+        for doc in docs:
+            chunk_id = doc.metadata.get('chunk_id', '?')
+            print(f"[{chunk_id}] {doc.page_content[:120]}...")
         print("-" * 40 + "\n")
 
 

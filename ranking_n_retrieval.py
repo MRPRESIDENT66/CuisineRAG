@@ -12,7 +12,7 @@ class Retriever:
         self.active_combo = "combo5"   # default, overridden in main.py
 
         # BM25 index built from raw text chunks
-        tokenized  = [doc.lower().split() for doc in documents]
+        tokenized  = [doc.page_content.lower().split() for doc in documents]
         self.bm25  = BM25Okapi(tokenized)
 
         # cross-encoder loaded once, reused across every query
@@ -25,12 +25,12 @@ class Retriever:
     # fast, good quality — use during development
     # ------------------------------------------------------------------
 
-    def retrieve_hybrid_rrf(self, query, query_embedding, k=20):
+    def retrieve_hybrid_rrf(self, query, query_embedding, k=20, top_n=5):
 
         dense_results  = self.vectordb.search(query_embedding, k)
         sparse_results = self._bm25_search(query, k)
 
-        return self._rrf_fusion(dense_results, sparse_results)
+        return self._rrf_fusion(dense_results, sparse_results, top_n=top_n)
 
 
     # ------------------------------------------------------------------
@@ -75,19 +75,24 @@ class Retriever:
         return [self.documents[i] for i in top_k_indices]
 
 
-    def _rrf_fusion(self, *ranked_lists, rrf_k=60):
+    def _rrf_fusion(self, *ranked_lists, rrf_k=60, top_n=None):
 
-        scores = {}
+        scores  = {}
+        doc_map = {}
         for ranked_list in ranked_lists:
             for rank, doc in enumerate(ranked_list):
-                scores[doc] = scores.get(doc, 0) + 1 / (rank + rrf_k)
+                key = id(doc)
+                doc_map[key] = doc
+                scores[key]  = scores.get(key, 0) + 1 / (rank + rrf_k)
 
-        return sorted(scores.keys(), key=lambda d: scores[d], reverse=True)
+        sorted_keys = sorted(scores.keys(), key=lambda k: scores[k], reverse=True)
+        result = [doc_map[k] for k in sorted_keys]
+        return result[:top_n] if top_n is not None else result
 
 
     def _rerank(self, query, chunks, top_n=5):
 
-        pairs  = [[query, chunk] for chunk in chunks]
+        pairs  = [[query, chunk.page_content] for chunk in chunks]
         scores = self.reranker.predict(pairs)
         ranked = sorted(zip(chunks, scores), key=lambda x: x[1], reverse=True)
 
