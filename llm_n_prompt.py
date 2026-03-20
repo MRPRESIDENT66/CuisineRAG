@@ -70,8 +70,8 @@ class QwenLLM:
             outputs = self.model.generate(
                 **inputs,
                 max_new_tokens=max_tokens,
-                temperature=1.0,
-                repetition_penalty=1.3,
+                temperature=0.4,
+                # repetition_penalty=1.3,
                 do_sample=True,
             )
 
