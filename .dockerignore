@@ -1,0 +1,11 @@
+__pycache__/
+.idea/
+.vscode/
+.git/
+.DS_Store
+anaconda_projects/
+myenv/
+ragenv/
+.ipynb_checkpoints/
+notebooks/
+*.pyc
