@@ -35,8 +35,14 @@ class RAGPipeline:
         # 2. Chunk documents — returns list[Document]
         print(f"Indexing {len(corpus):,} documents total...")
         self.chunks = self.chunker.chunk(corpus)
-        for idx, chunk in enumerate(self.chunks):
-            chunk.metadata['chunk_id'] = idx
+
+        # Assign chunk_id: {doc_id}_chunk_{n} per document
+        doc_chunk_counter = {}
+        for chunk in self.chunks:
+            doc_id = chunk.metadata.get('doc_id', 'unknown')
+            n = doc_chunk_counter.get(doc_id, 0)
+            chunk.metadata['chunk_id'] = f"{doc_id}_chunk_{n}"
+            doc_chunk_counter[doc_id] = n + 1
 
         # 3. Extract text and generate embeddings
         texts = [doc.page_content for doc in self.chunks]

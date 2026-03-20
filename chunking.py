@@ -1,5 +1,9 @@
+import re
+
+import numpy as np
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
+from sentence_transformers import SentenceTransformer
 
 
 class SectionAwareChunker:
@@ -31,12 +35,14 @@ class SectionAwareChunker:
         for doc in corpus:
             title = doc.get('title', '')
             url = doc.get('url', '')
+            doc_id = doc.get('doc_id', '')
 
             # 1. Handle summary
             raw_summary = doc.get('summary') or ''
             summary = (raw_summary.get('section_text', '') if isinstance(raw_summary, dict) else raw_summary).strip()
             if summary:
                 metadata = {
+                    'doc_id': doc_id,
                     'title': title,
                     'url': url,
                     'section': 'Summary',
@@ -62,6 +68,7 @@ class SectionAwareChunker:
                     continue
 
                 metadata = {
+                    'doc_id': doc_id,
                     'title': title,
                     'url': url,
                     'section': section_name,
@@ -82,3 +89,119 @@ class SectionAwareChunker:
             chunk.page_content = chunk.page_content.strip()
 
         return docs
+
+
+# ──────────────────────────────────────────────────────────
+#  Semantic Chunker (embedding-based topic-shift detection)
+# ──────────────────────────────────────────────────────────
+
+_SENTENCE_RE = re.compile(r"(?<=[.!?])\s+")
+
+
+class SemanticChunker:
+    """
+    Splits text by detecting topic shifts via sentence embeddings.
+    Returns list[Document] — same interface as SectionAwareChunker.
+    """
+
+    def __init__(
+        self,
+        model_name: str = "all-MiniLM-L6-v2",
+        similarity_threshold: float = 0.50,
+        min_chunk_size: int = 240,
+        max_chunk_size: int = 800,
+    ):
+        self.similarity_threshold = similarity_threshold
+        self.min_chunk_size = min_chunk_size
+        self.max_chunk_size = max_chunk_size
+
+        print(f"Loading embedding model for semantic chunking ({model_name})...")
+        self.model = SentenceTransformer(model_name)
+
+    # ── public API (same signature as SectionAwareChunker) ──
+
+    def chunk(self, corpus) -> list[Document]:
+        """
+        Input:  corpus list loaded from JSON
+        Output: list[Document]
+        """
+        all_chunks: list[Document] = []
+
+        for doc in corpus:
+            title = doc.get('title', '')
+            url = doc.get('url', '')
+            doc_id = doc.get('doc_id', '')
+
+            # Collect all text from summary + sections
+            raw_summary = doc.get('summary') or ''
+            summary = (raw_summary.get('section_text', '') if isinstance(raw_summary, dict) else raw_summary).strip()
+
+            sections_text = []
+            if summary:
+                sections_text.append(summary)
+            for sec in doc.get('content', []):
+                sec_text = (sec.get('section_text') or '').strip()
+                if sec_text and sec_text != summary:
+                    sections_text.append(sec_text)
+
+            full_text = "\n\n".join(sections_text)
+            if not full_text.strip():
+                continue
+
+            metadata = {'doc_id': doc_id, 'title': title, 'url': url}
+            all_chunks.extend(self._semantic_split(full_text, metadata))
+
+        return all_chunks
+
+    # ── internals ──
+
+    @staticmethod
+    def _to_units(text: str) -> list[str]:
+        """Split text into sentence-level units."""
+        units: list[str] = []
+        for line in text.splitlines():
+            stripped = line.strip()
+            if not stripped:
+                continue
+            sentences = [s.strip() for s in _SENTENCE_RE.split(stripped) if s.strip()]
+            units.extend(sentences)
+        return units
+
+    def _semantic_split(self, text: str, metadata: dict) -> list[Document]:
+        units = self._to_units(text)
+        if not units:
+            return []
+
+        embeddings = self.model.encode(units, convert_to_numpy=True, normalize_embeddings=True)
+
+        chunks: list[Document] = []
+        cur_units = [units[0]]
+        centroid_sum = embeddings[0].copy()
+        centroid_count = 1
+
+        for unit, emb in zip(units[1:], embeddings[1:]):
+            cur_text = " ".join(cur_units)
+            centroid = centroid_sum / centroid_count
+            sim = float(np.dot(centroid, emb))  # already L2-normalised
+
+            proposed_len = len(cur_text) + 1 + len(unit)
+            should_split = (
+                len(cur_text) >= self.min_chunk_size
+                and (proposed_len > self.max_chunk_size or sim < self.similarity_threshold)
+            )
+
+            if should_split:
+                chunks.append(Document(page_content=cur_text, metadata=dict(metadata)))
+                cur_units = [unit]
+                centroid_sum = emb.copy()
+                centroid_count = 1
+            else:
+                cur_units.append(unit)
+                centroid_sum += emb
+                centroid_count += 1
+
+        final = " ".join(cur_units).strip()
+        if final:
+            chunks.append(Document(page_content=final, metadata=dict(metadata)))
+
+        return chunks
