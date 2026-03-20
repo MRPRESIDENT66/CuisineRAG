@@ -33,7 +33,8 @@ class SectionAwareChunker:
             url = doc.get('url', '')
 
             # 1. Handle summary
-            summary = (doc.get('summary') or {}).get('section_text', '').strip()
+            raw_summary = doc.get('summary') or ''
+            summary = (raw_summary.get('section_text', '') if isinstance(raw_summary, dict) else raw_summary).strip()
             if summary:
                 metadata = {
                     'title': title,

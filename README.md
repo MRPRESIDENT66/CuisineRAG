@@ -320,9 +320,27 @@ numpy
 
 # Running the System
 
-Run the full pipeline:
+### Option 1: Docker (recommended)
 
+Make sure [Docker](https://www.docker.com/) is installed, then:
+
+```bash
+docker build -t cuisine-rag .
+docker run -it -v hf_cache:/root/.cache/huggingface cuisine-rag
 ```
+
+| Flag | Purpose |
+|------|---------|
+| `-i` | Keeps stdin open so you can type queries |
+| `-t` | Allocates a terminal for interactive use |
+| `-v hf_cache:/root/.cache/huggingface` | Persists downloaded HuggingFace models in a Docker volume so they survive container restarts |
+
+> Models are **not** bundled in the image. They are downloaded from HuggingFace on the first run (may take a few minutes). Subsequent runs will reuse the cached models.
+
+### Option 2: Run locally
+
+```bash
+pip install -r requirements-pip.txt
 python main.py
 ```
 

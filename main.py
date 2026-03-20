@@ -26,6 +26,7 @@ DEVICE     = get_device()
 FILEPATHS  = [
     "data/raw/south_asian_corpus.json",
     "data/raw/saved_wikibook_data.json",
+    "data/raw/cuisines80.json"
 ]
 
 # ==============================================================
