@@ -92,7 +92,20 @@ def run_json_input_output():
 
     # --- index the cuisine data ---
 
-    pipeline.index_data(FILEPATHS)
+    import os
+
+    INDEX_BIN  = "faiss_index.bin"
+    DOCS_JSON  = "faiss_docs.json"
+
+    if os.path.exists(INDEX_BIN) and os.path.exists(DOCS_JSON):
+        # already indexed — just load from disk
+        vectordb.load(INDEX_BIN, DOCS_JSON)
+        pipeline.chunks = vectordb.documents
+        print("Loaded existing index from disk.")
+    else:
+        # first run — index and save
+        pipeline.index_data(FILEPATHS)
+        vectordb.save(INDEX_BIN, DOCS_JSON)
 
     # --- build retriever with chunks for BM25 ---
 

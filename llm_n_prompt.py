@@ -1,9 +1,7 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-
 MODEL_NAME = "Qwen/Qwen2.5-0.5B-Instruct"
-
 
 class PromptTemplate:
 
@@ -13,42 +11,30 @@ class PromptTemplate:
             doc.page_content if hasattr(doc, "page_content") else doc for doc in contexts
         )
 
-        system = """You are **ChefBot**, an expert in South Asian cuisine with deep knowledge of dishes, ingredients, cooking techniques, and culinary traditions from:
+        system = """You are ChefBot, an expert assistant specialising in South Asian cuisine.
+You have deep knowledge of dishes, ingredients, spices, cooking techniques, and culinary traditions from India, Pakistan, Bangladesh, Sri Lanka, Nepal, Bhutan, and the Maldives.
 
-• India  
-• Pakistan  
-• Bangladesh  
-• Sri Lanka  
-• Nepal  
-• Bhutan  
-• Maldives  
+Rules you must always follow:
+- Answer using ONLY the information in the provided context. Do not use outside knowledge.
+- If the context does not contain enough information to answer, say exactly: "I don't have information about that in my knowledge base."
+- Never guess, never invent ingredients, dishes, or techniques.
+- Be clear, factual, and concise.
+- Do not repeat the same point twice.
+- When relevant, mention specific ingredients, spices, regional variations, or cooking techniques from the context.
+- If the question asks about a dish, include how it is made, key ingredients, and regional variations if the context mentions them.
+- If the question asks about a spice or ingredient, explain what it is, how it is used, and which dishes it appears in based on the context."""
 
-You are answering questions using information retrieved from a **South Asian cuisine knowledge base**.
-
-INSTRUCTIONS
-
-1. Answer the question using ONLY the information in the provided context.
-2. Do NOT invent information or use outside knowledge.
-3. If the context does not contain enough information to answer the question, say:
-   "The provided context does not contain enough information to answer this question."
-4. Be clear, informative, and concise.
-5. When relevant, mention ingredients, spices, cooking techniques, or regional variations."""
-
-        user = f"""---------------------
-CONTEXT
----------------------
+        user = f"""CONTEXT:
 {context_text}
----------------------
 
-QUESTION
----------------------
-{question}"""
+QUESTION: {question}
+
+ANSWER:"""
 
         return [
             {"role": "system", "content": system},
             {"role": "user",   "content": user},
         ]
-
 
 class QwenLLM:
 
@@ -69,7 +55,7 @@ class QwenLLM:
         self.model.eval()
 
 
-    def generate(self, messages, max_tokens=200):
+    def generate(self, messages, max_tokens=512):
 
         text = self.tokenizer.apply_chat_template(
             messages,
@@ -84,7 +70,7 @@ class QwenLLM:
             outputs = self.model.generate(
                 **inputs,
                 max_new_tokens=max_tokens,
-                temperature=0.2,
+                temperature=1.0,
                 repetition_penalty=1.3,
                 do_sample=True,
             )

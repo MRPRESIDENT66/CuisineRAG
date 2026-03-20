@@ -1,5 +1,6 @@
 import numpy as np
 from rank_bm25 import BM25Okapi
+from readchar import key
 from sentence_transformers import CrossEncoder
 
 
@@ -9,8 +10,7 @@ class Retriever:
 
         self.vectordb     = vectordb
         self.documents    = documents
-        self.active_combo = "combo5"   # default, overridden in main.py
-
+        self.active_combo = "combo1"
         # BM25 index built from raw text chunks
         tokenized  = [doc.page_content.lower().split() for doc in documents]
         self.bm25  = BM25Okapi(tokenized)
@@ -25,7 +25,7 @@ class Retriever:
     # fast, good quality — use during development
     # ------------------------------------------------------------------
 
-    def retrieve_hybrid_rrf(self, query, query_embedding, k=20, top_n=5):
+    def retrieve_hybrid_rrf(self, query, query_embedding, k=20, top_n=6):
 
         dense_results  = self.vectordb.search(query_embedding, k)
         sparse_results = self._bm25_search(query, k)
@@ -38,9 +38,8 @@ class Retriever:
     # best quality — use in production
     # ------------------------------------------------------------------
 
-    def retrieve_hybrid_reranked(self, query, query_embedding, k=20, top_n=5):
-
-        candidates = self.retrieve_hybrid_rrf(query, query_embedding, k)
+    def retrieve_hybrid_reranked(self, query, query_embedding, k=20, top_n=6):
+        candidates = self.retrieve_hybrid_rrf(query, query_embedding, k, top_n=k)
 
         return self._rerank(query, candidates, top_n)
 
@@ -81,7 +80,7 @@ class Retriever:
         doc_map = {}
         for ranked_list in ranked_lists:
             for rank, doc in enumerate(ranked_list):
-                key = id(doc)
+                key = doc.metadata["chunk_id"]
                 doc_map[key] = doc
                 scores[key]  = scores.get(key, 0) + 1 / (rank + rrf_k)
 
@@ -90,7 +89,7 @@ class Retriever:
         return result[:top_n] if top_n is not None else result
 
 
-    def _rerank(self, query, chunks, top_n=5):
+    def _rerank(self, query, chunks, top_n=6):
 
         pairs  = [[query, chunk.page_content] for chunk in chunks]
         scores = self.reranker.predict(pairs)
