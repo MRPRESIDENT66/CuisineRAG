@@ -93,3 +93,46 @@ def evaluate_generation(
 
     print(f"\nAvg BERTScore F1: {np.mean(f1_scores):.4f}\n")
     return {"avg_bert_f1": float(np.mean(f1_scores))}
+
+def _extract_keywords(text: str) -> str:
+    tokens = re.findall(r'\b[a-zA-Z]{3,}\b', text.lower())
+    return " ".join(t for t in tokens if t not in STOPWORDS)
+ 
+ 
+def evaluate_sacrebleu(
+    payload_path: str,
+    test_cases_path: str,
+) -> Dict:
+    bleu_scorer = BLEU(effective_order=True)
+    chrf_scorer = CHRF(beta=3, word_order=2)
+ 
+    refs    = _load_references(test_cases_path)
+    results = json.load(open(payload_path))["results"]
+    bleu_scores, chrf_scores, per_query, skipped = [], [], [], []
+ 
+    with tqdm(results, desc="SacreBLEU + ChrF3++ evaluation", ncols=80) as pbar:
+        for item in pbar:
+            query_id = int(item["query_id"])
+            if query_id not in refs:
+                skipped.append(query_id)
+                continue
+ 
+            hypothesis = _extract_keywords(item["response"])
+            reference  = _extract_keywords(refs[query_id])
+ 
+            bleu_score = bleu_scorer.sentence_score(hypothesis, [reference]).score
+            chrf_score = chrf_scorer.sentence_score(hypothesis, [reference]).score
+ 
+            bleu_scores.append(bleu_score)
+            chrf_scores.append(chrf_score)
+            per_query.append({"query_id": query_id, "sacrebleu": round(bleu_score, 4), "chrf3++": round(chrf_score, 4)})
+            pbar.set_postfix({"avg_BLEU": f"{np.mean(bleu_scores):.2f}", "avg_ChrF3++": f"{np.mean(chrf_scores):.2f}"})
+ 
+    avg_bleu = float(np.mean(bleu_scores))
+    avg_chrf = float(np.mean(chrf_scores))
+    print(f"\nAverage SacreBLEU : {avg_bleu:.2f}")
+    print(f"Average ChrF3++   : {avg_chrf:.2f}")
+    if skipped:
+        print(f"Skipped (no reference): {skipped}")
+    return {"avg_sacrebleu": avg_bleu, "avg_chrf3++": avg_chrf, "per_query": per_query}
+ 
