@@ -1,12 +1,10 @@
 """
 evaluate_rag.py — RAG Pipeline Evaluation
 
-Usage:
-    python evaluate_rag.py --payload output_payload.json --test-cases test_cases.json
+    from evaluate_rag import evaluate_retrieval, evaluate_generation
 
-    # Retrieval or generation only
-    python evaluate_rag.py ... --mode retrieval
-    python evaluate_rag.py ... --mode generation
+    evaluate_retrieval("output_payload.json", "test_cases.json")
+    evaluate_generation("output_payload.json", "test_cases.json")
 
 Input schemas:
     output_payload.json   {"results": [{"query_id", "query", "response", "retrieved_context": [{"doc_id", "text"}]}]}
@@ -16,7 +14,7 @@ Requirements:
     pip install sentence-transformers scikit-learn numpy bert-score tqdm
 """
 
-import argparse, json, os, re, sys
+import json, os, re, sys
 import numpy as np
 from typing import Dict
 
@@ -28,16 +26,22 @@ STOPWORDS = {
 }
 
 
-def load_references(path: str) -> Dict[int, str]:
-    test_cases = json.load(open(path))
+def _load_references(test_cases_path: str) -> Dict[int, str]:
+    test_cases = json.load(open(test_cases_path))
     return {tc["id"] - 1: tc["reference"] for tc in test_cases}
 
 
-def evaluate_retrieval(results, refs, model_name):
+def evaluate_retrieval(
+    payload_path: str,
+    test_cases_path: str,
+    embedding_model: str = "all-MiniLM-L6-v2",
+) -> Dict:
     from sentence_transformers import SentenceTransformer
     from sklearn.metrics.pairwise import cosine_similarity
 
-    model = SentenceTransformer(model_name)
+    refs    = _load_references(test_cases_path)
+    results = json.load(open(payload_path))["results"]
+    model   = SentenceTransformer(embedding_model)
     recalls, semantics = [], []
 
     for item in results:
@@ -58,12 +62,19 @@ def evaluate_retrieval(results, refs, model_name):
         print(f"   Recall: {recall:.0%}  |  Semantic: {semantic:.4f}")
 
     print(f"\nAvg Recall: {np.mean(recalls):.0%}  |  Avg Semantic: {np.mean(semantics):.4f}\n")
+    return {"avg_recall": float(np.mean(recalls)), "avg_semantic": float(np.mean(semantics))}
 
 
-def evaluate_generation(results, refs, bert_model):
+def evaluate_generation(
+    payload_path: str,
+    test_cases_path: str,
+    bert_model: str = "roberta-large",
+) -> Dict:
     from bert_score import BERTScorer
     from tqdm import tqdm
 
+    refs      = _load_references(test_cases_path)
+    results   = json.load(open(payload_path))["results"]
     scorer    = BERTScorer(model_type=bert_model)
     f1_scores = []
 
@@ -81,25 +92,4 @@ def evaluate_generation(results, refs, bert_model):
         f1_scores.append(f1.item())
 
     print(f"\nAvg BERTScore F1: {np.mean(f1_scores):.4f}\n")
-
-
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--payload",         required=True)
-    parser.add_argument("--test-cases",      required=True)
-    parser.add_argument("--mode",            choices=["retrieval", "generation", "both"], default="both")
-    parser.add_argument("--embedding-model", default="all-MiniLM-L6-v2")
-    parser.add_argument("--bert-model",      default="roberta-large")
-    args = parser.parse_args()
-
-    refs    = load_references(args.test_cases)
-    results = json.load(open(args.payload))["results"]
-
-    if args.mode in ("retrieval", "both"):
-        evaluate_retrieval(results, refs, args.embedding_model)
-    if args.mode in ("generation", "both"):
-        evaluate_generation(results, refs, args.bert_model)
-
-
-if __name__ == "__main__":
-    main()
+    return {"avg_bert_f1": float(np.mean(f1_scores))}
