@@ -7,3 +7,5 @@ myenv/
 ragenv/
 .ipynb_checkpoints/
 .DS_Store
+input_payload_sample.json
+output_payload_sample.json
