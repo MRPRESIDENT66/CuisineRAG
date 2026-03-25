@@ -9,3 +9,5 @@ ragenv/
 .DS_Store
 input_payload_sample.json
 output_payload_sample.json
+faiss_index.bin
+faiss_docs.json

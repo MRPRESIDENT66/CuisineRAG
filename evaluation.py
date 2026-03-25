@@ -1,22 +1,32 @@
 """
-evaluate_rag.py — RAG Pipeline Evaluation
+evaluate_rag.py — Consolidated RAG Pipeline Evaluation
 
-    from evaluate_rag import evaluate_retrieval, evaluate_generation
-
-    evaluate_retrieval("output_payload.json", "test_cases.json")
-    evaluate_generation("output_payload.json", "test_cases.json")
+Usage:
+    from evaluate_rag import evaluate_rag_pipeline
+    evaluate_rag_pipeline(output_path, benchmark_path)
 
 Input schemas:
-    output_payload.json   {"results": [{"query_id", "query", "response", "retrieved_context": [{"doc_id", "text"}]}]}
-    test_cases.json       [{"id": 1, "reference": "..."}]  ← ids are 1-indexed
+    output_path   (JSON) : {"results": [{"query_id", "query", "response", "retrieved_context": [{"doc_id", "text"}]}]}
+    benchmark_path (JSON): [{"id": 1, "query": "...", "reference": "...", "relevant_doc_ids": [...]}]
 
 Requirements:
-    pip install sentence-transformers scikit-learn numpy bert-score tqdm
+    pip install sentence-transformers scikit-learn numpy bert-score sacrebleu tqdm nltk pandas
 """
 
-import json, os, re, sys
+import json
+import os
+import re
+import sys
+
 import numpy as np
-from typing import Dict
+import pandas as pd
+from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
+from tqdm import tqdm
+
+
+# ──────────────────────────────────────────────────────────────────────────────
+# SHARED UTILITIES
+# ──────────────────────────────────────────────────────────────────────────────
 
 STOPWORDS = {
     "a","an","the","is","it","in","on","at","to","of","and","or","but","for",
@@ -25,114 +35,184 @@ STOPWORDS = {
     "their","also","into","can",
 }
 
+def _extract_keywords(text: str) -> str:
+    """Strip stopwords and return remaining tokens as a joined string."""
+    tokens = re.findall(r'\b[a-zA-Z]{3,}\b', text.lower())
+    return " ".join(t for t in tokens if t not in STOPWORDS)
 
-def _load_references(test_cases_path: str) -> Dict[int, str]:
-    test_cases = json.load(open(test_cases_path))
-    return {tc["id"] - 1: tc["reference"] for tc in test_cases}
 
+# ──────────────────────────────────────────────────────────────────────────────
+# MAIN EVALUATION FUNCTION
+# ──────────────────────────────────────────────────────────────────────────────
 
-def evaluate_retrieval(
-    payload_path: str,
-    test_cases_path: str,
+def evaluate_rag_pipeline(
+    output_path: str,
+    benchmark_path: str,
     embedding_model: str = "all-MiniLM-L6-v2",
-) -> Dict:
+    bert_model: str = "roberta-large",
+) -> pd.DataFrame:
+    """
+    Runs all evaluations on the RAG pipeline outputs and prints a full report.
+
+    Metrics covered
+    ---------------
+    Generation : BLEU (nltk), ROUGE-1 (F1 / Precision / Recall),
+                 SacreBLEU, ChrF3++, BERTScore F1
+    Retrieval  : Keyword Recall, Semantic Similarity,
+                 Precision, Recall, MRR
+    """
+
+    # ── 0. LAZY IMPORTS (so missing packages fail loudly at call-time) ────────
     from sentence_transformers import SentenceTransformer
     from sklearn.metrics.pairwise import cosine_similarity
-
-    refs    = _load_references(test_cases_path)
-    results = json.load(open(payload_path))["results"]
-    model   = SentenceTransformer(embedding_model)
-    recalls, semantics = [], []
-
-    for item in results:
-        qid = int(item["query_id"])
-        if qid not in refs:
-            continue
-
-        ref      = refs[qid]
-        context  = " ".join(c["text"].lower() for c in item["retrieved_context"])
-        keywords = [t for t in re.findall(r"\b[a-zA-Z]{3,}\b", ref.lower()) if t not in STOPWORDS]
-        hits     = [kw for kw in keywords if kw in context]
-        recall   = len(hits) / len(keywords) if keywords else 0.0
-        semantic = float(cosine_similarity(model.encode([ref]), model.encode([context]))[0][0])
-
-        recalls.append(recall)
-        semantics.append(semantic)
-        print(f"{'✅' if semantic >= 0.5 else '❌'} [{qid}] {item['query']}")
-        print(f"   Recall: {recall:.0%}  |  Semantic: {semantic:.4f}")
-
-    print(f"\nAvg Recall: {np.mean(recalls):.0%}  |  Avg Semantic: {np.mean(semantics):.4f}\n")
-    return {"avg_recall": float(np.mean(recalls)), "avg_semantic": float(np.mean(semantics))}
-
-
-def evaluate_generation(
-    payload_path: str,
-    test_cases_path: str,
-    bert_model: str = "roberta-large",
-) -> Dict:
     from bert_score import BERTScorer
-    from tqdm import tqdm
+    from sacrebleu.metrics import BLEU as SacreBLEU, CHRF
 
-    refs      = _load_references(test_cases_path)
-    results   = json.load(open(payload_path))["results"]
-    scorer    = BERTScorer(model_type=bert_model)
-    f1_scores = []
+    # ── 1. LOAD DATA ──────────────────────────────────────────────────────────
+    print("=" * 65)
+    print("  RAG PIPELINE EVALUATION")
+    print("=" * 65)
 
-    for item in tqdm(results, desc="BERTScore"):
-        qid = int(item["query_id"])
-        if qid not in refs:
+    with open(output_path, "r") as f:
+        output_data = json.load(f)
+    with open(benchmark_path, "r") as f:
+        benchmark_data = json.load(f)
+
+    results = output_data["results"]
+
+    # Build lookup maps — support both {id + reference} and {query + reference} schemas
+    refs_by_id    = {item["id"] - 1: item["reference"] for item in benchmark_data if "id" in item}
+    refs_by_query = {item["query"]: item["reference"]  for item in benchmark_data if "query" in item}
+    docs_by_query = {item["query"]: set(item["relevant_doc_ids"])
+                     for item in benchmark_data if "relevant_doc_ids" in item}
+
+    def _get_ref(item):
+        """Return (reference_text, true_doc_ids) for a result item, or (None, None)."""
+        ref = refs_by_id.get(int(item["query_id"])) or refs_by_query.get(item["query"])
+        true_docs = docs_by_query.get(item.get("query", ""), set())
+        return ref, true_docs
+
+    # ── 2. INITIALISE MODELS & SCORERS ────────────────────────────────────────
+    print("\n[Setup] Loading models …")
+    embed_model   = SentenceTransformer(embedding_model)
+    bert_scorer   = BERTScorer(model_type=bert_model)
+    sacre_bleu    = SacreBLEU(effective_order=True)
+    chrf_scorer   = CHRF(beta=3, word_order=2)
+    nltk_smoother = SmoothingFunction().method1
+    print("[Setup] Done.\n")
+
+    # ── 3. PER-QUERY EVALUATION ───────────────────────────────────────────────
+    evaluation_results = []
+    skipped = []
+
+    for item in tqdm(results, desc="Evaluating queries", ncols=80):
+        ref, true_docs = _get_ref(item)
+        if ref is None:
+            skipped.append(item.get("query_id"))
             continue
+
+        query         = item["query"]
+        response      = item["response"]
+        retrieved_docs = [doc["doc_id"] for doc in item["retrieved_context"]]
+        context_text  = " ".join(c["text"].lower() for c in item["retrieved_context"])
+
+        # ── GENERATION: BLEU (nltk) ──────────────────────────────────────────
+        ref_tokens  = ref.lower().split()
+        resp_tokens = response.lower().split()
+        bleu_nltk   = sentence_bleu([ref_tokens], resp_tokens, smoothing_function=nltk_smoother)
+
+        # ── GENERATION: ROUGE-1 ──────────────────────────────────────────────
+        ref_set   = set(ref_tokens)
+        resp_set  = set(resp_tokens)
+        overlap   = ref_set & resp_set
+        r1_recall    = len(overlap) / len(ref_set)  if ref_set  else 0.0
+        r1_precision = len(overlap) / len(resp_set) if resp_set else 0.0
+        r1_f1 = (
+            2 * r1_precision * r1_recall / (r1_precision + r1_recall)
+            if (r1_precision + r1_recall) > 0 else 0.0
+        )
+
+        # ── GENERATION: SacreBLEU + ChrF3++ ──────────────────────────────────
+        hyp_kw  = _extract_keywords(response)
+        ref_kw  = _extract_keywords(ref)
+        sacre_b = sacre_bleu.sentence_score(hyp_kw, [ref_kw]).score
+        chrf    = chrf_scorer.sentence_score(hyp_kw, [ref_kw]).score
+
+        # ── GENERATION: BERTScore ─────────────────────────────────────────────
         with open(os.devnull, "w") as devnull:
             _out, _err = sys.stdout, sys.stderr
             sys.stdout = sys.stderr = devnull
             try:
-                _, _, f1 = scorer.score([item["response"]], [refs[qid]])
+                _, _, bert_f1 = bert_scorer.score([response], [ref])
             finally:
                 sys.stdout, sys.stderr = _out, _err
-        f1_scores.append(f1.item())
+        bert_f1_val = float(bert_f1.item())
 
-    print(f"\nAvg BERTScore F1: {np.mean(f1_scores):.4f}\n")
-    return {"avg_bert_f1": float(np.mean(f1_scores))}
+        # ── RETRIEVAL: Keyword Recall ─────────────────────────────────────────
+        keywords  = [t for t in re.findall(r"\b[a-zA-Z]{3,}\b", ref.lower()) if t not in STOPWORDS]
+        hits_kw   = [kw for kw in keywords if kw in context_text]
+        kw_recall = len(hits_kw) / len(keywords) if keywords else 0.0
 
-def _extract_keywords(text: str) -> str:
-    tokens = re.findall(r'\b[a-zA-Z]{3,}\b', text.lower())
-    return " ".join(t for t in tokens if t not in STOPWORDS)
- 
- 
-def evaluate_sacrebleu(
-    payload_path: str,
-    test_cases_path: str,
-) -> Dict:
-    bleu_scorer = BLEU(effective_order=True)
-    chrf_scorer = CHRF(beta=3, word_order=2)
- 
-    refs    = _load_references(test_cases_path)
-    results = json.load(open(payload_path))["results"]
-    bleu_scores, chrf_scores, per_query, skipped = [], [], [], []
- 
-    with tqdm(results, desc="SacreBLEU + ChrF3++ evaluation", ncols=80) as pbar:
-        for item in pbar:
-            query_id = int(item["query_id"])
-            if query_id not in refs:
-                skipped.append(query_id)
-                continue
- 
-            hypothesis = _extract_keywords(item["response"])
-            reference  = _extract_keywords(refs[query_id])
- 
-            bleu_score = bleu_scorer.sentence_score(hypothesis, [reference]).score
-            chrf_score = chrf_scorer.sentence_score(hypothesis, [reference]).score
- 
-            bleu_scores.append(bleu_score)
-            chrf_scores.append(chrf_score)
-            per_query.append({"query_id": query_id, "sacrebleu": round(bleu_score, 4), "chrf3++": round(chrf_score, 4)})
-            pbar.set_postfix({"avg_BLEU": f"{np.mean(bleu_scores):.2f}", "avg_ChrF3++": f"{np.mean(chrf_scores):.2f}"})
- 
-    avg_bleu = float(np.mean(bleu_scores))
-    avg_chrf = float(np.mean(chrf_scores))
-    print(f"\nAverage SacreBLEU : {avg_bleu:.2f}")
-    print(f"Average ChrF3++   : {avg_chrf:.2f}")
+        # ── RETRIEVAL: Semantic Similarity ────────────────────────────────────
+        semantic_sim = float(
+            cosine_similarity(embed_model.encode([ref]), embed_model.encode([context_text]))[0][0]
+        )
+
+        # ── RETRIEVAL: Precision, Recall, MRR ────────────────────────────────
+        hits_doc   = set(retrieved_docs) & true_docs
+        ret_prec   = len(hits_doc) / len(retrieved_docs) if retrieved_docs else 0.0
+        ret_recall = len(hits_doc) / len(true_docs)      if true_docs      else 0.0
+        mrr        = next(
+            (1.0 / rank for rank, doc_id in enumerate(retrieved_docs, 1) if doc_id in true_docs),
+            0.0,
+        )
+
+        evaluation_results.append({
+            "query":             query,
+            # Generation
+            "bleu_nltk":         bleu_nltk,
+            "rouge1_f1":         r1_f1,
+            "rouge1_precision":  r1_precision,
+            "rouge1_recall":     r1_recall,
+            "sacrebleu":         sacre_b,
+            "chrf3++":           chrf,
+            "bert_f1":           bert_f1_val,
+            # Retrieval
+            "kw_recall":         kw_recall,
+            "semantic_sim":      semantic_sim,
+            "ret_precision":     ret_prec,
+            "ret_recall":        ret_recall,
+            "mrr":               mrr,
+        })
+
+    # ── 4. AGGREGATE & PRINT RESULTS ─────────────────────────────────────────
+    df = pd.DataFrame(evaluation_results)
+
+    print("\n" + "=" * 65)
+    print("  RESULTS SUMMARY")
+    print("=" * 65)
+
+    # ── GENERATION ────────────────────────────────────────────────────────────
+    print("\n── GENERATION METRICS ──────────────────────────────────────")
+    print(f"  BLEU (nltk)          : {df['bleu_nltk'].mean():.4f}")
+    print(f"  ROUGE-1 F1           : {df['rouge1_f1'].mean():.4f}")
+    print(f"  ROUGE-1 Precision    : {df['rouge1_precision'].mean():.4f}")
+    print(f"  ROUGE-1 Recall       : {df['rouge1_recall'].mean():.4f}")
+    print(f"  SacreBLEU            : {df['sacrebleu'].mean():.2f}")
+    print(f"  ChrF3++              : {df['chrf3++'].mean():.2f}")
+    print(f"  BERTScore F1         : {df['bert_f1'].mean():.4f}")
+
+    # ── RETRIEVAL ─────────────────────────────────────────────────────────────
+    print("\n── RETRIEVAL METRICS ───────────────────────────────────────")
+    print(f"  Keyword Recall       : {df['kw_recall'].mean():.2%}")
+    print(f"  Semantic Similarity  : {df['semantic_sim'].mean():.4f}")
+    print(f"  Precision            : {df['ret_precision'].mean():.4f}")
+    print(f"  Recall               : {df['ret_recall'].mean():.4f}")
+    print(f"  MRR                  : {df['mrr'].mean():.4f}")
+
     if skipped:
-        print(f"Skipped (no reference): {skipped}")
-    return {"avg_sacrebleu": avg_bleu, "avg_chrf3++": avg_chrf, "per_query": per_query}
- 
+        print(f"\n  ⚠  Skipped (no reference found): {skipped}")
+
+    print("\n" + "=" * 65)
+
+    return df
