@@ -7,3 +7,6 @@ numpy
 langchain-core
 langchain-text-splitters
 rank-bm25
+bert-score
+scikit-learn
+tqdm
