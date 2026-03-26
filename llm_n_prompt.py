@@ -36,6 +36,51 @@ ANSWER:"""
             {"role": "user",   "content": user},
         ]
 
+# class QwenLLM:
+#
+#     def __init__(self, device="cpu"):
+#
+#         print("Loading LLM...")
+#
+#         self.device = device
+#
+#         self.tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+#
+#         self.model = AutoModelForCausalLM.from_pretrained(
+#             MODEL_NAME
+#         )
+#
+#         self.model.to(self.device)
+#
+#         self.model.eval()
+#
+#
+#     def generate(self, messages, max_tokens=512):
+#
+#         text = self.tokenizer.apply_chat_template(
+#             messages,
+#             tokenize=False,
+#             add_generation_prompt=True,
+#         )
+#
+#         inputs = self.tokenizer(text, return_tensors="pt").to(self.device)
+#         input_length = inputs.input_ids.shape[1]
+#
+#         with torch.no_grad():
+#             outputs = self.model.generate(
+#                 **inputs,
+#                 max_new_tokens=max_tokens,
+#                 temperature=0.4,
+#                 # repetition_penalty=1.3,
+#                 do_sample=True,
+#             )
+#
+#         response = self.tokenizer.decode(
+#             outputs[0][input_length:],
+#             skip_special_tokens=True,
+#         )
+#
+#         return response.strip()
 class QwenLLM:
 
     def __init__(self, device="cpu"):
@@ -47,7 +92,8 @@ class QwenLLM:
         self.tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 
         self.model = AutoModelForCausalLM.from_pretrained(
-            MODEL_NAME
+            MODEL_NAME,
+            torch_dtype=torch.float16 if device in ("mps","cuda") else torch.float32
         )
 
         self.model.to(self.device)
@@ -57,22 +103,27 @@ class QwenLLM:
 
     def generate(self, messages, max_tokens=512):
 
-        text = self.tokenizer.apply_chat_template(
-            messages,
-            tokenize=False,
-            add_generation_prompt=True,
-        )
+        # text = self.tokenizer.apply_chat_template(
+        #     messages,
+        #     tokenize=False,
+        #     add_generation_prompt=True,
+        # )
 
-        inputs = self.tokenizer(text, return_tensors="pt").to(self.device)
+        # inputs = self.tokenizer(text, return_tensors="pt").to(self.device)
+        inputs = self.tokenizer.apply_chat_template(messages,
+            return_tensors="pt",
+            add_generation_prompt=True,
+        ).to(self.device)
         input_length = inputs.input_ids.shape[1]
 
-        with torch.no_grad():
+        with torch.inference_mode():
             outputs = self.model.generate(
                 **inputs,
                 max_new_tokens=max_tokens,
                 temperature=0.4,
-                # repetition_penalty=1.3,
+                # repetition_penalty=1.1,
                 do_sample=True,
+                pad_token_id=self.tokenizer.eos_token_id
             )
 
         response = self.tokenizer.decode(

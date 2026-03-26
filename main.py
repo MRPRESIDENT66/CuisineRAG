@@ -25,9 +25,9 @@ VECTORDB   = "faiss"    # "faiss"   or  "chroma"
 RETRIEVAL  = "combo2"   # "combo1"  or  "combo2"
 DEVICE     = get_device()
 FILEPATHS  = [
-    "data/raw/south_asian_corpus.json",
-    "data/raw/saved_wikibook_data.json",
-    "data/raw/cuisines80.json"
+    "data/corpus/wikipedia_south_asian.json",
+    "data/corpus/wikibook_cookbook.json",
+    "data/corpus/blog_80cuisines.json"
 ]
 
 # ==============================================================
@@ -62,7 +62,7 @@ def run_json_input_output():
     print("\n" + "="*50)
     print("       CuisineRAG — ChefBot")
     print("="*50)
-    print(f"Chunker: {CHUNKER}")
+    print(f"  Chunker: {CHUNKER}")
     print(f"  Embedding : {EMBEDDING}")
     print(f"  VectorDB  : {VECTORDB}")
     print(f"  Retrieval : {RETRIEVAL}")

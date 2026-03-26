@@ -8,29 +8,14 @@ The project is structured to allow experimentation with different **chunking met
 
 ---
 
-## Setup
-
-### 1) Install dependencies (pip)
-
-> Use `requirements-pip.txt` for a pip-installable dependency list.
+## Quick Start
 
 ```bash
-python -m venv myenv
-source myenv/bin/activate
-pip install -r requirements-pip.txt
+git clone https://github.com/MRPRESIDENT66/CuisineRAG.git
+cd CuisineRAG
+pip install -r requirements.txt
+python main.py
 ```
-
-### 2) (Optional) Full Conda environment
-
-The original `requirements.txt` includes packages that are only available via conda (e.g., `conda`, `anaconda-*`). If you want the full conda-based environment, use:
-
-```bash
-conda create -n cuisine_rag python=3.13
-conda activate cuisine_rag
-conda install --file requirements.txt
-```
-
-> Note: Running `pip install -r requirements.txt` will fail because some packages are not on PyPI.
 
 ---
 
@@ -286,65 +271,9 @@ Metrics that can be evaluated:
 
 ---
 
-# Installation
+# Example
 
-Clone the repository:
-
-```
-git clone https://github.com/yourusername/CuisineRAG.git
-cd CuisineRAG
-```
-
-Install dependencies:
-
-```
-pip install -r requirements.txt
-```
-
----
-
-# Dependencies
-
-Key libraries used:
-
-```
-sentence-transformers
-transformers
-torch
-faiss-cpu
-chromadb
-numpy
-```
-
----
-
-# Running the System
-
-### Option 1: Docker (recommended)
-
-Make sure [Docker](https://www.docker.com/) is installed, then:
-
-```bash
-docker build -t cuisine-rag .
-docker run -it -v hf_cache:/root/.cache/huggingface cuisine-rag
-```
-
-| Flag | Purpose |
-|------|---------|
-| `-i` | Keeps stdin open so you can type queries |
-| `-t` | Allocates a terminal for interactive use |
-| `-v hf_cache:/root/.cache/huggingface` | Persists downloaded HuggingFace models in a Docker volume so they survive container restarts |
-
-> Models are **not** bundled in the image. They are downloaded from HuggingFace on the first run (may take a few minutes). Subsequent runs will reuse the cached models.
-
-### Option 2: Run locally
-
-```bash
-pip install -r requirements-pip.txt
-python main.py
-```
-
-Example query:
+Query:
 
 ```
 What spices are commonly used in South Asian cooking?
