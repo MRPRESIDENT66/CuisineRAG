@@ -36,6 +36,51 @@ ANSWER:"""
             {"role": "user",   "content": user},
         ]
 
+    def build_few_shot_prompt(self, question, contexts):
+        context_text = "\n\n".join(
+            doc.page_content if hasattr(doc, "page_content") else doc for doc in contexts
+        )
+
+        system = """You are ChefBot, an expert assistant specialising in South Asian cuisine.
+    Rules:
+    - Answer using ONLY the provided context.
+    - If info is missing, say: "I don't have information about that in my knowledge base."
+    - Be factual and concise."""
+
+        # These are the "Shots" (Examples)
+        few_shot_examples = """
+    EXAMPLE 1:
+    CONTEXT: Chana Masala is a North Indian chickpea curry. It uses garam masala, amchoor (mango powder), and green chillies.
+    QUESTION: What gives Chana Masala its sourness?
+    ANSWER: According to the context, Chana Masala gets its sourness from amchoor (mango powder).
+
+    EXAMPLE 2:
+    CONTEXT: Traditional Jalebi is made by deep-frying maida flour batter in pretzel shapes and soaking them in sugar syrup.
+    QUESTION: Is Jalebi baked?
+    ANSWER: No. Based on the information provided, Jalebi is made by deep-frying maida flour batter and then soaking it in sugar syrup.
+
+    EXAMPLE 3:
+    CONTEXT: Lassi is a yogurt-based drink from the Punjab region.
+    QUESTION: How do you make a Pizza?
+    ANSWER: I don't have information about that in my knowledge base.
+    """
+
+        user = f"""{few_shot_examples}
+
+    ---
+    CURRENT TASK:
+    CONTEXT:
+    {context_text}
+
+    QUESTION: {question}
+
+    ANSWER:"""
+
+        return [
+            {"role": "system", "content": system},
+            {"role": "user",   "content": user},
+        ]
+
 # class QwenLLM:
 #
 #     def __init__(self, device="cpu"):
