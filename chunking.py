@@ -1,3 +1,4 @@
+import json
 import re
 import numpy as np
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -5,6 +6,23 @@ from langchain_core.documents import Document
 from sentence_transformers import SentenceTransformer
 
 _SENTENCE_RE = re.compile(r"(?<=[.!?])\s+")
+
+
+def export_chunks_json(chunks: list[Document], path: str):
+    """Export chunks to a JSON index file with doc_id, chunk_id, doc_idx, chunk_idx, text."""
+    records = []
+    for chunk in chunks:
+        meta = chunk.metadata
+        records.append({
+            "doc_id": str(meta.get("chunk_id", "?")),
+            "chunk_id": f"doc{meta.get('doc_idx', 0)}_chunk{meta.get('chunk_idx', 0)}",
+            "doc_idx": meta.get("doc_idx", 0),
+            "chunk_idx": meta.get("chunk_idx", 0),
+            "text": chunk.page_content,
+        })
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(records, f, indent=2, ensure_ascii=False)
+    print(f"Chunk index saved → {path} ({len(records)} chunks)")
 class SectionAwareChunker:
     def __init__(self, chunk_size=800, chunk_overlap=120):
         self.chunk_size = chunk_size
@@ -26,9 +44,10 @@ class SectionAwareChunker:
         section_based_chunks = []
         global_chunk_idx = 1
 
-        for doc in corpus:
+        for doc_idx, doc in enumerate(corpus):
             title = doc.get('title', '')
             url = doc.get('url', '')
+            chunk_within_doc = 0
 
             # 1. Handle summary
             raw_summary = doc.get('summary') or ''
@@ -40,6 +59,10 @@ class SectionAwareChunker:
                     'section': 'Summary',
                 }
                 docs, global_chunk_idx = self._split_and_meta(summary, metadata, global_chunk_idx)
+                for d in docs:
+                    d.metadata['doc_idx'] = doc_idx
+                    d.metadata['chunk_idx'] = chunk_within_doc
+                    chunk_within_doc += 1
                 section_based_chunks.extend(docs)
 
             # 2. Handle sections
@@ -67,6 +90,10 @@ class SectionAwareChunker:
                     metadata['subsection'] = subsection_name
 
                 docs, global_chunk_idx = self._split_and_meta(sec_text, metadata, global_chunk_idx)
+                for d in docs:
+                    d.metadata['doc_idx'] = doc_idx
+                    d.metadata['chunk_idx'] = chunk_within_doc
+                    chunk_within_doc += 1
                 section_based_chunks.extend(docs)
 
         return section_based_chunks
@@ -106,9 +133,10 @@ class SemanticChunker:
         all_chunks: list[Document] = []
         global_chunk_idx = 1
 
-        for doc in corpus:
+        for doc_idx, doc in enumerate(corpus):
             title = doc.get('title', 'UnknownDoc')
             url = doc.get('url', '')
+            chunk_within_doc = 0
 
             # 1. Summary
             raw_summary = doc.get('summary') or ''
@@ -116,6 +144,10 @@ class SemanticChunker:
             if summary:
                 metadata = {'title': title, 'url': url, 'section': 'Summary'}
                 docs, global_chunk_idx = self._split_section(summary, metadata, global_chunk_idx)
+                for d in docs:
+                    d.metadata['doc_idx'] = doc_idx
+                    d.metadata['chunk_idx'] = chunk_within_doc
+                    chunk_within_doc += 1
                 all_chunks.extend(docs)
 
             # 2. Content Sections
@@ -141,6 +173,10 @@ class SemanticChunker:
                     metadata['subsection'] = subsection_name
 
                 docs, global_chunk_idx = self._split_section(sec_text, metadata, global_chunk_idx)
+                for d in docs:
+                    d.metadata['doc_idx'] = doc_idx
+                    d.metadata['chunk_idx'] = chunk_within_doc
+                    chunk_within_doc += 1
                 all_chunks.extend(docs)
 
         return all_chunks

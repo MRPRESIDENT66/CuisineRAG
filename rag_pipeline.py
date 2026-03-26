@@ -1,4 +1,5 @@
 import json
+from chunking import export_chunks_json
 
 class RAGPipeline:
 
@@ -43,6 +44,9 @@ class RAGPipeline:
         # 4. Store Document objects + embeddings so metadata is available at retrieval time
         self.vectordb.add_documents(embeddings, self.chunks)
         print(f"Finished! Total chunks: {len(self.chunks)}")
+
+        # Export chunk index JSON
+        export_chunks_json(self.chunks, "data/chunks_index.json")
 
 
     def query(self, question):
