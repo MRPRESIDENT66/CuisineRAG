@@ -1,0 +1,60 @@
+{
+  "queries": [
+    {
+      "query_id": "0",
+      "query": "What is Dosa and where does it originate from?"
+    },
+    {
+      "query_id": "1",
+      "query": "What is Samosas and where does it originate from?"
+    },
+    {
+      "query_id": "2",
+      "query": "What is Chicken Tikka Masala and where is it from?"
+    },
+    {
+      "query_id": "3",
+      "query": "What is a biryani?"
+    },
+    {
+      "query_id": "4",
+      "query": "What is anglo-Indian food?"
+    },
+    {
+      "query_id": "5",
+      "query": "What is Pongal?"
+    },
+    {
+      "query_id": "6",
+      "query": "What is Garam Masala?"
+    },
+    {
+      "query_id": "7",
+      "query": "What is upma?"
+    },
+    {
+      "query_id": "8",
+      "query": "What is ghevar usually served with?"
+    },
+    {
+      "query_id": "9",
+      "query": "What is Nihari?"
+    },
+    {
+      "query_id": "10",
+      "query": "What is Kashmiri Pink Tea?"
+    },
+    {
+      "query_id": "11",
+      "query": "What is the main fish used in Bengali cuisine?"
+    },
+    {
+      "query_id": "12",
+      "query": "What are Sri Lankan Hoppers?"
+    },
+    {
+      "query_id": "13",
+      "query": "What is Chana Dal Halwa?"
+    }
+  ]
+}

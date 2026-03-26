@@ -1,0 +1,438 @@
+{
+  "results": [
+    {
+      "query_id": "0",
+      "query": "What is Dosa and where does it originate from?",
+      "response": "Dosa is a traditional South Indian dish originating from the town of Udupi in Karnataka, India.",
+      "retrieved_context": [
+        {
+          "doc_id": "100115",
+          "text": "The dosa originated in South India, but its precise geographical origins are unknown.  According to food historian K. T. Achaya, references in the Sangam literature suggest that dosa was already in use in the ancient Tamil country around the first century CE. However, according to historian P. Thankappan Nair, dosa originated in the town of Udupi in Karnataka. Achaya states that the earliest written mention of dosa appears in the eighth-century literature of present-day Tamil Nadu, while the earliest mention of dosaë in Kannada literature appears a century later."
+        },
+        {
+          "doc_id": "100115",
+          "text": "In popular tradition, the origin of the dosa is linked to Udupi, probably because of the dish's association with Udupi restaurants. The Karnataka dosa is traditionally softer and thicker; the thinner and crispier version of dosa, which became popular across India, was first made in present-day Tamil Nadu. A recipe for dosa can be found in Manasollasa, a 12th-century Sanskrit encyclopedia compiled by Someshvara III, who ruled from present-day Karnataka.\nThe dosa arrived in Mumbai with the opening of Udupi restaurants in the 1930s. After India's independence in 1947, South Indian cuisine became gradually popular in North India. In New Delhi, the Madras Hotel in Connaught Place became one of the first restaurants to serve South Indian cuisine."
+        },
+        {
+          "doc_id": "100115",
+          "text": "A dosa (in Indian English) or thosai (in Malaysian English and Singapore English) is a thin, savoury crepe in South Indian cuisine made from a fermented batter of ground black gram and rice. Dosas are served hot, often with chutney and sambar."
+        },
+        {
+          "doc_id": "100295",
+          "text": "A dosa (plural: dosai) is a pancake made from a fermented batter. It is somewhat similar to a crêpe but its main ingredients are rice and black gram. Dosai are a typical part of the South Indian diet but are known all over the Indian subcontinent. Masala dosa is served hot along with sambar, stuffed with potato masala (aloo masala) or paneer masala and chutney. It can be consumed with idli podi as well."
+        },
+        {
+          "doc_id": "100115",
+          "text": "Dosas, like many other dishes of South Indian cuisine, were introduced in Ceylon (Sri Lanka) by South Indian emigrants during British rule. Tirunelveli and Tuticorin merchants who settled there were instrumental in the spreading of South Indian cookery across the island by opening restaurants (vegetarian hotels) to meet initially the needs of the emigrant population. Dosa has found its way into the culinary habits of the Sri Lankan people, where it has evolved into an island-specific version which is quite distinct from the Indian dosa. In both forms, it is called those (තෝසේ or [t̪oːse]) or thosai (தோசை or [t̪oːsaɪ̯]) in Sinhala and in Sri Lankan Tamil."
+        },
+        {
+          "doc_id": "100115",
+          "text": "As in Sri Lanka, dosa was introduced far abroad since the early 18th century, by the migration of the Indian Tamil diaspora to Southeast Asia and later in the Western world, and through the worldwide popularisation of Indian and Sri Lankan cuisines since the second half of the 20th century."
+        }
+      ]
+    },
+    {
+      "query_id": "1",
+      "query": "What is Samosas and where does it originate from?",
+      "response": "Samosas are a type of Indian pastry filled with savory fillings such as spiced potatoes, onions, and peas, but can also include cheese such as paneer, meat, or fish. They originated in medieval times or earlier and are commonly associated with the Middle Persian word sambosag (سنبوسگ). Samosas are typically made in various shapes, including triangular, cone, or crescent, and are often accompanied by chutney. They have roots in medieval Arabic recipes and were popular in the 10th–13th centuries. Samosas are popular snacks in South Asia and within the Indian diaspora around the world.",
+      "retrieved_context": [
+        {
+          "doc_id": "100271",
+          "text": "A samosa () () is a fried Indian pastry with a savoury filling that mostly consists of vegetables like spiced potatoes, onions, and peas, but can include cheese such as paneer, meat or even fish. Its name originates from the Middle Persian word sambosag (سنبوسگ) (meaning 'triangular pastry'). It is made in different shapes, including triangular, cone, or crescent, depending on the region. Samosas are often accompanied by chutney, and have origins in medieval times or earlier. Sweet versions containing traditional Indian flavours or even chocolate are also made. Samosas are popular snacks in South Asia and within the Indian diaspora across the world."
+        },
+        {
+          "doc_id": "100271",
+          "text": "The English word samosa derives from the Hindustani word samosa (Hindi: समोसा), traceable to the Middle Persian word sambōsag (سنبوسگ) 'triangular pastry'. Similar pastries are called sambusak in Arabic from Persian; medieval Arabic recipe books sometimes spell it sambusaj. All these word-forms are borrowed from the Persian."
+        },
+        {
+          "doc_id": "100271",
+          "text": "The Indian samosa is believed to be derived from a medieval precursor from the Middle East that was baked and not deep fried. The earliest mention of a samosa precursor was by Abbasid-era poet Ishaq al-Mawsili, praising the sanbusaj. Recipes are found in 10th–13th-century  Arab cookery books, under the names sanbusak, sanbusaq, and sanbusaj, all deriving from the Persian word sanbosag. In Iran, the dish was popular until the 16th century, but by the 20th century its popularity was restricted to certain provinces (such as the sambusas of Larestan). Abolfazl Beyhaqi (995–1077), an Iranian historian, mentioned it in his history, Tarikh-e Beyhaghi."
+        },
+        {
+          "doc_id": "100271",
+          "text": "All across East Africa, samosas, known by several variants of the name, are popular. In Somalia, sambuus filled with vegetables, meat, or seafood are eaten on special occasions. Samosas, locally called samoussas, are a popular snack on Réunion. They are filled with chicken, cheese, crabs or potatoes.\nSouth African samoosas tend to be smaller than Indian ones. Samosa dough is also used for a flatbread called farmaas puri, which consists of rolled-up sheets of dough stacked with minced meat, which are cut into thin circles and deep fried. Originating in South Africa, farmaas puri spread to Gujarati communities in India and Pakistan, where it is popular during Ramadan."
+        },
+        {
+          "doc_id": "100271",
+          "text": "Both flat (triangular) and full-shaped (tetrahedron/triangular pyramid) samosas are popular in Bangladesh. A Bengali version of the full-shaped samosa is called a সিঙাড়া (shingara) and is normally smaller than the standard variety. The shingara is usually filled with pieces of potatoes, vegetables, and nuts. Samosas are called singadas in the eastern part of Nepal, from their shape which is like a water caltrop (shingara in Eastern India); the rest of the country calls it samosa.\nA distinct variety of samosa, available in Karachi, is called kaghazi samosa (Urdu: کاغذی سموسہ; \"paper samosa\" in English) due to its thin and crispy covering, which resembles a wonton or spring roll wrapper. Fillings include beef, chicken, and lamb, or they can be made as a sweet."
+        },
+        {
+          "doc_id": "100271",
+          "text": "In Goa (India), Portugal, and Angola, samosas are known as chamuças. They are filled with chicken, beef, pork, lamb or vegetables, and generally served quite hot. Samosas are an integral part of Goan Catholic and Portuguese cuisine, where they are a common snack."
+        }
+      ]
+    },
+    {
+      "query_id": "2",
+      "query": "What is Chicken Tikka Masala and where is it from?",
+      "response": "Chicken Tikka Masala is a dish originating from India, specifically from the Punjab region of the Indian Subcontinent. It is made by roasting marinated chicken pieces in a tomato-based curry sauce, typically featuring tomatoes, coconut cream, and mild, sweet spices. The dish is known for its bright colors and is commonly served with yellow rice and a spicy salad.",
+      "retrieved_context": [
+        {
+          "doc_id": "100067",
+          "text": "Chicken tikka masala is a curry consisting of roasted marinated chicken pieces (chicken tikka) in a creamy spiced sauce (masala). It is thought to have been created in Britain, possibly by Ali Ahmed Aslam in Glasgow. It is offered at restaurants around the world and is similar to butter chicken."
+        },
+        {
+          "doc_id": "200525",
+          "text": "Chicken Tikka Masala CategoryChicken recipesServings4Time1 hourDifficulty\n\n\nChicken tikka masala is a dish based on chunks of Indian-style roasted chicken (Chicken Tikka) cooked in a tomato curry sauce, originating in India. There is no standard recipe for chicken tikka masala; a survey found that, of 48 different recipes, the only common ingredient was chicken.[1] The sauce usually includes tomato and either cream or coconut cream and various spices."
+        },
+        {
+          "doc_id": "200499",
+          "text": "Chicken Tikka CategoryChicken recipesServings4Time30 minutesDifficulty\nChicken tikka is a chicken dish originating in the Punjab region of the Indian Subcontinent made by baking chicken which has been marinated in spices and yoghurt. It should not be confused with Chicken Tikka Masala (of which it is an ingredient). It is traditionally cooked on skewers in a tandoor and is usually boneless. It is tasty when served with yellow rice and a spicy salad."
+        },
+        {
+          "doc_id": "100067",
+          "text": "Chicken tikka masala is a brightly coloured curry composed of chicken tikka, boneless chunks of chicken marinated in spices (masala) and yoghurt, roasted in an oven, and served in a creamy sauce. A tomato and coriander leaf sauce is common, but there is no standard recipe: a 1998 survey in Britain found that among 48 recipes, the only common ingredient was chicken. It is served as a main course, often with rice or flatbread. Chicken tikka masala is similar to butter chicken, both in the method of creation and appearance."
+        },
+        {
+          "doc_id": "100066",
+          "text": "Chicken tikka is a dish of roasted marinated chicken pieces traditionally cooked in a tandoor. It is associated with Mughal cuisine, reflecting Central and South Asian cooking techniques and the use of yogurt-based marinades and spices. It is now popular across South Asia and worldwide. The dish later served as the basis for the British curry chicken tikka masala.”"
+        },
+        {
+          "doc_id": "300000",
+          "text": "OK, OK, I know chicken tikka masala is probably not actually from India. Many (including the irrefutable QI) say that it actually originated in Glasgow in the 70s, after Indian spices were introduced to Great Britain. Wikipedia still says the origin is “disputed” however, and my boyfriend insisted that I cook it, so here we are. It's usually tomato-based, with coconut cream and mild, sweet spices. Saag paneer basically has saag, which is a spinach-based curry, and paneer, which is cheese. I made the paneer, it's pretty easy, you just follow the same steps as ricotta, but then at the end press it between two heavy objects so that it becomes a solid block. After that you just cut it up and lightly fry it"
+        }
+      ]
+    },
+    {
+      "query_id": "3",
+      "query": "What is a biryani?",
+      "response": "A biryani is a mixed rice dish originating from the contact between Persian pilau and spicy Indian cuisine under the Mughal emperors. It is made with rice, meat, onions, garlic, yogurt, and spices.",
+      "retrieved_context": [
+        {
+          "doc_id": "100319",
+          "text": "Biryani is a mixed rice dish originating in the contact between delicate Persian pilau and spicy Indian cuisine under the Mughal emperors. It is made with rice, meat, onions, garlic, yoghurt, and spices. \nThere are many varieties of biryani, both in the Indian subcontinent and in countries around the world."
+        },
+        {
+          "doc_id": "100306",
+          "text": "Biryani is an exotic dish of Mughal origin, but this variant is an indigenous recipe of Malabar. It is a symbol of the cultural amalgamation of Mughal and Malabari cuisines. The Mughals brought the cuisine of biryani from Samarkand, and later variations of biryani developed in different parts of India.\nThalassery biryani may have come to the region because of the influence of the Muslim rulers of Mysore and Arkot."
+        },
+        {
+          "doc_id": "100038",
+          "text": "The word biryani (Hindi: बिरयानी, Urdu: بریانی) is derived from biryan or beriyan (Persian: بریان), which means \"to fry\" or \"to roast\", said by Merriam-Webster probably to be related to Sanskrit: भृज्जति bhṛjjati with the same meaning. The usage is from the Persian phrase birinj biryan (with Persian: برنج birinj, \"rice\"), meaning \"fried rice\"."
+        },
+        {
+          "doc_id": "100038",
+          "text": "The cookery writer Pratibha Karan states that biryani is of Indian origin, derived from pilau which Muslim traders and invaders brought with them. She speculates that pilau was an army dish in medieval India. Armies would prepare a one-pot dish of rice with any available red meat. Over time, the dish became biryani due to different methods of cooking."
+        },
+        {
+          "doc_id": "100143",
+          "text": "Hyderabadi biryani (also known as Hyderabadi dum biryani) is a style of biryani originating from Hyderabad, India made with basmati rice and meat (mostly goat meat). Originating in the kitchens of the Nizam of Hyderabad, it combines elements of Hyderabadi and Mughlai cuisines. Hyderabad biryani is a key dish in Hyderabadi cuisine and it is so famous that the dish is considered synonymous with the city of Hyderabad."
+        },
+        {
+          "doc_id": "100319",
+          "text": "Hyderabadi biryani is India's most famous biryani; some say biryani is synonymous with Hyderabad. Hyderabadi biryani developed in Hyderabad Subah under the rule of Asaf Jah I, who was first appointed as the governor of Deccan by the Mughal Emperor Aurangzeb. It is made with basmati rice, spices and goat meat. Popular variations use chicken instead of goat meat. There are various forms of Hyderabadi biryani, such as kachay gosht ki biryani or dum biryani, where goat meat is marinated and cooked along with the rice. It is left on a slow fire or dum for a fragrant and aromatic flavour."
+        }
+      ]
+    },
+    {
+      "query_id": "4",
+      "query": "What is anglo-Indian food?",
+      "response": "Anglo-Indian food is a cuisine that developed during British rule in India, specifically between 1612 and 1947, and continues to thrive in the modern era. It features spiced dishes such as curry, condiments like chutney, and a variety of simpler dishes like kedgeree, mulligatawny, and pish pash. These dishes are integral to the British palate and have adapted to become part of the local cuisine.",
+      "retrieved_context": [
+        {
+          "doc_id": "100012",
+          "text": "Anglo-Indian cuisine is the cuisine that developed during British rule in India, between 1612 and 1947, and has survived into the 21st century. Spiced dishes such as curry, condiments including chutney, and a selection of plainer dishes such as kedgeree, mulligatawny and pish pash were introduced to British palates. Anglo-Indian food arrived in Britain by 1747, with a recipe for \"a Currey the Indian Way\" in Hannah Glasse's The Art of Cookery Made Plain and Easy."
+        },
+        {
+          "doc_id": "100089",
+          "text": "Anglo-Indian cuisine developed during the period of British colonial rule in India, as British officials interacted with their Indian cooks.\nWell-known Anglo-Indian dishes include chutneys, salted beef tongue, kedgeree, ball curry, fish rissoles, and mulligatawny soup."
+        },
+        {
+          "doc_id": "100012",
+          "text": "Anglo-Indians in independent India cook a range of dishes from their traditional cuisine, including pork dishes such as pork chops, pork bhoonie, and the Goan pork assado. They adopted the British custom of adding side dishes to a dinner; these could include recipes like coq au vin, roast duck with orange sauce, and pepper steak. They welcome friends with tea, which may be served with British accompaniments like sandwiches, buns, and cake, and with Indian snacks like pakoras and samosas. The spices they use are the same as those used in Indian cuisine."
+        },
+        {
+          "doc_id": "100012",
+          "text": "Anglo-Indian cuisine was documented in detail by the English army officer Arthur Robert Kenney-Herbert, writing as \"Wyvern\" in 1878. Many of its usages are described in the 1886 Anglo-Indian dictionary, Hobson-Jobson. Definitions vary somewhat; this article follows The Oxford Companion to Food in distinguishing colonial era Anglo-Indian cuisine from post-war British cuisine influenced by the style of dishes served in Indian restaurants."
+        },
+        {
+          "doc_id": "100012",
+          "text": "Anglo-Indian cuisine was documented in practical detail by the English colonel Arthur Robert Kenney-Herbert, writing his Culinary Jottings for Madras as \"Wyvern\" in 1878. Many of its usages are described in what Alan Davidson calls the \"wonderful\" 1886 Anglo-Indian dictionary, Hobson-Jobson. The Veeraswamy restaurant opened in London (in Regent Street) in 1926; it originally served Anglo-Indian food, but as regional Indian food became popular in Britain it switched to serving dishes from Punjab and other regions. \nMore recently, the cuisine has been analysed by Jennifer Brennan in 1990 and David Burton in 1993."
+        },
+        {
+          "doc_id": "100092",
+          "text": ". Collingham describes the resulting Anglo-Indian cuisine as \"eclectic\", \"pan-Indian\", \"lacking sophistication\", embodying a \"passion for garnishes\", and forming a \"coherent repertoire\"; but it was eaten only by the British. Collingham writes that \"The idea of a curry is, in fact, a concept that the Europeans imposed on India's food culture. Indians referred to their different dishes by specific names... But the British lumped all these together under the heading of curry.\""
+        }
+      ]
+    },
+    {
+      "query_id": "5",
+      "query": "What is Pongal?",
+      "response": "Pongal is a popular South Indian dish that originates from the Tamil Nadu region of India. It is typically cooked in hot milk and is a staple food during the Pongal festival, which marks the beginning of the harvest season. The dish consists of rice cooked in milk, symbolizing abundance and prosperity. Commonly available varieties include the Venn pongal and Sakkarai pongal. These dishes are often enjoyed as a sweet dessert alongside a prasad offering to the gods.",
+      "retrieved_context": [
+        {
+          "doc_id": "100236",
+          "text": "Pongal (lit. 'to boil over') is a dish of rice cooked in boiling milk. It is a popular dish cooked by the Tamil people in South India and Sri Lanka. Its preparation is the main custom associated with the namesake Pongal festival. Several varieties such as the Venn pongal and Sakkarai pongal are part of the  Tamil cuisine."
+        },
+        {
+          "doc_id": "100223",
+          "text": "Pongal is a sweet dish traditionally made on Pongal, the Tamil harvest festival."
+        },
+        {
+          "doc_id": "100182",
+          "text": "Pongal, a boiled rice dish which comes in sweet and spicy varieties. It shares the same name as the harvest festival which is celebrated every January; the name of the festival itself is derived from this dish. The sweet variety of pongal, prepared with milk and jaggery, is cooked in the morning. Once the pongal pot has boiled over (symbolism for an abundant harvest), it is then offered as a prasad to the gods as thanksgiving.\nPoori, an unleavened deep-fried bread made with whole-wheat flour, commonly consumed for breakfast or as a light meal. A larger North Indian variant made with leavened all-purpose flour or maida is called bhatura."
+        },
+        {
+          "doc_id": "100181",
+          "text": "Parattal or Peratal: a traditional South Indian dry curry cooked with meat or vegetables.\nPongal: a boiled rice dish which comes in sweet and spicy varieties. It shares the same name as the harvest festival which is celebrated every January; the name of the festival itself is derived from this dish. The sweet variety of pongal, prepared with milk and jaggery, is cooked in the morning. Once the pongal pot has boiled over (symbolism for an abundant harvest), it is then offered as a prasad to the gods as thanksgiving."
+        },
+        {
+          "doc_id": "200532",
+          "text": "Chakarai Pongal (Sweet Rice and Black Gram Pudding)CategoryIndian recipesServings8Difficulty\n\n\nChakarai pongal is a sweet and buttery porridge-like dish that is traditionally prepared in South India for the Makar Sankranti festival that heralds the arrival of summer. The khara pongal variety differs only in the spices added, and the two are often cooked together from the same batch of rice and dhal."
+        },
+        {
+          "doc_id": "100236",
+          "text": "Typically pongal varieties are made with cow milk and its derivatives. Venn pongal (\"Venn\" means white) is made up of rice and lentil porridge similar to the another South Asian staple khichdi. Spices like black pepper, ginger, turmeric, asafoetida, cashews, cumin, curry leaves, are used along with ghee (clarified butter), mung beans, and salt. In South India, it is commonly eaten for breakfast with coconut chutney and coffee.\nSakkarai pongal (\"Sakkarai\" meaning sweet or sugar) is made with jaggery, mixed with cardamom, cashews, raisins, nutmeg, and ghee. It is often served as a prasadam after being offered to the deities. Other variations include Kozhi pongal (\"Kozhi\" meaning chicken) made with chicken meat and Sanyasi pongal (\"Sanyasi\" meaning ascetic or monk) made with vegetables."
+        }
+      ]
+    },
+    {
+      "query_id": "6",
+      "query": "What is Garam Masala?",
+      "response": "Garam masala is a blend of ground spices originating from India. It is commonly used in Indian, Pakistani, Nepalese, Bangladeshi, and Caribbean cuisines. It is used alone or with other seasonings. Key ingredients include cardamom, cinnamon, cumin, cloves, bay leaves, star anise, and peppercorns.",
+      "retrieved_context": [
+        {
+          "doc_id": "100128",
+          "text": "Garam masala (Hindustani: garam masālā, lit. 'hot or warm spices') is a blend of ground spices originating from India. It is common in Indian, Pakistani, Nepalese, Bangladeshi,  and Caribbean cuisines. It is used alone or with other seasonings. The specific combination differs by region, but it regularly incorporates a blend of flavours like cardamom, cinnamon, cumin, cloves, bay leaves, star anise, and peppercorns. Garam masala is used in a wide range of dishes, including marinades, pickles, stews, and curries."
+        },
+        {
+          "doc_id": "200371",
+          "text": "Garam MasalaCategoryHerbs and spices\n\n\nGaram masala, literally \"hot spice\" in Hindi,[1][2] is a term for a mixture of spices used in South Asian cooking.[1]"
+        },
+        {
+          "doc_id": "100053",
+          "text": "Chaat masala, also spelled chat masala, is a powdered spice mix, or masala, originating from the Indian subcontinent, typically used to add flavor to chaat. It typically consists of amchoor (dried mango powder), cumin, coriander, dried ginger, salt (often black salt), black pepper, asafoetida, and chili powder. Garam masala is optional."
+        },
+        {
+          "doc_id": "100128",
+          "text": "The composition of garam masala differs regionally, with many recipes across the Indian subcontinent according to regional and personal taste, and none is considered more authentic than another. The components of the mix are roasted, then ground together or added to the dish for flavour just before finishing cooking.\nA typical Indian version of garam masala contains (with Hindustani names in parentheses):"
+        },
+        {
+          "doc_id": "100097",
+          "text": "As commercially available in Western markets, curry powder is comparable to the traditional Indian spice mixture known as garam masala ('warm spices').\nConceived as a ready-made ingredient intended to replicate the flavor of an Indian sauce, it was first sold by Indian merchants to British traders."
+        },
+        {
+          "doc_id": "200371",
+          "text": "Despite the modern understanding of \"hot\", garam masala does not typically contain chiles.[3] Instead, it contains a blend of warming spices—commonly cinnamon, cumin, cardamom, coriander, clove, and peppercorn form the base.[1][2][4][5][3] Nutmeg, tej pat, fennel, star anise, mace, ginger, and mustard seed may also be added according to the cook's preference. Note that regional variations exist, and even individual families may have their own blends.\n\nTypically, the spices are toasted whole in order to develop a more complex flavor before combining and grinding to a powder.[1][3][4] A \"wet\" garam masala refers to these spices when combined with liquid, such as water or coconut milk.[1][2]"
+        }
+      ]
+    },
+    {
+      "query_id": "7",
+      "query": "What is upma?",
+      "response": "Upma is a South Indian breakfast dish made from semolina. It consists of a porridge made from rava (cream of wheat), which is typically made with large-grained varieties. Upma is a wholesome, nutritious, and filling breakfast option in South India.",
+      "retrieved_context": [
+        {
+          "doc_id": "200459",
+          "text": "Upma (Indian Semolina Porridge)CategoryIndian recipesDifficulty\n\n\nUpma is a popular South Indian dish made from semolina. Several variations of the dish exist including the use of different varieties of ground wheat, rice and even bread. A simple upma or uppittu takes just about 10 minutes to prepare. It uses very little oil/butter, making it one of the most popular, healthy and filling breakfasts in South India."
+        },
+        {
+          "doc_id": "200488",
+          "text": "Uppittu (Indian Semolina Porridge)CategoryIndian recipesDifficulty\n\n\nUpma or uppittu as it is referred to in Karnataka is a wholesome Indian dish made of rava (cream of wheat). There are many ways it is prepared but typically includes a healthy amount of vegetables added during preparation. The rava used for this must be the large-grained variety, as upma prepared with fine rava tends to become soggy."
+        },
+        {
+          "doc_id": "100010",
+          "text": "Andhra upma\nGodhuma uppindi, upma made from broken wheat flour\nPesarpindi uppindi, a dry porridge made of green gram flour; commonly served with yoghurt or mango-jaggery pickle\nPulusu uppindi, a dry porridge made with rice flour, peanuts, and tamarind extract, and commonly served with yoghurt or mango-jaggery pickle\nBeeyam rava pesara pappu, literally translated as 'made with broken rice and hulled green gram'; commonly served with yoghurt or mango-jaggery pickle\nVaripindi uppindi, a dry porridge made with rice flour and hulled green gram; commonly served with yoghurt or mango-jaggery pickle\nUppudu pindi or uppindi, also known as upma, a porridge made from broken sooji flour, ghee, and vegetables. It is commonly served with buttermilk or a spicy-savoury powder made from pulses."
+        },
+        {
+          "doc_id": "100010",
+          "text": "Saggubiyyam (sago) upma, an upma made from sago (saboodana)\nSemiya upma, an upma made with vermicelli"
+        },
+        {
+          "doc_id": "100174",
+          "text": "Upma, sanja or upeeth is similar to the South Indian upma. It is a thick porridge made from semolina perked up with green chillies, onions and other spices.\nVada pav is a fast food dish consisting of a fried mashed potato dumpling (vada), eaten sandwiched in a wheat bread bun (pav). This is the Indian version of a burger and is almost always accompanied with red chutney made from garlic and fried red and green chillies. Vada pav in its entirety is rarely made at home, mainly because home baking is not common.\nPav bhaji is a fast food dish consisting of a vegetable curry (Marathi: bhaji) served with a soft bread roll (pav)."
+        },
+        {
+          "doc_id": "100135",
+          "text": "Khaman (Steamed cakes made out of gram flour, garnished with green chili pepper and cilantro; types include nylon khaman and vati dal na khaman\nKhandvi (roll made of gram flour and dahi (yogurt) topped with mustard seed, cilantro, and grated coconut)\nUpma \nKhichu (a thick porridge-like mixture made of rice flour and seasoned with cumin seeds; once prepared, the mixture is often topped with oil, cayenne pepper, and salt)\nLilva kachori (a variety of kachori made with pigeon peas)\nPatra (Patarveliya)\nMethi na gota (Fried fenugreek Dumplings)\nMuthia (steamed dumpling made of gram flour, fenugreek, salt, turmeric, and cayenne pepper; the steamed dumpling can also be stir fried with mustard seed)"
+        }
+      ]
+    },
+    {
+      "query_id": "8",
+      "query": "What is ghevar usually served with?",
+      "response": "ghevar is typically served with piping hot rabri, a variety of very thick sweetened milk.",
+      "retrieved_context": [
+        {
+          "doc_id": "200460",
+          "text": "A mould is not required to cook the ghevar; if the pot containing the ghee has a small enough diameter, it will act as the mold to shape the ghevar.\nUsually ghevar is served with piping hot rabri, a variety of very thick sweetened milk."
+        },
+        {
+          "doc_id": "200460",
+          "text": "Ghevar (Rajasthani Honeycomb Fritter) CategoryIndian recipesYield10 piecesTime2 hoursDifficulty\n\n\nGhevar is an Indian delicacy originally from the state of Rajasthan. It is made with a round mold and has a crispy but porous texture. The following recipe has been entered with inputs from Tarla Dalal recipe book."
+        },
+        {
+          "doc_id": "100242",
+          "text": "Ghevar: A honeycombed shaped cake made by deep frying batter of wheat flour in ghee and then soaking it in sugar syrup. Ghevar is offered as Naivedheya to Hindu God Shiva & Goddess Parvati during Teej festival.\nLaapsi: This is a pudding prepared using grain flour cooked in ghee along with milk, dry fruits & sugar. Various variations of Laapsi are Daliya Laapsi, Suji Laapsi (Mohan Bhog), Maida Laapsi (Sohan Bhog), Besan Laapsi,  Moong Dal Laapsi, Rajwaadi Badam/Suphal Laapsi etc. Kusum Laapsi (Gulab Laapsi) is Rose petal flavoured Laapsi popular in Paali. Suji Laapsi and Puri forms Naivedhya for Durga Ashtami festival. While, Moong Dal Laapsi is common during Diwali festival\nJhajhariya: Prepared using hara choliya or corn flour, Jhajhariya is one variety of Laapsi."
+        },
+        {
+          "doc_id": "200460",
+          "text": "Immerse ghevar in sugar syrup, drain quickly, and place on a serving plate.\nRepeat the cooking steps, using the remaining batter to make 9 pieces of ghevar."
+        },
+        {
+          "doc_id": "100174",
+          "text": "Peanut oil and sunflower oil are the preferred cooking oils; however, cottonseed oil is also used. Clarified butter (called tūp) is often used for its distinct flavor. It is served with puraṇ pōḷī, varaṇa bhāt, ĉapātī, and many other dishes. Fresh homemade butter is usually served with bhākri."
+        },
+        {
+          "doc_id": "100010",
+          "text": "After the meal, paan or somph (areca nut/betel on pan leaf) is traditionally offered. On festival days or other auspicious occasions, a sweet, usually paravannam, is served with the meal, which is usually eaten first."
+        }
+      ]
+    },
+    {
+      "query_id": "9",
+      "query": "What is Nihari?",
+      "response": "Nihari is a national dish of Pakistan, traditionally made with beef, lamb, mutton, or goat, and includes a blend of aromatic spices, including pepper, turmeric, coriander seeds, ginger, fennel, cumin, cardamom, cloves, cinnamon, bay leaf, and nutmeg. The dish is known for its unique flavor profile, combining strongly spiced aromatics with rich lamb fat. While it is not thickened with cream, tomato, or vegetables, it is often described as thin due to the absence of cream. The name \"nihari\" literally translates to \"dawn,\" referring to its origin as a home remedy. Nihari has become a popular breakfast/brunch dish, especially during periods of increased Muslim migration following independence. It is prepared by simmering the meat over night and adding leftover leftovers from the previous day. The dish is often accompanied by naan, a type of flatbread, and garnished with sauteed onions, nuts, and cheese.",
+      "retrieved_context": [
+        {
+          "doc_id": "300005",
+          "text": "Nihari is often touted as the national dish of Pakistan, and is usually made with shank meat from beef, lamb, mutton or goat. The meat is stewed for several hours along with a strong symphony of spices, including pepper, turmeric, coriander seeds, ginger, fennel, cumin, cardamom, cloves, cinnamon, bay leaf and nutmeg, with only a little plain flour to thicken the mixture. I found the flavour a very unusual mix of strongly spiced/aromatic notes, with a richness from the lamb fat, but it was also strangely thin, given that it isn't thickened with cream, tomato or other vegetables, as with more familiar curries. The dish originated from the Muslim population of the Indian subcontinent, apparently first concocted centuries ago by a “hakeem”, a wise man or doctor of the time"
+        },
+        {
+          "doc_id": "300005",
+          "text": ". In addition to being a fool-proof home remedy, nihari is also a popular breakfast/brunch dish. Cooks will put the dish on to simmer overnight, and then by the morning the meat is fall-off-the-bone tender and completely infused with the cacophony of spices. In fact, the name nihari itself means “dawn”. I served my nihari with the bones, as is traditional, and although not pictured, with plenty of naan to sop up the liquid."
+        },
+        {
+          "doc_id": "300005",
+          "text": ". The dish became particularly popular in Pakistan after independence and the subsequent mass migration of Muslims from northern India. In some Pakistani restaurants, an essential component of the daily nihari is that some leftovers from the previous day (called taar) be added to the pot, which reminds me somewhat of a sourdough starter. There are even very old establishments who boast centuries of unbroken taar! As with many spiced meaty broths around the world, nihari is made by fretful parents and spouses when their loved ones fall ill with common colds and fevers. In addition to being a fool-proof home remedy, nihari is also a popular breakfast/brunch dish"
+        },
+        {
+          "doc_id": "100220",
+          "text": "Naan – In Urdu, the national language of Pakistan, the word naan means 'bread'. Unlike chapatis, naans are slightly thicker, typically leavened with yeast and mainly made with white flour. Some varieties like roghani and Peshwari naan may also be sprinkled with sesame seeds. Naans are seldom, if ever, made at home since they require tandoor-based cooking and  preparatory work. Numerous varieties of plain and stuffed naans are available throughout Pakistan and each region or city can have its own specialty. Naan is a versatile bread and is eaten with almost anything. For instance, 'saada naan' or 'plain naan' is often served with siri-payay (cow's head and trotters) or nihari (slow-cooked beef stew) for breakfast in many parts of the country."
+        },
+        {
+          "doc_id": "100033",
+          "text": "Ghughni – a curry made of soaked and boiled peas or chickpeas. Variations of the dish use different types of peas or chickpeas, such as black gram, green peas, or white peas.\nNimona – a spicy curry made by mincing peas or beans and sometimes even vegetables. Matar ka nimona is the most common variant. Nimonas are also made with kala channa and gobhi. It is a popular winter dish."
+        },
+        {
+          "doc_id": "100201",
+          "text": "The Alwān-E-Niʿmat (\"Colours of the Table\") from the reign of Jahangir (r. 1605–1627), was dedicated entirely to sweetmeats. It describes nan ḵẖata'i (a biscuit-like bread, sometimes with almond: nan ḵẖata'i badami); sweetened puri breads and fried sweet samosa snacks; spherical laddu sweets;  and halva. The samosas and puris could be cooked slowly in a sealed pot (dam cooking)."
+        }
+      ]
+    },
+    {
+      "query_id": "10",
+      "query": "What is Kashmiri Pink Tea?",
+      "response": "Kashmiri Pink Tea, also known as Noon Chai, is a traditional Indian tea that originated in Kashmir. It is a pinkish-colored, milky tea with pistachios and cardamom. This tea is consumed primarily at special occasions, weddings, and during the winter months when it is sold in many kiosks. It is one of the most basic and essential food items in a Kashmiri household.",
+      "retrieved_context": [
+        {
+          "doc_id": "100161",
+          "text": "Kashmiris are heavy tea drinkers. Kashmiris don't use the word \"Kashmiri Chai\". The word \"Noon\" in Kashmiri means salt. The most popular drink is a pinkish coloured salted tea called \"noon chai\". It is made with black tea, milk, salt and bicarbonate of soda. The particular colour of the tea is a result of its unique method of preparation and the addition of soda. The Kashmiri Hindus more commonly refer to this chai as \"Sheer Chai.\" The Kashmiri Muslims refer to it as \"Noon Chai\" or \"Namkeen Chai\", both meaning salty tea. Noon Chai or Sheer Chai is a common breakfast tea in Kashmiri households and is taken with breads like baqerkhani brought fresh from Qandur (Kashmiri : کاندر ) or bakers. It is one of the most basic and essential food items in a Kashmiri household"
+        },
+        {
+          "doc_id": "100220",
+          "text": "In Gilgit-Baltistan and Chitral, as well as areas near the Chinese border, salty Tibetan-style butter tea is consumed.\nDoodh pati chai is made by cooking tea leaves with milk and sugar, sometimes served with cardamom for fragrance. Extremely sweet, this is a local variation of a builder's tea.\n\"Kashmiri chai\" or \"noon chai\", a pink, milky tea with pistachios and cardamom, is consumed primarily at special occasions, weddings, and during the winter, when it is sold in many kiosks. However, unlike Kashmir the Kashmiri Chai in Pakistan is prepared with sugar and not with salt.\n\"Sabz chai\" or \"kahwah\", a green tea often served after every meal in Kashmir, Khyber Pakhtunkhwa, and the Pashtun belt of Balochistan, served with saffron and nuts.\nSulaimani chai is black tea served with lemon."
+        },
+        {
+          "doc_id": "100161",
+          "text": ". It is one of the most basic and essential food items in a Kashmiri household. Tea was as served in large samavars. Now, the use of Samavars is limited to special occasions and normally kettles are used. Nuts like almonds and pistachios and edible rose petals can be added before serving, and sometimes malai or fresh cream is added to give the tea viscosity and richness."
+        },
+        {
+          "doc_id": "100220",
+          "text": "Besides tea, there are other drinks that may be included as part of the Pakistani cuisine. All of them are non-alcoholic as the consumption of alcohol is prohibited by Islam. During the 20th century, beverages such as coffee and soft drinks have become popular in Pakistan. It is common to have soft drinks with Pakistani meals.\n\nBaraf Gola – Frozen Ice in a cup mould with syrup as a topping\nKashmiri chai/Gulabi chai – A milky tea known for its pink color, with an either sweet or salty taste\nLassi – Milk with yogurt, with an either sweet or salty taste\nLemonade (Limu pani)\nQehwa – Green tea with cardamom\nSherbet (syrup mixed in water)\nSugarcane juice (Ganney ka ras)\nThadal – A sweet drink from Sindh"
+        },
+        {
+          "doc_id": "100189",
+          "text": "The spices used in masala chai most often include cardamom, grated ginger, and cinnamon. Also used are cloves, star anise, black peppercorns, mint, lemongrass, and more.\nMasala chai in western India often excludes cloves and black peppercorns. A small amount of salt is often added to chai in the region of Bhopal. The Kashmiri version of chai is brewed with green tea instead of black tea and has a more subtle blend of spices with a pinch of salt. This version is a bit savoury and is pink in colour, due to the addition of baking soda."
+        },
+        {
+          "doc_id": "100003",
+          "text": "Chai is tea in Afghanistan, which can either be green or black. It is consumed at all times, especially a short time after finishing a meal or with guests during any social gathering. Most people drink green tea with no sugar. Some add cardamom, saffron, or sugar.\nSheer chai (or \"milk tea\") is also consumed but mostly in the morning and on special occasions. It is a type of Kashmiri chai. Many people of Afghanistan also drink masala chai, particularly in cities such as Asadabad, Jalalabad, Khost and Kandahar."
+        }
+      ]
+    },
+    {
+      "query_id": "11",
+      "query": "What is the main fish used in Bengali cuisine?",
+      "response": "Pudina hilsa (Bengali Fish with Mint) is a wonderful Bengali preparation of hilsa fish. It is very easy and can be served hot with boiled rice.",
+      "retrieved_context": [
+        {
+          "doc_id": "100089",
+          "text": "The cuisine is known for subtle flavours with an emphasis on fish, meat, vegetables, lentils, and rice. Bread is also a common dish in Bengali cuisine, particularly a deep-fried version called luchi is popular. Fresh aquatic fish is one of its most distinctive features; Bengalis prepare fish in many ways, such as steaming, braising, or stewing in vegetables and sauces based on coconut milk or mustard.\nEast Bengali food, which has a high presence in West Bengal and Bangladesh, is much spicier than the West Bengali cuisine, and tends to use high amounts of chilli, and is one of the spiciest cuisines in India and the World."
+        },
+        {
+          "doc_id": "100030",
+          "text": "Bengali cuisine is the culinary style of Bengal, comprising now most of Bangladesh and parts of India (i.e., West Bengal and Barak Valley). The cuisine has been shaped by the region's diverse history and climate. It is known for its varied use of flavours including mustard oil, as well as the spread of its confectioneries and desserts. There is a strong emphasis on rice as a staple, with fish traditionally the most common protein. Freshwater fish are preferred to marine fish, although barramundi, known as bhetki, is also common. Meat is also a common protein among Bengalis, with chicken and mutton being the most popular. Beef is popular within the Muslim community.However meat from any sources is consumed far less than fish in Bangladesh"
+        },
+        {
+          "doc_id": "100090",
+          "text": "Bangladeshi dishes exhibit strong aromatic flavours; and often include eggs, potatoes, tomatoes and aubergines. A variety of spices and herbs, along with mustard oil and ghee, is used in Bangladeshi cooking. The main breads are naan, porota, roti, bakarkhani and luchi. Dal is the second most important staple food which is served with rice/porota/luchi. Fish is a staple in Bangladeshi cuisine, especially freshwater fish, which is a distinctive feature of the country's gastronomy. Major fish dishes include ilish (hilsa), pabda (butterfish), rui (rohu), pangash (pangas catfish), chitol (clown knifefish), magur (walking catfish), bhetki (barramundi) and tilapia. Meat consumption includes beef, goat, chicken, duck, and koel"
+        },
+        {
+          "doc_id": "100089",
+          "text": "West Bengal is located in the eastern portion of India, along the Bay of Bengal. \nMughal cuisine is a universal influencer in the Bengali palate, and has introduced Persian and Islamic foods to the region, as well as a number of more elaborate methods of preparing food, like marination using ghee. Fish, meat (chicken, goat meat), egg, rice, milk, and sugar all play crucial parts in Bengali cuisine.\nBengali cuisine can be subdivided into four different types of dishes, charbya (চারব্য), or food that is chewed, such as rice or fish; choṣya, or food that is sucked, such as ambal and tak; lehya (লেহ্য), or foods that are meant to be licked, like chuttney; and peya (পেয়ে), which includes drinks, mainly milk."
+        },
+        {
+          "doc_id": "100030",
+          "text": "Bengali cuisine can be subdivided into four different types of dishes: eatables (খাদ্য, ভক্ষ্য, or ভোজ্য); চর্ব্য, chôrbyô, or chewables, such as rice or fish; চোষ্য, choshyô, or suckables, such as ambal and tak; লেহ্য, lehyô, or lickables, like chutney; and পেয়, peyô, or drinkables which includes drinks, mainly milk."
+        },
+        {
+          "doc_id": "200570",
+          "text": "Pudina Hilsa (Bengali Fish with Mint)CategoryFish recipesDifficulty\n\n\nPudina hilsa is a wonderful Bengali preparation of hilsa fish. It is very easy and can be served hot with boiled rice."
+        }
+      ]
+    },
+    {
+      "query_id": "12",
+      "query": "What are Sri Lankan Hoppers?",
+      "response": "Sri Lankan Hoppers are a traditional dish that originated in Sri Lanka. They are primarily enjoyed for breakfast or lunch and are often paired with Lunumiris, a fiery hot mix of red onions and spices. These dishes are typically made from a fermented batter of rice flour, coconut milk, and palm toddy, which provides acidity and promotes fermentation. The batter is left to rise before being cooked in a hemispherical wok-like pan. There are numerous types of Hoppers, including egg Hoppers, milk Hoppers, and sweeter varieties like Vandaapura and Paniappa.",
+      "retrieved_context": [
+        {
+          "doc_id": "200302",
+          "text": "Hoppers (appa) are another food native to Sri Lanka, served mainly for breakfast or lunch and often accompanied by lunumiris, a fiery hot mix of red onions and spices. Hoppers are made from a fermented batter of rice flour, coconut milk and a dash of palm toddy, which provides acidity and organisms that promote fermentation. If toddy is not available, yeast is often used. The batter is left to rise, then cooked in a hemispherical wok-like pan. There are many types of hoppers including egg hoppers, milk hoppers, and sweeter varieties like vanduappa and paniappa.\n\nKoola'ya is a dish made of a variety of leftover curries, mixed together with rice and often served at temples, with chapati. Its also served in a ball form, or even mixed in a blender.\n\n\n\nSweets[edit | edit source]"
+        },
+        {
+          "doc_id": "100294",
+          "text": "\"Short eats\" (colloquially called \"shorties\") are a ubiquitous category of savory and sweet snacks in Sri Lanka, encompassing items such as patties, cutlets, rolls, samosas, pies, and buns. Though now deeply ingrained in Sri Lankan culture, their origins are a fusion of colonial culinary influences adapted and \"Sri Lankanised\" over the past 80 years. The diverse array of short eats reflects the island's history of foreign presence. European influences (British, Dutch, Portuguese) contributed pies, pastries, fish patties, and the likely ancestor of the breadcrumb-coated cutlet (from the Portuguese bolinho)"
+        },
+        {
+          "doc_id": "100294",
+          "text": "The central feature of Sri Lankan cuisine is boiled or steamed rice, served with a curry of fish or meat, along with other curries made with vegetables, lentils, or fruits.\nDishes are accompanied by pickled fruits or vegetables, chutneys, and sambols. Coconut sambol is especially common, a paste of ground coconut mixed with chili peppers, dried Maldives fish, and lime juice."
+        },
+        {
+          "doc_id": "100294",
+          "text": "Sri Lankan cuisine is known for its particular combinations of herbs, spices, fish, vegetables, rices, and fruits. The cuisine is highly centered around many varieties of rice, as well as coconut which is a ubiquitous plant throughout the country. Seafood also plays a significant role in the cuisine, be it fresh fish or preserved fish. As a country that was a hub in the historic oceanic silk road, contact with foreign traders brought new food items and cultural influences in addition to the local traditions of the country's ethnic groups, all of which have helped shape Sri Lankan cuisine. Influences from Indian (particularly South Indian), Indonesian and Dutch cuisines are most evident with Sri Lankan cuisine sharing close ties to other neighbouring South and Southeast Asian cuisines."
+        },
+        {
+          "doc_id": "200302",
+          "text": "A typical Sri Lankan meal consists of a \"main curry\" (fish, chicken, beef, pork or mutton), as well as several other curries made with vegetable and lentils. \n\nSide-dishes include pickles, chutneys and sambols which can sometimes be fiery hot. The most famous of these is the coconut sambol, made of ground coconut mixed with chillies, dried Maldive fish and lime juice. This is ground to a paste and eaten with rice, as it gives zest to the meal and is believed to increase appetite.\n\nIn addition to sambols, Sri Lankans eat mallung, chopped leaves mixed with grated coconut and red onions. Coconut milk is found in most Sri Lankan dishes, giving the cuisine its unique flavour."
+        },
+        {
+          "doc_id": "300002",
+          "text": "I grouped Sri Lanka and The Maldives together because both are, to varying degrees, lost in the great expanse of the Indian Ocean, and their cuisines have influenced each other, as well as having been influenced by similar external forces, over the centuries. Sri Lanka has taken cues from the cuisines of neighbouring Southern India, as well as various migrants/invaders over the years, notably Indonesia, Malaysia, China, Britain, The Netherlands and Portugal. The standout flavours/ingredients that pervade Sri Lankan cooking include fresh fish, often in curries, steaming white rice, flatbreads, dals, fresh coconut and coconut milk, lime, chillies (often flavouring various “sambols”; describing all sorts of spicy pastes/dips/accompaniments) dried Maldive fish and curry leaves"
+        }
+      ]
+    },
+    {
+      "query_id": "13",
+      "query": "What is Chana Dal Halwa?",
+      "response": "Chana Dal Halwa is a traditional South Indian dessert made with chickpeas, coconut milk, and sugar. It's typically served with sweetened yogurt or milk and is enjoyed during festivals and celebrations. The name \"Halwa\" comes from the Hindi word for \"halwa\", which means \"sweetness\".",
+      "retrieved_context": [
+        {
+          "doc_id": "100055",
+          "text": "Chana masala (also chole masala or chholay) is a chickpea curry cooked in a tomato-based sauce, originating from the Indian subcontinent. It is a staple dish in Indian (particularly North Indian) and Pakistani cuisine. It is often eaten with bread, including deep-fried bhatura (where the combination is called chole bhature), puri, or flatbreads such as kulcha."
+        },
+        {
+          "doc_id": "100242",
+          "text": "Rajasthani Dal Maharani/Dal Rajwadi : This is prepared using whole Urad dal in a rich gravy of dry fruits and topped with lots of ghee.\nHaveji : A lentil preparation made by cooking Chana Dal with Yogurt or buttermilk gravy."
+        },
+        {
+          "doc_id": "100106",
+          "text": "Dalcha, is an Indian lentil-based stew originating from Hyderabad, Telangana. Its origins may lie with a similar middle eastern dish Harees which is more of a gruel with cooked meats. Primary ingredients are lentils, can be chana dal or sometimes tur dal. Vegetables or meats, both chicken or mutton may also be added to the stew, so if mutton is added it will be called a mutton dalcha. Bottle gourd is another key ingredient in a Dalcha. It is traditionally served with the rice dish called bagara khana."
+        },
+        {
+          "doc_id": "100174",
+          "text": "Khichdi is made of rice and dal with mustard seeds and onions to add flavor.\nVaranfal is traditional Maharashtrian cuisine made up of pieces of dough cooked in the curry of Toor dal. Dal dhokli is a similar dish popular in Gujarat and Rajasthan.\nChana daliche dheerde is a savory crepe made with chana dal.\nLike most Indian cuisines, Maharashtrian cuisine is laced with many fried savories, including:"
+        },
+        {
+          "doc_id": "100100",
+          "text": "Dal preparations are eaten with rice, chapati and naan on the Indian subcontinent. The manner in which it is cooked and presented varies by region. In South India, dal is often called \"paruppu\". It is primarily used to make a dish called sambar. It is also used to make parippu that is mixed with charu and rice. Ground chana dal is used to make a paste called besan, which is used in the preparation of many dishes including bhaji and Mediterranean dishes like farinata."
+        },
+        {
+          "doc_id": "100033",
+          "text": "Chana chabeni or bhuja / bhunjna – another typical breakfast of Bhojpur region. This dish is prepared on a big makeshift stove locally called a bhadsar. There is also a Bhojpuri song that mentions this dish:"
+        }
+      ]
+    }
+  ]
+}
