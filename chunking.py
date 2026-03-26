@@ -100,7 +100,9 @@ _SENTENCE_RE = re.compile(r"(?<=[.!?])\s+")
 
 class SemanticChunker:
     """
-    Splits text by detecting topic shifts via sentence embeddings.
+    Section-aware semantic chunker: respects JSON section boundaries,
+    uses embedding-based topic-shift detection *within* each section
+    instead of RecursiveCharacterTextSplitter.
     Returns list[Document] — same interface as SectionAwareChunker.
     """
 
@@ -114,6 +116,12 @@ class SemanticChunker:
         self.similarity_threshold = similarity_threshold
         self.min_chunk_size = min_chunk_size
         self.max_chunk_size = max_chunk_size
+
+        # Sections to skip (same as SectionAwareChunker)
+        self.ignored_sections = {
+            'see also', 'references', 'external links',
+            'further reading', 'notes'
+        }
 
         print(f"Loading embedding model for semantic chunking ({model_name})...")
         self.model = SentenceTransformer(model_name)
@@ -132,26 +140,53 @@ class SemanticChunker:
             url = doc.get('url', '')
             doc_id = doc.get('doc_id', '')
 
-            # Collect all text from summary + sections
+            # 1. Handle summary
             raw_summary = doc.get('summary') or ''
             summary = (raw_summary.get('section_text', '') if isinstance(raw_summary, dict) else raw_summary).strip()
-
-            sections_text = []
             if summary:
-                sections_text.append(summary)
+                metadata = {
+                    'doc_id': doc_id,
+                    'title': title,
+                    'url': url,
+                    'section': 'Summary',
+                }
+                all_chunks.extend(self._split_section(summary, metadata))
+
+            # 2. Handle sections
             for sec in doc.get('content', []):
+                sec_title = (sec.get('section_title') or '').strip()
                 sec_text = (sec.get('section_text') or '').strip()
-                if sec_text and sec_text != summary:
-                    sections_text.append(sec_text)
 
-            full_text = "\n\n".join(sections_text)
-            if not full_text.strip():
-                continue
+                if not sec_text or sec_text == summary:
+                    continue
 
-            metadata = {'doc_id': doc_id, 'title': title, 'url': url}
-            all_chunks.extend(self._semantic_split(full_text, metadata))
+                # Parse nested titles
+                section_name = sec_title
+                subsection_name = None
+                if ' / ' in sec_title:
+                    section_name, subsection_name = [part.strip() for part in sec_title.split(' / ', 1)]
+
+                if section_name.lower() in self.ignored_sections:
+                    continue
+
+                metadata = {
+                    'doc_id': doc_id,
+                    'title': title,
+                    'url': url,
+                    'section': section_name,
+                }
+                if subsection_name:
+                    metadata['subsection'] = subsection_name
+
+                all_chunks.extend(self._split_section(sec_text, metadata))
 
         return all_chunks
+
+    def _split_section(self, text: str, metadata: dict) -> list[Document]:
+        """If section is short enough, return as-is. Otherwise, semantic split."""
+        if len(text) <= self.max_chunk_size:
+            return [Document(page_content=text.strip(), metadata=dict(metadata))]
+        return self._semantic_split(text, metadata)
 
     # ── internals ──
 

@@ -2,7 +2,7 @@ import torch
 import json
 from chunking import SectionAwareChunker, SemanticChunker
 from embeddings import MiniLMEmbedding, QwenEmbedding
-from vectore_store import FAISSVectorDB, ChromaVectorDB
+from vectore_store import FAISSVectorDB
 from ranking_n_retrieval import Retriever
 from llm_n_prompt import QwenLLM, PromptTemplate
 from rag_pipeline import RAGPipeline
@@ -37,7 +37,7 @@ def build_embedder(choice):
     if choice == "minilm":
         return MiniLMEmbedding(), 384
     elif choice == "qwen":
-        return QwenEmbedding(), 768
+        return QwenEmbedding(), 1024
     else:
         raise ValueError(f"Unknown embedder: {choice}. Choose 'minilm' or 'qwen'")
 
@@ -45,8 +45,8 @@ def build_embedder(choice):
 def build_vectordb(choice, dim):
     if choice == "faiss":
         return FAISSVectorDB(dim=dim)
-    elif choice == "chroma":
-        return ChromaVectorDB()
+    # elif choice == "chroma":
+    #     return ChromaVectorDB()
     else:
         raise ValueError(f"Unknown vectordb: {choice}. Choose 'faiss' or 'chroma'")
 
@@ -59,15 +59,15 @@ def build_retriever(choice, vectordb, documents):
 
 def run_json_input_output():
 
-    # print("\n" + "="*50)
-    # print("       CuisineRAG — ChefBot")
-    # print("="*50)
-    # print(f"Chunker: {CHUNKER}")
-    # print(f"  Embedding : {EMBEDDING}")
-    # print(f"  VectorDB  : {VECTORDB}")
-    # print(f"  Retrieval : {RETRIEVAL}")
-    # print(f"  Device    : {DEVICE}")
-    # print("="*50 + "\n")
+    print("\n" + "="*50)
+    print("       CuisineRAG — ChefBot")
+    print("="*50)
+    print(f"Chunker: {CHUNKER}")
+    print(f"  Embedding : {EMBEDDING}")
+    print(f"  VectorDB  : {VECTORDB}")
+    print(f"  Retrieval : {RETRIEVAL}")
+    print(f"  Device    : {DEVICE}")
+    print("="*50 + "\n")
 
     # --- build components based on config ---
     if CHUNKER == "semantic":
