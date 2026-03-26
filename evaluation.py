@@ -99,6 +99,8 @@ def evaluate_rag_pipeline(
     sacre_bleu    = SacreBLEU(effective_order=True)
     chrf_scorer   = CHRF(beta=3, word_order=2)
     nltk_smoother = SmoothingFunction().method1
+    total_number_of_chunks=9888
+    #12616 - for semantic
     print("[Setup] Done.\n")
 
     # ── 3. PER-QUERY EVALUATION ───────────────────────────────────────────────
@@ -113,9 +115,7 @@ def evaluate_rag_pipeline(
 
         query         = item["query"]
         response      = item["response"]
-        retrieved_docs = [doc["doc_id"] for doc in item["retrieved_context"]]
         context_text  = " ".join(c["text"].lower() for c in item["retrieved_context"])
-
         # ── GENERATION: BLEU (nltk) ──────────────────────────────────────────
         ref_tokens  = ref.lower().split()
         resp_tokens = response.lower().split()
@@ -137,7 +137,6 @@ def evaluate_rag_pipeline(
         ref_kw  = _extract_keywords(ref)
         sacre_b = sacre_bleu.sentence_score(hyp_kw, [ref_kw]).score
         chrf    = chrf_scorer.sentence_score(hyp_kw, [ref_kw]).score
-
         # ── GENERATION: BERTScore ─────────────────────────────────────────────
         with open(os.devnull, "w") as devnull:
             _out, _err = sys.stdout, sys.stderr
@@ -152,19 +151,21 @@ def evaluate_rag_pipeline(
         keywords  = [t for t in re.findall(r"\b[a-zA-Z]{3,}\b", ref.lower()) if t not in STOPWORDS]
         hits_kw   = [kw for kw in keywords if kw in context_text]
         kw_recall = len(hits_kw) / len(keywords) if keywords else 0.0
-
         # ── RETRIEVAL: Semantic Similarity ────────────────────────────────────
+        semantic_sim = (cosine_similarity(embed_model.encode([ref]), embed_model.encode([c["text"].lower() for c in item["retrieved_context"]])))
+        # print(semantic_sim)
+        #float(
+         #   cosine_similarity(embed_model.encode([ref]), embed_model.encode([c["text"].lower() for c in item["retrieved_context"]]))
+        #)
+        hit_doc_count=(sum(float(sim)>0.6 for sim in semantic_sim[0]))
+        # print("h d c -",hit_doc_count)
+        # ── RETRIEVAL: Precision, Recall, MRR ────────────────────────────────
+        ret_prec   = hit_doc_count / 6
+        ret_recall = hit_doc_count / total_number_of_chunks
+        mrr=1/int(np.argmax(semantic_sim)+1)
+        context_text  = " ".join(c["text"].lower() for c in item["retrieved_context"])
         semantic_sim = float(
             cosine_similarity(embed_model.encode([ref]), embed_model.encode([context_text]))[0][0]
-        )
-
-        # ── RETRIEVAL: Precision, Recall, MRR ────────────────────────────────
-        hits_doc   = set(retrieved_docs) & true_docs
-        ret_prec   = len(hits_doc) / len(retrieved_docs) if retrieved_docs else 0.0
-        ret_recall = len(hits_doc) / len(true_docs)      if true_docs      else 0.0
-        mrr        = next(
-            (1.0 / rank for rank, doc_id in enumerate(retrieved_docs, 1) if doc_id in true_docs),
-            0.0,
         )
 
         evaluation_results.append({
@@ -184,7 +185,7 @@ def evaluate_rag_pipeline(
             "ret_recall":        ret_recall,
             "mrr":               mrr,
         })
-
+        # return
     # ── 4. AGGREGATE & PRINT RESULTS ─────────────────────────────────────────
     df = pd.DataFrame(evaluation_results)
 
@@ -216,3 +217,9 @@ def evaluate_rag_pipeline(
     print("\n" + "=" * 65)
 
     return df
+
+
+if __name__=='__main__':
+    output_path="data/output_payload_sample_benchmark.json"
+    benchmark_path="data/benchmark_dataset.json"
+    evaluate_rag_pipeline(output_path,benchmark_path)

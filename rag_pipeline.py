@@ -36,16 +36,8 @@ class RAGPipeline:
         print(f"Indexing {len(corpus):,} documents total...")
         self.chunks = self.chunker.chunk(corpus)
 
-        # Assign chunk_id: {doc_id}_chunk_{n} per document
-        doc_chunk_counter = {}
-        for chunk in self.chunks:
-            doc_id = chunk.metadata.get('doc_id', 'unknown')
-            n = doc_chunk_counter.get(doc_id, 0)
-            chunk.metadata['chunk_id'] = f"{doc_id}_chunk_{n}"
-            doc_chunk_counter[doc_id] = n + 1
-
         # 3. Extract text and generate embeddings
-        texts = [doc.page_content for doc in self.chunks]
+        texts = [doc.page_content + f" title:{doc.metadata.get('title')}" for doc in self.chunks]
         embeddings = self.embedder.embed_documents(texts)
 
         # 4. Store Document objects + embeddings so metadata is available at retrieval time

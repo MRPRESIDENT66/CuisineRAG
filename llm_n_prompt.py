@@ -138,7 +138,7 @@ class QwenLLM:
 
         self.model = AutoModelForCausalLM.from_pretrained(
             MODEL_NAME,
-            torch_dtype=torch.float16 if device in ("mps","cuda") else torch.float32
+            dtype=torch.float16 if device in ("mps","cuda") else torch.float32
         )
 
         self.model.to(self.device)
