@@ -160,7 +160,7 @@ def evaluate_rag_pipeline(
         hit_doc_count=(sum(float(sim)>0.6 for sim in semantic_sim[0]))
         # print("h d c -",hit_doc_count)
         # ── RETRIEVAL: Precision, Recall, MRR ────────────────────────────────
-        ret_prec   = hit_doc_count / 6
+        ret_prec   = hit_doc_count / 5
         ret_recall = hit_doc_count / total_number_of_chunks
         mrr=1/int(np.argmax(semantic_sim)+1)
         context_text  = " ".join(c["text"].lower() for c in item["retrieved_context"])

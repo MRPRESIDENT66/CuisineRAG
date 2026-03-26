@@ -112,12 +112,12 @@ def run_json_input_output():
     retriever = build_retriever(RETRIEVAL, vectordb, pipeline.chunks)
     pipeline.retriever = retriever
 
-    input_file_name="data/input_payload_sample_benchmark.json"
-    output_file_name= "data/output_payload_sample_benchmark.json"
-    with open(input_file_name) as input_file:
+    input_file_path = "inputs_and_outputs/input.json"
+    output_file_path = "inputs_and_outputs/output.json"
+    with open(input_file_path) as input_file:
         query_list=json.load(input_file)['queries']
 
-    print(f"\nProcessing {len(query_list)} queries from {input_file_name}...\n")
+    print(f"\nProcessing {len(query_list)} queries from {input_file_path}...\n")
 
     results=[0]*len(query_list)
     for i,query in enumerate(query_list):
@@ -129,13 +129,13 @@ def run_json_input_output():
             "query_id":str(query_id),
             "query":str(query_text),
             "response":str(answer),
-            "retrieved_context":[{"chunk_id":chunk.metadata.get('chunk_id', '?'),"text":chunk.page_content} for chunk in docs]
+            "retrieved_context":[{"doc_id":str(chunk.metadata.get('chunk_id', '?')),"text":chunk.page_content} for chunk in docs]
             }
         final=dict({"results": results})
-    with open(output_file_name,'w') as output_json:
+    with open(output_file_path,'w') as output_json:
         json.dump(final, output_json, indent=2, ensure_ascii=False)
 
-    print(f"\nDone! {len(results)} results saved to {output_file_name}")
+    print(f"\nDone! {len(results)} results saved to {output_file_path}")
 
 
 
