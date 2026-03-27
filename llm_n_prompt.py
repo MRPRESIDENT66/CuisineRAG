@@ -36,6 +36,96 @@ ANSWER:"""
             {"role": "user",   "content": user},
         ]
 
+    def build_few_shot_prompt(self, question, contexts):
+        context_text = "\n\n".join(
+            doc.page_content if hasattr(doc, "page_content") else doc for doc in contexts
+        )
+
+        system = """You are ChefBot, an expert assistant specialising in South Asian cuisine.
+    Rules:
+    - Answer using ONLY the provided context.
+    - If info is missing, say: "I don't have information about that in my knowledge base."
+    - Be factual and concise."""
+
+        # These are the "Shots" (Examples)
+        few_shot_examples = """
+    EXAMPLE 1:
+    CONTEXT: Chana Masala is a North Indian chickpea curry. It uses garam masala, amchoor (mango powder), and green chillies.
+    QUESTION: What gives Chana Masala its sourness?
+    ANSWER: According to the context, Chana Masala gets its sourness from amchoor (mango powder).
+
+    EXAMPLE 2:
+    CONTEXT: Traditional Jalebi is made by deep-frying maida flour batter in pretzel shapes and soaking them in sugar syrup.
+    QUESTION: Is Jalebi baked?
+    ANSWER: No. Based on the information provided, Jalebi is made by deep-frying maida flour batter and then soaking it in sugar syrup.
+
+    EXAMPLE 3:
+    CONTEXT: Lassi is a yogurt-based drink from the Punjab region.
+    QUESTION: How do you make a Pizza?
+    ANSWER: I don't have information about that in my knowledge base.
+    """
+
+        user = f"""{few_shot_examples}
+
+    ---
+    CURRENT TASK:
+    CONTEXT:
+    {context_text}
+
+    QUESTION: {question}
+
+    ANSWER:"""
+
+        return [
+            {"role": "system", "content": system},
+            {"role": "user",   "content": user},
+        ]
+
+# class QwenLLM:
+#
+#     def __init__(self, device="cpu"):
+#
+#         print("Loading LLM...")
+#
+#         self.device = device
+#
+#         self.tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+#
+#         self.model = AutoModelForCausalLM.from_pretrained(
+#             MODEL_NAME
+#         )
+#
+#         self.model.to(self.device)
+#
+#         self.model.eval()
+#
+#
+#     def generate(self, messages, max_tokens=512):
+#
+#         text = self.tokenizer.apply_chat_template(
+#             messages,
+#             tokenize=False,
+#             add_generation_prompt=True,
+#         )
+#
+#         inputs = self.tokenizer(text, return_tensors="pt").to(self.device)
+#         input_length = inputs.input_ids.shape[1]
+#
+#         with torch.no_grad():
+#             outputs = self.model.generate(
+#                 **inputs,
+#                 max_new_tokens=max_tokens,
+#                 temperature=0.4,
+#                 # repetition_penalty=1.3,
+#                 do_sample=True,
+#             )
+#
+#         response = self.tokenizer.decode(
+#             outputs[0][input_length:],
+#             skip_special_tokens=True,
+#         )
+#
+#         return response.strip()
 class QwenLLM:
 
     def __init__(self, device="cpu"):
@@ -47,7 +137,8 @@ class QwenLLM:
         self.tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 
         self.model = AutoModelForCausalLM.from_pretrained(
-            MODEL_NAME
+            MODEL_NAME,
+            dtype=torch.float16 if device in ("mps","cuda") else torch.float32
         )
 
         self.model.to(self.device)
@@ -57,22 +148,27 @@ class QwenLLM:
 
     def generate(self, messages, max_tokens=512):
 
-        text = self.tokenizer.apply_chat_template(
-            messages,
-            tokenize=False,
-            add_generation_prompt=True,
-        )
+        # text = self.tokenizer.apply_chat_template(
+        #     messages,
+        #     tokenize=False,
+        #     add_generation_prompt=True,
+        # )
 
-        inputs = self.tokenizer(text, return_tensors="pt").to(self.device)
+        # inputs = self.tokenizer(text, return_tensors="pt").to(self.device)
+        inputs = self.tokenizer.apply_chat_template(messages,
+            return_tensors="pt",
+            add_generation_prompt=True,
+        ).to(self.device)
         input_length = inputs.input_ids.shape[1]
 
-        with torch.no_grad():
+        with torch.inference_mode():
             outputs = self.model.generate(
                 **inputs,
                 max_new_tokens=max_tokens,
                 temperature=0.4,
-                # repetition_penalty=1.3,
+                # repetition_penalty=1.1,
                 do_sample=True,
+                pad_token_id=self.tokenizer.eos_token_id
             )
 
         response = self.tokenizer.decode(

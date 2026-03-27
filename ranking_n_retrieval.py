@@ -24,7 +24,7 @@ class Retriever:
     # fast, good quality — use during development
     # ------------------------------------------------------------------
 
-    def retrieve_hybrid_rrf(self, query, query_embedding, k=20, top_n=6):
+    def retrieve_hybrid_rrf(self, query, query_embedding, k=20, top_n=5):
 
         dense_results  = self.vectordb.search(query_embedding, k)
         sparse_results = self._bm25_search(query, k)
@@ -37,7 +37,7 @@ class Retriever:
     # best quality — use in production
     # ------------------------------------------------------------------
 
-    def retrieve_hybrid_reranked(self, query, query_embedding, k=20, top_n=6):
+    def retrieve_hybrid_reranked(self, query, query_embedding, k=20, top_n=5):
         candidates = self.retrieve_hybrid_rrf(query, query_embedding, k, top_n=k)
 
         return self._rerank(query, candidates, top_n)
@@ -88,7 +88,7 @@ class Retriever:
         return result[:top_n] if top_n is not None else result
 
 
-    def _rerank(self, query, chunks, top_n=6):
+    def _rerank(self, query, chunks, top_n=5):
 
         pairs  = [[query, chunk.page_content] for chunk in chunks]
         scores = self.reranker.predict(pairs)

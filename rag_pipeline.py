@@ -1,4 +1,5 @@
 import json
+from chunking import export_chunks_json
 
 class RAGPipeline:
 
@@ -36,14 +37,6 @@ class RAGPipeline:
         print(f"Indexing {len(corpus):,} documents total...")
         self.chunks = self.chunker.chunk(corpus)
 
-        # Assign chunk_id: {doc_id}_chunk_{n} per document
-        doc_chunk_counter = {}
-        for chunk in self.chunks:
-            doc_id = chunk.metadata.get('doc_id', 'unknown')
-            n = doc_chunk_counter.get(doc_id, 0)
-            chunk.metadata['chunk_id'] = f"{doc_id}_chunk_{n}"
-            doc_chunk_counter[doc_id] = n + 1
-
         # 3. Extract text and generate embeddings
         texts = [doc.page_content for doc in self.chunks]
         embeddings = self.embedder.embed_documents(texts)
@@ -51,6 +44,9 @@ class RAGPipeline:
         # 4. Store Document objects + embeddings so metadata is available at retrieval time
         self.vectordb.add_documents(embeddings, self.chunks)
         print(f"Finished! Total chunks: {len(self.chunks)}")
+
+        # Export chunk index JSON
+        export_chunks_json(self.chunks, "data/chunks_index.json")
 
 
     def query(self, question):

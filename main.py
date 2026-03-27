@@ -25,9 +25,9 @@ VECTORDB   = "faiss"    # "faiss"   or  "chroma"
 RETRIEVAL  = "combo2"   # "combo1"  or  "combo2"
 DEVICE     = get_device()
 FILEPATHS  = [
-    "data/raw/south_asian_corpus.json",
-    "data/raw/saved_wikibook_data.json",
-    "data/raw/cuisines80.json"
+    "data/corpus/wikipedia_south_asian.json",
+    "data/corpus/wikibook_cookbook.json",
+    "data/corpus/blog_80cuisines.json"
 ]
 
 # ==============================================================
@@ -62,7 +62,7 @@ def run_json_input_output():
     print("\n" + "="*50)
     print("       CuisineRAG — ChefBot")
     print("="*50)
-    print(f"Chunker: {CHUNKER}")
+    print(f"  Chunker: {CHUNKER}")
     print(f"  Embedding : {EMBEDDING}")
     print(f"  VectorDB  : {VECTORDB}")
     print(f"  Retrieval : {RETRIEVAL}")
@@ -112,12 +112,12 @@ def run_json_input_output():
     retriever = build_retriever(RETRIEVAL, vectordb, pipeline.chunks)
     pipeline.retriever = retriever
 
-    input_file_name="data/input_payload_sample_benchmark.json"
-    output_file_name= "data/output_payload_sample_benchmark.json"
-    with open(input_file_name) as input_file:
+    input_file_path = "inputs_and_outputs/input.json"
+    output_file_path = "inputs_and_outputs/output.json"
+    with open(input_file_path) as input_file:
         query_list=json.load(input_file)['queries']
 
-    print(f"\nProcessing {len(query_list)} queries from {input_file_name}...\n")
+    print(f"\nProcessing {len(query_list)} queries from {input_file_path}...\n")
 
     results=[0]*len(query_list)
     for i,query in enumerate(query_list):
@@ -129,83 +129,14 @@ def run_json_input_output():
             "query_id":str(query_id),
             "query":str(query_text),
             "response":str(answer),
-            "retrieved_context":[{"doc_id":chunk.metadata.get('doc_id', '?'),"text":chunk.page_content} for chunk in docs]
+            "retrieved_context":[{"doc_id":str(chunk.metadata.get('chunk_id', '?')),"text":chunk.page_content} for chunk in docs]
             }
         final=dict({"results": results})
-    with open(output_file_name,'w') as output_json:
+    with open(output_file_path,'w') as output_json:
         json.dump(final, output_json, indent=2, ensure_ascii=False)
 
-    print(f"\nDone! {len(results)} results saved to {output_file_name}")
+    print(f"\nDone! {len(results)} results saved to {output_file_path}")
 
-
-
-# def main():
-#
-#     print("\n" + "="*50)
-#     print("       CuisineRAG — ChefBot")
-#     print("="*50)
-#     print(f"  Chunker   : {CHUNKER}")
-#     print(f"  Embedding : {EMBEDDING}")
-#     print(f"  VectorDB  : {VECTORDB}")
-#     print(f"  Retrieval : {RETRIEVAL}")
-#     print(f"  Device    : {DEVICE}")
-#     print("="*50 + "\n")
-#
-#     # --- build components based on config ---
-#
-#     embedder, dim = build_embedder(EMBEDDING)
-#     vectordb      = build_vectordb(VECTORDB, dim)
-#     prompt_builder = PromptTemplate()
-#     llm           = QwenLLM(device=DEVICE)
-#
-#     # --- build pipeline (retriever added after indexing) ---
-#
-#     pipeline = RAGPipeline(
-#         chunker        = chunker,
-#         embedder       = embedder,
-#         vectordb       = vectordb,
-#         retriever      = None,
-#         prompt_builder = prompt_builder,
-#         llm            = llm
-#     )
-#
-#     # --- index the cuisine data ---
-#
-#     pipeline.index_data(FILEPATHS)
-#
-#     # --- build retriever with chunks for BM25 ---
-#
-#     retriever = build_retriever(RETRIEVAL, vectordb, pipeline.chunks)
-#     pipeline.retriever = retriever
-#
-#     print("\nReady! Type your question or 'quit' to exit.\n")
-#
-#     # --- chatbot loop ---
-#
-#     while True:
-#
-#         question = input("You: ").strip()
-#
-#         if not question:
-#             continue
-#
-#         if question.lower() in ("quit", "exit", "q"):
-#             print("Goodbye!")
-#             break
-#
-#         print("\nChefBot: thinking...\n")
-#
-#         answer, docs = pipeline.query(question)
-#
-#         print(f"ChefBot: {answer}")
-#
-#         print("\n--- Retrieved chunks ---")
-#         for doc in docs:
-#             doc_id = doc.metadata.get('doc_id', '?')
-#             chunk_id = doc.metadata.get('chunk_id', '?')
-#             title = doc.metadata.get('title', '')
-#             print(f"[doc={doc_id} | {chunk_id}] ({title}) {doc.page_content[:120]}...")
-#         print("-" * 40 + "\n")
 
 
 if __name__ == "__main__":

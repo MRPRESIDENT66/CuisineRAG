@@ -1,0 +1,400 @@
+{
+  "queries": [
+    {
+      "query_id": "0",
+      "query": "What is Dosa and where does it originate from?"
+    },
+    {
+      "query_id": "1",
+      "query": "What is Samosas and where does it originate from?"
+    },
+    {
+      "query_id": "2",
+      "query": "What is Chicken Tikka Masala and where is it from?"
+    },
+    {
+      "query_id": "3",
+      "query": "What is a biryani?"
+    },
+    {
+      "query_id": "4",
+      "query": "What is anglo-Indian food?"
+    },
+    {
+      "query_id": "5",
+      "query": "What is Pongal?"
+    },
+    {
+      "query_id": "6",
+      "query": "What is Garam Masala?"
+    },
+    {
+      "query_id": "7",
+      "query": "What is upma?"
+    },
+    {
+      "query_id": "8",
+      "query": "What is ghevar usually served with?"
+    },
+    {
+      "query_id": "9",
+      "query": "What is Nihari?"
+    },
+    {
+      "query_id": "10",
+      "query": "What is Kashmiri Pink Tea?"
+    },
+    {
+      "query_id": "11",
+      "query": "What is the main fish used in Bengali cuisine?"
+    },
+    {
+      "query_id": "12",
+      "query": "What are Sri Lankan Hoppers?"
+    },
+    {
+      "query_id": "13",
+      "query": "What is Chana Dal Halwa?"
+    },
+    {
+      "query_id": "14",
+      "query": "What are the five spices in Panch Phoron?"
+    },
+    {
+      "query_id": "15",
+      "query": "What can Jains not eat?"
+    },
+    {
+      "query_id": "16",
+      "query": "What is a Kashmiri Wazwan?"
+    },
+    {
+      "query_id": "17",
+      "query": "When was tea introduced to India?"
+    },
+    {
+      "query_id": "18",
+      "query": "What does Kacchi Biryani mean?"
+    },
+    {
+      "query_id": "19",
+      "query": "What is Haleem?"
+    },
+    {
+      "query_id": "20",
+      "query": "What is a Tawa?"
+    },
+    {
+      "query_id": "21",
+      "query": "What is Tadka?"
+    },
+    {
+      "query_id": "22",
+      "query": "Is Ghee the same as clarified butter?"
+    },
+    {
+      "query_id": "23",
+      "query": "What is Jaggery?"
+    },
+    {
+      "query_id": "24",
+      "query": "I'm looking for a light savory breakfast—is Dosa a good option, and where is it from?"
+    },
+    {
+      "query_id": "25",
+      "query": "Do Samosas actually have South Asian roots, or did they come from somewhere else originally?"
+    },
+    {
+      "query_id": "26",
+      "query": "Is Vindaloo a traditional Indian dish, and what gives it that sharp flavor?"
+    },
+    {
+      "query_id": "27",
+      "query": "I read that Chicken Tikka Masala might be British—is that true?"
+    },
+    {
+      "query_id": "28",
+      "query": "How did a Persian pilaf turn into the modern-day Biryani we see today?"
+    },
+    {
+      "query_id": "29",
+      "query": "I heard about Pongal—is it a dessert or a main course, and where does it come from?"
+    },
+    {
+      "query_id": "30",
+      "query": "Where did Butter Chicken come from, and what's the secret to that rich texture?"
+    },
+    {
+      "query_id": "31",
+      "query": "What makes a Chapli Kebab different and where is it from?"
+    },
+    {
+      "query_id": "32",
+      "query": "I’ve heard Hyderabadi Biryani is the 'king'—what makes it so special?"
+    },
+    {
+      "query_id": "33",
+      "query": "Does the word 'curry' have a specific meaning, or is it a Western invention?"
+    },
+    {
+      "query_id": "34",
+      "query": "What are the most popular Pakistani rice dishes and what goes into them?"
+    },
+    {
+      "query_id": "35",
+      "query": "I’ve heard Chilli Chicken is unique—how does it compare to regular fried chicken?"
+    },
+    {
+      "query_id": "36",
+      "query": "I saw a video of street vendors chopping up roti in Sri Lanka—what is that called?"
+    },
+    {
+      "query_id": "37",
+      "query": "I’m trying to cook more legumes—what ingredients do I need for Chana Masala?"
+    },
+    {
+      "query_id": "38",
+      "query": "Is Curd Rice just plain yogurt and rice, or is there more to it?"
+    },
+    {
+      "query_id": "39",
+      "query": "What are the main differences between things like Naan, Roti, and Paratha?"
+    },
+    {
+      "query_id": "40",
+      "query": "What are the most common types of chutney I'd find in a traditional Indian home?"
+    },
+    {
+      "query_id": "41",
+      "query": "How do you go from a dry bag of lentils to a proper South Asian Dal?"
+    },
+    {
+      "query_id": "42",
+      "query": "I’m looking for a vegetarian protein—is Paneer a good substitute?"
+    },
+    {
+      "query_id": "43",
+      "query": "Which specific spices are responsible for the 'warmth' in Garam Masala?"
+    },
+    {
+      "query_id": "44",
+      "query": "If I want something milder and creamier than Tikka Masala, which should I pick?"
+    },
+    {
+      "query_id": "45",
+      "query": "I want something with a vinegary tang and high heat—is Vindaloo the right choice?"
+    },
+    {
+      "query_id": "46",
+      "query": "If I enjoy Chana Masala, will I also like Dal, or are they different?"
+    },
+    {
+      "query_id": "47",
+      "query": "What is the primary ingredient of 'Idli'?"
+    },
+    {
+      "query_id": "48",
+      "query": "What is 'Payasam'?"
+    },
+    {
+      "query_id": "49",
+      "query": "What is the difference between 'Kacchi' and 'Pukki' Biryani preparation?"
+    },
+    {
+      "query_id": "50",
+      "query": "I heard about a special tea from Kashmir that is pink and salty—how is it made?"
+    },
+    {
+      "query_id": "51",
+      "query": "What ingredients are traditionally included in Kabuli pulao alongside the rice?"
+    },
+    {
+      "query_id": "52",
+      "query": "Why is Kulfi so dense?"
+    },
+    {
+      "query_id": "53",
+      "query": "I saw a video of street vendors chopping up roti on a griddle in Sri Lanka—what's in it?"
+    },
+    {
+      "query_id": "54",
+      "query": "What cooking techniques and vegetables did the Portuguese and British introduce?"
+    },
+    {
+      "query_id": "55",
+      "query": "I want to make a traditional flatbread but I don't have a tandoor—can I make a Chapati on a regular pan?"
+    },
+    {
+      "query_id": "56",
+      "query": "What is the process of 'Tempering' (Tadka) and why is it done at the end of cooking?"
+    },
+    {
+      "query_id": "57",
+      "query": "Are Idlis healthy?"
+    },
+    {
+      "query_id": "58",
+      "query": "How do you make 'Ghee' from regular butter?"
+    },
+    {
+      "query_id": "59",
+      "query": "What gives 'Rasgulla' its spongy texture?"
+    },
+    {
+      "query_id": "60",
+      "query": "Explain the preparation difference between sweet and savory Pongal."
+    },
+    {
+      "query_id": "61",
+      "query": "How did the partition of India in 1947 affect the culinary landscape?"
+    },
+    {
+      "query_id": "62",
+      "query": "Who introduced the concept of 'Tea' as a commercial crop in South Asia?"
+    },
+    {
+      "query_id": "63",
+      "query": "Which historical empire popularized the tandoor for baking meats?"
+    },
+    {
+      "query_id": "64",
+      "query": "Is 'Anglo-Indian' food a legitimate fusion style with its own unique dishes?"
+    },
+    {
+      "query_id": "65",
+      "query": "I'm looking for a specific Pakistani beef stew that is slow-cooked overnight?"
+    },
+    {
+      "query_id": "66",
+      "query": "What is the main ingredient of 'Haleem' that gives it its porridge-like consistency?"
+    },
+    {
+      "query_id": "67",
+      "query": "Is Vindaloo a traditional Indian dish, and what gives it that sharp flavor?"
+    },
+    {
+      "query_id": "68",
+      "query": "What's the secret to Butter Chicken's rich texture?"
+    },
+    {
+      "query_id": "69",
+      "query": "What is 'Dhokla' and is it served as a main dish or a snack?"
+    },
+    {
+      "query_id": "70",
+      "query": "What is the primary difference between a Karachi-style Biryani and a Lucknawi one?"
+    },
+    {
+      "query_id": "71",
+      "query": "What vegetables did the Portuguese introduce to the Indian subcontinent?"
+    },
+    {
+      "query_id": "72",
+      "query": "What is the difference between Roti and Paratha?"
+    },
+    {
+      "query_id": "73",
+      "query": "What does the 'Kacchi' method involve in Biryani?"
+    },
+    {
+      "query_id": "74",
+      "query": "I have rice, meat, saffron, and yogurt. What South Asian food can I make?"
+    },
+    {
+      "query_id": "75",
+      "query": "I read about 'Jain Vegetarianism'—how does it change the way people cook?"
+    },
+    {
+      "query_id": "76",
+      "query": "If a diner follows strict Jain vegetarianism, which staple ingredients in Chana Masala must be removed?"
+    },
+    {
+      "query_id": "77",
+      "query": "Discuss the shift in tea production from medicinal to commercial in the 19th century."
+    },
+    {
+      "query_id": "78",
+      "query": "Analyze the role of the Mughal Empire in popularizing tandoori-style cuisine."
+    },
+    {
+      "query_id": "79",
+      "query": "Which Anglo-Indian dish is famously attributed to the UK rather than the subcontinent?"
+    },
+    {
+      "query_id": "80",
+      "query": "Explain the linguistic evolution of the term 'curry' from Dravidian roots."
+    },
+    {
+      "query_id": "81",
+      "query": "Justify why Raita is considered a functional accompaniment to spicy dishes."
+    },
+    {
+      "query_id": "82",
+      "query": "Identify the standard spices you should grind together for a Garam Masala that provides 'warmth'."
+    },
+    {
+      "query_id": "83",
+      "query": "Which Pashtun meat dish is distinguished by pomegranate seeds and its flat form?"
+    },
+    {
+      "query_id": "84",
+      "query": "How is a Karachi Biryani different from other types regarding spice and specific fruits?"
+    },
+    {
+      "query_id": "85",
+      "query": "Identify the specific community in Kerala responsible for the historical origin of Calicut Halwa."
+    },
+    {
+      "query_id": "86",
+      "query": "Explain the role of 'Chhena' in syrupy South Asian desserts."
+    },
+    {
+      "query_id": "87",
+      "query": "Describe the physical characteristics of a 'Tawa' and its utility."
+    },
+    {
+      "query_id": "88",
+      "query": "Identify the primary legume used as the structural base for Dosa."
+    },
+    {
+      "query_id": "89",
+      "query": "Why does Naan require a Tandoor for its specific texture compared to Roti?"
+    },
+    {
+      "query_id": "90",
+      "query": "Identify the specific variety of carp traditionally preferred for Bengali fish curries."
+    },
+    {
+      "query_id": "91",
+      "query": "Analyze the impact of Persian culinary traditions on the development of modern Biryani."
+    },
+    {
+      "query_id": "92",
+      "query": "Explain why Jaggery is often used in traditional sweets instead of white sugar."
+    },
+    {
+      "query_id": "93",
+      "query": "Identify the city that became the hub for tandoori cuisine post-1947."
+    },
+    {
+      "query_id": "94",
+      "query": "Which spices provide the signature 'warmth' in a Garam Masala blend?"
+    },
+    {
+      "query_id": "95",
+      "query": "Identify the specific region where 'Haleem' is most culturally prominent."
+    },
+    {
+      "query_id": "96",
+      "query": "What is the difference between Garam Masala and Chaat Masala?"
+    },
+    {
+      "query_id": "97",
+      "query": "Identify the specific historical context for the creation of 'Mulligatawny' soup."
+    },
+    {
+      "query_id": "98",
+      "query": "Which Indo-Chinese dish uses battered chicken in a soy and green chilli sauce?"
+    }
+  ]
+}
