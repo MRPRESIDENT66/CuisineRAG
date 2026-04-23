@@ -137,10 +137,8 @@ def evaluate_rag_pipeline(
         )
 
         # ── GENERATION: SacreBLEU + ChrF3++ ──────────────────────────────────
-        hyp_kw  = _extract_keywords(response)
-        ref_kw  = _extract_keywords(ref)
-        sacre_b = sacre_bleu.sentence_score(hyp_kw, [ref_kw]).score
-        chrf    = chrf_scorer.sentence_score(hyp_kw, [ref_kw]).score
+        sacre_b = sacre_bleu.sentence_score(response, [ref]).score
+        chrf    = chrf_scorer.sentence_score(response, [ref]).score
 
         # ── GENERATION: BERTScore ─────────────────────────────────────────────
         with open(os.devnull, "w") as devnull:

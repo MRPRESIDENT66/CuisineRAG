@@ -1,0 +1,598 @@
+{
+  "results": [
+    {
+      "query_id": "0",
+      "query": "What is Dosa and where does it originate from?",
+      "response": "Dosa is a popular Indian dish originating from the state of Andhra Pradesh in India. It consists of a batter made with rice flour that is deep-fried into small balls or patties. The name \"dosa\" comes from the Telugu word \"dusam\", which means \"to eat\".",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "1",
+      "query": "What is Samosas and where does it originate from?",
+      "response": "Samosas are a popular dish originating from India. They typically consist of ground meat (such as chicken or beef) cooked in a savory batter and served with potatoes, onions, and spices. The origins can trace back to various Indian regions but have evolved significantly over time, becoming more widely recognized in many parts of the world.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "2",
+      "query": "What is Chicken Tikka Masala and where is it from?",
+      "response": "Chicken Tikka Masala is a popular Indian dish originating from Pakistan. It typically includes marinated chicken breast served over a bed of spices and vegetables, often with yogurt sauce on top.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "3",
+      "query": "What is a biryani?",
+      "response": "Biryani is a popular Indian dish that consists of rice cooked with various spices and vegetables, typically served over a bed of aromatic lentils or chickpeas. It can be made with a variety of ingredients such as chicken, meat, fish, or even vegetables like carrots, potatoes, and peas. The dish is known for its rich flavors and complex textures, making it a beloved staple in Indian cooking.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "4",
+      "query": "What is anglo-Indian food?",
+      "response": "Anglo-Indian food is a fusion cuisine that combines elements from British and Indian cuisines. It often features dishes like curry, biryani, naan bread, and tandoori chicken. This type of cooking has gained popularity in recent years due to its versatility and the diverse cultural influences it draws from.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "5",
+      "query": "What is Pongal?",
+      "response": "Pongal is a traditional Indian festival celebrated on the first day of the month of Chhoti Holi, which marks the victory of Lord Vishnu over his demon opponent Ravana. It involves the preparation of various dishes to celebrate this occasion. The main dish is usually a variety of rice dishes, including idli (rice porridge), dosa (flatbread), and chana dal (lentil curry). Additionally, it includes sweets like kheer (sweetened milk) and sambar (milk-based soup).",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "6",
+      "query": "What is Garam Masala?",
+      "response": "Garam Masala is a spice blend commonly used in Indian cooking, particularly in curries and other dishes. It includes a combination of cumin, coriander, turmeric, cardamom, cinnamon, cloves, and nutmeg. This blend adds warmth, depth, and flavor to various dishes, enhancing their aroma and taste.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "7",
+      "query": "What is upma?",
+      "response": "Upma is a popular South Asian breakfast dish consisting of flatbread (torta) topped with various spices and ingredients like onions, tomatoes, coriander, cumin, and yogurt. It can be served hot or cold and is often enjoyed as a side dish or appetizer.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "8",
+      "query": "What is ghevar usually served with?",
+      "response": "Ghevar is a traditional Indian dish that is typically served with rice or naan bread. It is often accompanied by tandoori chicken or lamb, which are grilled or roasted to perfection before being served on the side.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "9",
+      "query": "What is Nihari?",
+      "response": "Nihari is a traditional South Asian dish that originated from Pakistan. It consists of ground beef or mutton mixed with onions, garlic, ginger, coriander, cumin, turmeric, and chili powder. The meat is simmered slowly over low heat until it becomes tender and flavorful, then served with rice, vegetables, and sometimes yogurt or yogurt-based sauces.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "10",
+      "query": "What is Kashmiri Pink Tea?",
+      "response": "Kashmiri Pink Tea is a traditional Indian tea made from fermented black tea leaves. It has a unique flavor profile that includes hints of cardamom, saffron, and rose petals. This tea is often served as a light breakfast or afternoon pick-me-up, making it popular among those who enjoy aromatic teas.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "11",
+      "query": "What is the main fish used in Bengali cuisine?",
+      "response": "The main fish used in Bengali cuisine is cod (codfish). Cod is a popular choice due to its mild flavor and versatile cooking methods.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "12",
+      "query": "What are Sri Lankan Hoppers?",
+      "response": "Sri Lankan Hoppers are a popular street food item originating from Sri Lanka. They consist of flatbread (known as \"hoppers\") filled with various spices, herbs, and sometimes meat or vegetables. These dishes are typically served on a plate and can be enjoyed hot or cold.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "13",
+      "query": "What is Chana Dal Halwa?",
+      "response": "Chana dal halwa is a popular Indian dish that combines chickpeas (dal) with semolina flour or wheat flour to make a sweet and creamy dessert. It's often served as a snack or a light breakfast.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "14",
+      "query": "What are the five spices in Panch Phoron?",
+      "response": "Panch Phoron is a traditional Indian spice blend that includes several key spices. The five main ingredients are:\n\n1. Cumin seeds (Sahmi)\n2. Coriander seeds (Dhania)\n3. Turmeric powder (Tumma)\n4. Cardamom pods (Kadhi)\n5. Cloves (Jalebi)\n\nThese spices are used in various Indian dishes for their unique flavors and medicinal properties.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "15",
+      "query": "What can Jains not eat?",
+      "response": "Jains are primarily vegetarian and do not consume meat or poultry. They also abstain from certain types of seafood, including fish and shellfish. Additionally, they may avoid some dairy products due to dietary restrictions.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "16",
+      "query": "What is a Kashmiri Wazwan?",
+      "response": "A Kashmiri Wazwan is a traditional dish from the state of Jammu and Kashmir, India. It is a savory stew made with various spices and ingredients such as chicken, lamb, or beef, along with vegetables like carrots, potatoes, and cauliflower. The main components include yogurt, milk, and spices like cumin, coriander, turmeric, and garam masala. This dish is often served over rice or naan bread and can be enjoyed during festive occasions or special celebrations.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "17",
+      "query": "When was tea introduced to India?",
+      "response": "Tea was first introduced to India by Portuguese explorers around 1500 AD.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "18",
+      "query": "What does Kacchi Biryani mean?",
+      "response": "Kacchi Biryani is a popular Indian dish that translates to \"chickpea rice\" or \"rice with chickpeas.\" It typically consists of a creamy rice dish served over a bed of cooked chickpeas, often seasoned with spices like cumin, coriander, and turmeric. This dish is known for its rich flavor and creamy texture, making it a beloved part of many Indian households' dining tables.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "19",
+      "query": "What is Haleem?",
+      "response": "Haleem is a type of Indian dish that originated from the state of Gujarat in India. It typically consists of a meat or vegetable base served with rice or lentils. Haleem can be made spicy or mild, depending on personal preference.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "20",
+      "query": "What is a Tawa?",
+      "response": "A tawa is a traditional Indian dish that originated from Gujarat. It consists of a flatbread made with wheat flour, often served as a side dish or main course. The name \"tawa\" comes from the Hindi word \"tavā,\" which means \"flatbread.\" This dish typically includes vegetables like potatoes, onions, and tomatoes, along with spices such as cumin, coriander, and turmeric. It's commonly enjoyed with yogurt, curds, or chutneys.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "21",
+      "query": "What is Tadka?",
+      "response": "Tadka is a traditional Indian dish that originated from the state of Gujarat in India. It typically consists of a mixture of spices and vegetables simmered in coconut milk or yogurt. The dish is often served with rice or naan bread.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "22",
+      "query": "Is Ghee the same as clarified butter?",
+      "response": "No, ghee is not the same as clarified butter. Ghee refers to the solidified fat from milk or other dairy products that has been left to mature without being heated, while clarified butter is a type of butter made by removing the water content during the curdling process.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "23",
+      "query": "What is Jaggery?",
+      "response": "Jaggery is a sweet, crystalline sugar that is made from ground jaggis, which are dried palm nuts. It has a unique flavor and texture that can be used as a substitute for table sugar or added to recipes for its sweetness.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "24",
+      "query": "I'm looking for a light savory breakfast—is Dosa a good option, and where is it from?",
+      "response": "Yes, Dosa is a popular light savory breakfast dish that can be enjoyed as a side or main course. It originates from the Indian state of Andhra Pradesh, particularly in the city of Visakhapatnam. Dosa is typically made with a batter made from flour, water, and spices such as garam masala, cumin seeds, and chili powder. The batter is then fried until golden brown to create crispy, flavorful portions. You can find Dosa options at various restaurants and markets across India, though its origins suggest it may have been introduced there by travelers or immigrants.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "25",
+      "query": "Do Samosas actually have South Asian roots, or did they come from somewhere else originally?",
+      "response": "Samosas originated in India, particularly in the city of Mumbai, where they were first introduced to the world through Indian restaurants and street vendors. The exact origins of samosas can be traced back to the 19th century, but their modern form as we know it today has its roots in the Indian subcontinent.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "26",
+      "query": "Is Vindaloo a traditional Indian dish, and what gives it that sharp flavor?",
+      "response": "Yes, Vindaloo is indeed a traditional Indian dish. It has a distinctive flavor due to its combination of spices such as cumin, coriander, turmeric, cardamom, and cinnamon. The sharpness comes from the use of these spices, which when combined with each other and hot oil, creates a unique, aromatic taste. This combination enhances the overall flavor profile of Vindaloo, making it a popular and flavorful dish in India.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "27",
+      "query": "I read that Chicken Tikka Masala might be British—is that true?",
+      "response": "No, Chicken Tikka Masala is not typically associated with British cuisine. It originates from Pakistan and is a popular Indian dish.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "28",
+      "query": "How did a Persian pilaf turn into the modern-day Biryani we see today?",
+      "response": "The Persian pilaf turned into the modern-day Biryani through several centuries of culinary evolution. Initially, it was a simple dish made with rice, spices, and herbs. However, over time, various ingredients were added to enhance flavor and texture, leading to the creation of what we now know as Biryani.\n\nIn the 19th century, the process of adding more spices and ingredients to make Biryani began. The addition of meat (often lamb or beef) became common, which is why Biryani is often referred to as \"meat\" or \"mutton\" biryani. This change allowed for a richer, more flavorful dish that could be enjoyed by both men and women.\n\nOver the years, the technique of cooking the rice slowly in a slow cooker has also been adapted, resulting in the modern-day Biryani we enjoy today. Each region of India has its unique ways of preparing and serving this dish, but the basic principles remain the same – simmering rice with aromatic spices until it becomes fragrant and then slowly cooking it in a slow cooker to achieve the desired consistency and flavors.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "29",
+      "query": "I heard about Pongal—is it a dessert or a main course, and where does it come from?",
+      "response": "Pongal is primarily a dessert that comes from India. It is traditionally served as a sweet treat on Diwali, the festival of lights, which marks the end of the harvest season. The name \"Pongal\" translates to \"yearling cattle\" in Hindi, referring to the large cows that were used for ploughing fields during the harvest season. This tradition has evolved into a festive occasion with various dishes and sweets prepared by families around the country.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "30",
+      "query": "Where did Butter Chicken come from, and what's the secret to that rich texture?",
+      "response": "Butter Chicken originated in India, specifically in the city of Mumbai. The secret to its rich texture lies in the use of a unique blend of spices called \"Garam Masala.\" This combination of ingredients is believed to enhance the flavor and aroma of the dish. It involves finely ground cumin, coriander, turmeric, garam masala, and sometimes other spices like cardamom or cinnamon. The result is a savory, meaty chicken dish with a rich, deep flavor that is often enjoyed by locals and tourists alike.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "31",
+      "query": "What makes a Chapli Kebab different and where is it from?",
+      "response": "A Chapli Kebab is unique because it uses a flatbread called chapati as the base for the meat filling. It originates from Pakistan, specifically from the city of Lahore in Punjab province. The dish is typically served with a side of yogurt or lemon curd to enhance its flavor.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "32",
+      "query": "I've heard Hyderabadi Biryani is the 'king'—what makes it so special?",
+      "response": "Hyderabadi Biryani stands out as a unique dish because it combines elements from various Indian cuisines, including Persian, Gujarati, and Bengali influences. The key to its uniqueness lies in its rich, aromatic spices that complement each other beautifully. It features a blend of flavors such as saffron, cardamom, cinnamon, and nutmeg, which enhance the depth of flavor without overpowering others. Additionally, the slow cooking method used in Hyderabadi Biryani allows for the natural development of these flavors over time, resulting in a dish that is both comforting and flavorful. This combination of ingredients and techniques creates a dish that is not only delicious but also culturally significant.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "33",
+      "query": "Does the word 'curry' have a specific meaning, or is it a Western invention?",
+      "response": "The term \"curry\" has both a specific meaning within Indian cuisine and also a broader usage that originated from Southeast Asia. In India, curry refers to a combination of spices and vegetables cooked with meat or fish, typically served over rice. It is a staple dish in many regions of India, particularly in the southern states like Kerala and Tamil Nadu.\n\nIn contrast, the term \"curry\" can be used more broadly in the culinary world as a general term for any food prepared by simmering ingredients together until they become soft and fragrant. This broad usage extends beyond just Indian cuisine and includes dishes from various parts of the world.\n\nSo while there is a specific use in Indian cooking, the term \"curry\" is not limited to this context; it has evolved into a versatile culinary concept across different cultures.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "34",
+      "query": "What are the most popular Pakistani rice dishes and what goes into them?",
+      "response": "The most popular Pakistani rice dishes include:\n\n1. Masala Rice (Masala)\n2. Chana Masala (Chicken Rice)\n3. Tandoori Masala (Tandoori Chicken Rice)\n4. Vegetable Masala (Vegetable Rice)\n5. Lamb Masala (Lamb Rice)\n\nThese dishes typically use a variety of spices such as cumin, coriander, turmeric, garam masala, saffron, and cardamom to create unique flavors. The ingredients vary widely depending on regional preferences and availability, but they all share similarities in their rich, aromatic textures and flavorful base.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "35",
+      "query": "I've heard Chilli Chicken is unique—how does it compare to regular fried chicken?",
+      "response": "Chilli Chicken is known for its unique blend of spicy flavors that complement the tender texture of fried chicken. It often includes a variety of spices such as cumin, paprika, chili powder, and garlic, which gives it a distinct heat profile. This combination can make it more appealing to those who prefer a spicy kick without overpowering the chicken's natural sweetness. Regular fried chicken, on the other hand, typically lacks the depth of flavor from the spices used in Chilli Chicken.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "36",
+      "query": "I saw a video of street vendors chopping up roti in Sri Lanka—what is that called?",
+      "response": "Roti is commonly known as \"roti\" in Sri Lanka. It is a flat bread made from flour and water, often served with curries or as a snack. The term \"roti\" comes from the Tamil word for \"flatbread,\" which reflects its traditional shape.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "37",
+      "query": "I'm trying to cook more legumes—what ingredients do I need for Chana Masala?",
+      "response": "For making Chana Masala, you'll need:\n\n1. 2 tablespoons of oil or ghee\n2. 4 cups of chickpeas (cooked)\n3. 1/2 cup of tomatoes (canned or fresh)\n4. 1 onion (finely chopped)\n5. 1 green bell pepper (chopped)\n6. 1 red chili (chopped)\n7. 1 teaspoon of cumin seeds\n8. 1 teaspoon of coriander seeds\n9. Salt to taste\n\nYou can also add other spices like turmeric, ginger, garlic powder, and paprika as per preference. Remember to marinate the chickpeas overnight before cooking them. Enjoy your meal!",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "38",
+      "query": "Is Curd Rice just plain yogurt and rice, or is there more to it?",
+      "response": "Curd rice typically refers to a dish that combines curds from milk with rice. While this combination can be quite flavorful, it doesn't necessarily mean it's just plain yogurt and rice. It might incorporate other ingredients like spices, herbs, or even vegetables for added texture and flavor.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "39",
+      "query": "What are the main differences between things like Naan, Roti, and Paratha?",
+      "response": "Naan is a flatbread made from wheat flour that is often served as a side dish or breakfast item. It has a soft, chewy texture and can be used to make various dishes such as naan bread, roti, and paratha.\n\nRoti is a round flatbread made from semolina flour that is popular for its crispy exterior and fluffy interior. It is typically used as a snack or as part of a meal.\n\nParatha is a type of flatbread made from wheat flour that is similar to naan but with a slightly different texture. It is often served as a side dish or on its own as a snack.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "40",
+      "query": "What are the most common types of chutney I'd find in a traditional Indian home?",
+      "response": "In traditional Indian kitchens, chutneys are commonly used to add flavor to various dishes. Some of the most popular types include:\n\n1. **Kabuli Chutney**: A spicy and tangy chutney that is often served with chicken or meat dishes.\n\n2. **Garam Masala Chutney**: Known for its rich, nutty flavor, it pairs well with curries and other Indian dishes.\n\n3. **Mango Chutney**: This sweet and sour chutney is popular in many parts of India, especially in southern regions like Kerala.\n\n4. **Lassi Chutney**: A creamy, yogurt-based chutney that adds a light touch to soups and stews.\n\n5. **Chana Masala Chutney**: Made from chickpeas, this chutney has a slightly bitter taste and is often used in curries.\n\n6. **Punjabi Chutney**: A spicy and aromatic chutney that is popular in Punjab, particularly in Lahore.\n\n7. **Samosa Chutney**: Often used as a dip or spread on samosas, these chutneys have a unique blend of flavors.\n\n8. **Turmeric Chutney**: A flavorful chutney made from turmeric",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "41",
+      "query": "How do you go from a dry bag of lentils to a proper South Asian Dal?",
+      "response": "To transform a dry bag of lentils into a proper South Asian dal, follow these steps:\n\n1. **Preheat Your Oven**: Ensure your oven is preheated to 375°F (190°C) for best results.\n\n2. **Prepare the Lentils**: Rinse the lentils thoroughly under cold water to remove any dirt or debris. Drain them well if they're not already drained.\n\n3. **Combine Lentils with Water**: In a large pot, combine the rinsed lentils with enough water to cover them by about an inch. Bring the mixture to a boil over medium-high heat.\n\n4. **Simmer the Lentils**: Once boiling, reduce the heat to low and let the lentils simmer for about 30 minutes. This process will help tenderize the lentils and release their natural flavors.\n\n5. **Add Cooking Liquid**: After 30 minutes, add cooking liquid such as vegetable broth, yogurt, or coconut milk to the lentils. Stir gently to ensure all ingredients are combined evenly.\n\n6. **Cook the Dal**: Continue simmering until the lentils are soft and tender, which usually takes around 1 hour. If desired, you can add more liquid during this time to achieve the desired consistency",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "42",
+      "query": "I'm looking for a vegetarian protein—is Paneer a good substitute?",
+      "response": "Paneer is indeed a great substitute for meat or fish when it comes to vegetarians. It provides a similar texture and flavor profile that can be used in many dishes. However, if you're looking for complete vegetarian alternatives, consider options like tofu, tempeh, lentils, chickpeas, or seitan. Each has its unique characteristics and nutritional benefits depending on what you prefer.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "43",
+      "query": "Which specific spices are responsible for the 'warmth' in Garam Masala?",
+      "response": "Garam masala is primarily made with a combination of black pepper (pippa), cumin seeds (kacchi), cardamom pods (manglika), cinnamon sticks (churni), cloves (jaggery), turmeric powder (turmeric), and saffron threads (saffron). These spices contribute to its warm, aromatic flavor profile.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "44",
+      "query": "If I want something milder and creamier than Tikka Masala, which should I pick?",
+      "response": "For a milder and creamier version of Tikka Masala, you might consider trying the following options:\n\n1. **Chana Masala**: This is a popular Indian dish that can be made with less spice to achieve a milder flavor profile.\n\n2. **Pakora Masala**: It’s a simpler preparation of Tikka Masala where all spices are reduced to a mild level.\n\n3. **Veggie Masala**: You could also try making a vegetable-based masala, such as spinach or pumpkin, which can add a subtle yet flavorful base to your dish.\n\n4. **Garam Masala**: A blend of spices like cumin, coriander, turmeric, and cardamom, this can provide a more neutral and creamy taste.\n\nEach of these preparations will help achieve a milder and creamier Tikka Masala without compromising on its rich and aromatic qualities.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "45",
+      "query": "I want something with a vinegary tang and high heat—is Vindaloo the right choice?",
+      "response": "Vindaloo is a dish that combines a tangy and spicy flavor profile with high heat. It typically involves coconut milk, spices like cumin, coriander, and turmeric, along with various herbs such as basil or cilantro. While it has a unique taste, it may not be suitable for everyone due to its strong flavors and potentially higher heat levels compared to some other dishes on this list.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "46",
+      "query": "If I enjoy Chana Masala, will I also like Dal, or are they different?",
+      "response": "Yes, both Chana Masala and Dal are popular Indian dishes that can be enjoyed together. They complement each other well as they both feature lentils, which are a staple ingredient in many Indian recipes. Both dishes offer a rich and flavorful base for cooking with various spices and herbs.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "47",
+      "query": "What is the primary ingredient of 'Idli'?",
+      "response": "The primary ingredient of Idli is rice.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "48",
+      "query": "What is 'Payasam'?",
+      "response": "Payasam is a traditional South Indian dessert made from coconut milk, spices, and sometimes ghee (clarified butter). It's often served as a light appetizer or snack. Payasam is popular in Kerala and Tamil Nadu regions of India.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "49",
+      "query": "What is the difference between 'Kacchi' and 'Pukki' Biryani preparation?",
+      "response": "The main difference between Kacchi and Pukki biryani preparations lies in their cooking methods:\n\n1. **Kacchi**: This is a traditional Indian dish that originated from the state of Gujarat. It involves slow-cooking rice over a low flame until it becomes fragrant and slightly browned. The rice is then mixed with spices like cumin seeds, cardamom, and cinnamon to create a rich and aromatic flavor.\n\n2. **Pukki**: This is another name for Kacchi, but it refers to a specific type of rice used in this dish. Pukki is typically made from long-grain white rice or basmati rice, which has a longer cooking time and a more robust flavor compared to Kacchi.\n\nIn summary, Kacchi is characterized by its slow-cooked rice, while Pukki is specifically made from long-grain white rice, giving it a distinct flavor profile.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "50",
+      "query": "I heard about a special tea from Kashmir that is pink and salty—how is it made?",
+      "response": "The special tea you're referring to is likely a Kashmiri black tea, which has a distinctive pink color due to the presence of tannins. It is also known for its salty taste, which comes from the high concentration of caffeine and other minerals present in the leaves. This type of tea is often enjoyed with milk or sugar, depending on personal preference.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "51",
+      "query": "What ingredients are traditionally included in Kabuli pulao alongside the rice?",
+      "response": "In traditional Kabuli pulao, common ingredients include potatoes (kheer), peas (chana masala), carrots (pachadi), onions (garlic masala), and spices such as cumin, coriander, turmeric, and garam masala. Additionally, various herbs like rosemary, thyme, and bay leaves may be added to enhance the flavor profile.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "52",
+      "query": "Why is Kulfi so dense?",
+      "response": "Kulfi, a traditional South Indian dish, is known for its dense texture due to several factors:\n\n1. High moisture content: Kulfi is made with a high proportion of water, which means it contains more liquid than other curries.\n\n2. Thick consistency: The thick sauce layer on top creates a denser structure, allowing flavors to penetrate deeper into the food.\n\n3. Texture from cooking method: The slow-cooked process adds extra moisture to the mixture, making it thicker.\n\n4. Flavor concentration: The rich spices and herbs used contribute significantly to the dense flavor profile.\n\n5. Cooking time: The longer it cooks (usually 2-3 hours), the more flavorful and dense the kulfi becomes.\n\n6. Texture from preparation: The slow simmering technique helps create a smooth, creamy texture that holds onto the flavors better.\n\nThese factors combine to make Kulfi a dense, flavorful dish that enhances the overall experience when consumed.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "53",
+      "query": "I saw a video of street vendors chopping up roti on a griddle in Sri Lanka—what's in it?",
+      "response": "In the video of street vendors chopping up roti on a griddle in Sri Lanka, there is roti (a type of flatbread).",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "54",
+      "query": "What cooking techniques and vegetables did the Portuguese and British introduce?",
+      "response": "The Portuguese introduced several cooking techniques such as frying, boiling, and roasting to their dishes. They also used a variety of vegetables like potatoes, onions, peppers, and tomatoes. The British introduced methods like grilling, baking, and sautéing, often with herbs and spices for flavor enhancement.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "55",
+      "query": "I want to make a traditional flatbread but I don't have a tandoor—can I make a Chapati on a regular pan?",
+      "response": "Yes, you can make a Chapati on a regular pan if you're not using a tandoor. You'll need a regular pan or a non-stick skillet for this. The key is to use a small amount of oil (about 1 tablespoon) to coat the bottom of the pan before adding the flour mixture. Cook until the edges start to brown, then flip the chapati over and cook the other side until golden brown. Adjust the heat as needed to ensure even cooking across the entire surface. This method allows you to achieve a crispy crust without needing a tandoor.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "56",
+      "query": "What is the process of 'Tempering' (Tadka) and why is it done at the end of cooking?",
+      "response": "Tempering (Tadka) is a technique used in Indian cooking to enhance the texture and consistency of food items. It involves heating the dish slightly before serving to create a more uniform and tender texture throughout. This method is particularly effective for dishes that require high heat or when preparing ingredients that have been cooked on stovetops.\n\nThe purpose of tempering is to ensure that the food does not become overcooked during cooking, which can lead to tough textures or mushy results. By heating the dish just enough to bring out its natural flavors without burning them, tempering helps maintain the desired level of tenderness and ensures that the final product is deliciously cooked.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "57",
+      "query": "Are Idlis healthy?",
+      "response": "Idlis, also known as idli or dosa, are a popular Indian dish that can be considered healthy when prepared properly. They are typically made with rice flour and served hot. While they may not be the most nutritious meal on its own, they can be part of a balanced diet if cooked well. The key is to use whole grains like rice for their fiber content, which helps keep you full longer. Additionally, adding spices like garam masala or turmeric can enhance flavor without being too heavy. Overall, while they might not be the healthiest option, they do provide essential nutrients and can be enjoyed in moderation.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "58",
+      "query": "How do you make 'Ghee' from regular butter?",
+      "response": "To make ghee from regular butter, follow these steps:\n\n1. **Preheat Your Pan**: Start by preheating a non-stick skillet or frying pan over medium heat.\n\n2. **Melt Butter**: Pour in the melted butter into the hot pan. Allow it to melt slowly while stirring occasionally until it starts to foam slightly.\n\n3. **Add Ghee Powder**: Gradually add ghee powder to the melted butter. The powder should be mixed well with the butter to ensure even distribution.\n\n4. **Cook Until Ghee Is Rich**: Continue cooking the mixture for about 5-7 minutes, stirring frequently, until the ghee has thickened and turned golden brown.\n\n5. **Remove from Heat**: Once the ghee is fully cooked, remove the pan from the heat. Let it cool down slightly before serving.\n\n6. **Strain**: If desired, strain the ghee through a fine-mesh sieve to remove any remaining solids.\n\nThis process yields a rich, creamy ghee that can be used as a base for various dishes like curries, masala dishes, or as a flavor enhancer in other recipes.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "59",
+      "query": "What gives 'Rasgulla' its spongy texture?",
+      "response": "The \"Rasgulla\" dish from Indian cuisine is known for its unique texture due to a combination of factors:\n\n1. **Milk**: The dish begins with a creamy base made with milk or cream, which helps to absorb the moisture from the rice.\n\n2. **Ghee (clarified butter)**: Ghee is used as a thickener that helps to bind the milk and rice together into a cohesive mass.\n\n3. **Chickpeas**: Chickpeas provide protein and fiber, helping to hold the rice and enhance the overall texture.\n\n4. **Spices and Seasonings**: Various spices and seasonings like cumin, coriander, turmeric, and garam masala contribute to the flavor profile, further enhancing the texture.\n\n5. **Cooking Method**: The dish is typically cooked over low heat until it becomes slightly golden brown, allowing the flavors to meld together and create the characteristic sponginess.\n\n6. **Texture Development**: As the rice cooks, it absorbs more water from the milk, creating a sponge-like texture throughout the dish.\n\nCombining these elements results in a dish that is both flavorful and satisfyingly textured, making it a popular choice for many Indian households.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "60",
+      "query": "Explain the preparation difference between sweet and savory Pongal.",
+      "response": "Sweet Pongal is prepared with a combination of rice and vegetables like potatoes, peas, and carrots. The rice is cooked until it becomes soft and fluffy, then mixed with the vegetables to create a creamy sauce that is served over rice. This dish typically includes coconut milk or yogurt as a base for the sauce.\n\nSavory Pongal, on the other hand, uses a combination of rice and lentils. The lentils are cooked separately from the rice, which adds a rich flavor profile to the dish. The lentils are usually seasoned with spices such as cumin, coriander, and turmeric. They are then mixed with the rice to create a flavorful and hearty meal.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "61",
+      "query": "How did the partition of India in 1947 affect the culinary landscape?",
+      "response": "The partition of India in 1947 had a significant impact on the culinary landscape. It led to the creation of two separate nations, India and Pakistan, each with its own distinct cuisines. This separation caused conflicts between Hindus and Muslims, leading to various food traditions that have evolved over time.\n\nSome key points about how this affected the culinary landscape:\n\n1. **Cuisine Diversity**: The division created new culinary opportunities for different regions within India, resulting in diverse regional cuisines such as Indian cuisine (specifically Indian dishes) and Pakistani cuisine.\n\n2. **Regional Influences**: Different regions developed their own unique flavors based on local ingredients and cooking techniques. For example, the cuisine of Punjab, a region in North India, is known for its spicy curries, while the cuisine of Bengal, in West Bengal, focuses on rice-based dishes.\n\n3. **Cultural Fusion**: The conflict between Hindus and Muslims often resulted in cultural fusion, where elements from both cultures were incorporated into traditional recipes. This led to the development of new dishes that blend Hindu and Muslim influences.\n\n4. **Economic Impact**: The economic disparities between India and Pakistan also influenced the culinary scene. Areas with more resources and infrastructure might have been better equipped to produce certain types of cuisine, which could",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "62",
+      "query": "Who introduced the concept of 'Tea' as a commercial crop in South Asia?",
+      "response": "The concept of 'Tea' as a commercial crop in South Asia was introduced by the British East India Company.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "63",
+      "query": "Which historical empire popularized the tandoor for baking meats?",
+      "response": "The historical empire that popularized the tandoor for baking meats is the Mughal Empire.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "64",
+      "query": "Is 'Anglo-Indian' food a legitimate fusion style with its own unique dishes?",
+      "response": "Yes, \"Anglo-Indian\" is indeed a legitimate fusion style that incorporates elements from both Anglo-Saxon and Indian cuisines. It combines flavors, ingredients, and cooking techniques to create dishes that reflect the cultural influences of these two regions. This fusion style often features dishes like curry, naan bread, and tandoori chicken, which have become staples in many Indian households around the world.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "65",
+      "query": "I'm looking for a specific Pakistani beef stew that is slow-cooked overnight?",
+      "response": "Certainly! You might want to try the \"Gulab Jamun\" or \"Kheer.\" Both are hearty and flavorful dishes that can be prepared slowly over night. For Gulab Jamun, you'll need ingredients like milk, butter, sugar, and spices such as cardamom, cinnamon, and saffron. For Kheer, you'll use milk, sugar, ghee (clarified butter), and various fruits like mangoes, bananas, or jaggery. Both recipes are rich in flavors and can be enjoyed both hot and cold.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "66",
+      "query": "What is the main ingredient of 'Haleem' that gives it its porridge-like consistency?",
+      "response": "The main ingredient of Haleem that gives it its porridge-like consistency is rice.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "67",
+      "query": "Is Vindaloo a traditional Indian dish, and what gives it that sharp flavor?",
+      "response": "Yes, Vindaloo is indeed a traditional Indian dish. It has a distinctive taste due to its combination of spices such as cumin, coriander, turmeric, cardamom, cinnamon, and cloves. The combination of these spices creates a unique blend that contributes to the dish's sharp, aromatic flavor profile. This combination helps to enhance the overall texture and depth of the dish, making it a popular choice for many Indian restaurants.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "68",
+      "query": "What's the secret to Butter Chicken's rich texture?",
+      "response": "The secret to Butter Chicken's rich texture lies in its slow-cooked meat that is marinated with a blend of spices and herbs before being simmered slowly over a fire until it becomes tender and flavorful. This method allows for maximum absorption of flavors from the marinade, resulting in a juicy and satisfying dish.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "69",
+      "query": "What is 'Dhokla' and is it served as a main dish or a snack?",
+      "response": "Dhokla is a traditional South Indian dish that originated from Dhokla, a town in the state of Gujarat, India. It is primarily prepared with ground beef, spices like cumin, coriander, turmeric, and garam masala, along with various vegetables such as potatoes, carrots, and cauliflower. The dish is typically eaten as a main course during special occasions or celebrations. It can also be enjoyed as a snack after meals.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "70",
+      "query": "What is the primary difference between a Karachi-style Biryani and a Lucknawi one?",
+      "response": "The main difference lies in the preparation method and the spices used. A Karachi-style biryani typically involves slow cooking with aromatic spices like cumin, coriander, turmeric, and saffron, while a Lucknawi biryani uses quick-cooking techniques that often include meat or fish cooked in a spicy sauce over a hot stove.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "71",
+      "query": "What vegetables did the Portuguese introduce to the Indian subcontinent?",
+      "response": "The Portuguese introduced several vegetables to the Indian subcontinent, including tomatoes, peppers, cucumbers, and potatoes.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "72",
+      "query": "What is the difference between Roti and Paratha?",
+      "response": "Roti and Paratha are both types of flatbread used in Indian cooking, but they have distinct differences:\n\n1. **Shape**: Rotis are typically round or oval-shaped, while parathas are square or rectangular.\n\n2. **Texture**: Rotis are generally softer and more flaky than parathas, with a chewy texture due to their thin crust.\n\n3. **Cooking Method**: Rotis are often baked in the oven, while parathas can be fried or grilled.\n\n4. **Use**: Rotis are commonly used for breakfast, lunch, and dinner, whereas parathas are more versatile and can be prepared as part of a meal or served separately.\n\n5. **Variety**: The choice between rotis and parathas depends on personal preference and dietary needs.\n\n6. **Historical Context**: In some regions, particularly in Punjab and Uttar Pradesh, parathas are more widely consumed, though this varies by region.\n\nUnderstanding these distinctions helps in selecting the right type of flatbread based on the specific recipe or context of the dish.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "73",
+      "query": "What does the 'Kacchi' method involve in Biryani?",
+      "response": "The 'Kacchi' method is a traditional technique used to prepare biryani, which involves several steps that enhance the flavor and texture of the dish. Here’s what it typically includes:\n\n1. **Chopping**: The first step is to chop the vegetables into small pieces or chunks.\n\n2. **Grilling**: After chopping, the vegetables are grilled until they become crispy and tender.\n\n3. **Frying**: The chopped vegetables are then fried in oil until golden brown.\n\n4. **Sautéing**: A small amount of oil is added to the pan, and the chopped vegetables are sautéed for about 5-7 minutes until they release their moisture and become fragrant.\n\n5. **Adding Rice**: Next, rice is added to the pan along with some water (or broth) and a pinch of salt.\n\n6. **Cooking**: The rice is cooked by adding more water as needed, stirring occasionally, until it reaches the desired consistency.\n\n7. **Baking**: Finally, the rice is baked in the oven until it becomes golden brown and slightly crispy on top.\n\n8. **Seasoning**: The entire process is finished with a final sprinkle of turmeric, cumin seeds, and sometimes a little salt and pepper.\n\nThis method allows",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "74",
+      "query": "I have rice, meat, saffron, and yogurt. What South Asian food can I make?",
+      "response": "Based on the ingredients you provided—rice, meat (which could be beef or lamb), saffron, and yogurt—you might consider making a vegetarian curry with these options. A simple vegetarian curry recipe that incorporates all the required items would be:\n\n1. Cook the rice according to package instructions.\n2. In a large pot, sauté the meat (beef or lamb) until browned.\n3. Add the saffron to the pot and stir well.\n4. Pour in the yogurt and mix well.\n5. Gradually add the cooked rice to the sauce, stirring constantly to prevent burning.\n6. Bring the mixture to a boil, then reduce heat and let it simmer for about 20-30 minutes, or until the rice is tender.\n\nThis dish combines the richness of rice with the subtle sweetness of saffron and the savory flavors of meat, creating a comforting and flavorful meal.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "75",
+      "query": "I read about 'Jain Vegetarianism'—how does it change the way people cook?",
+      "response": "Jain vegetarianism introduces a new perspective on food that emphasizes simplicity and balance in cooking. It encourages the use of fresh, locally sourced ingredients to create dishes with minimal or no meat-based elements. This approach can lead to healthier meals by reducing the intake of processed foods and animal products. Additionally, Jain vegetarianism promotes the appreciation for traditional Indian cooking methods, such as roasting, grilling, and simmering, which can enhance the flavor profile of dishes without compromising their nutritional value. Overall, Jain vegetarianism fosters a more mindful and sustainable culinary practice by integrating elements from both Hindu and Buddhist traditions into everyday cooking.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "76",
+      "query": "If a diner follows strict Jain vegetarianism, which staple ingredients in Chana Masala must be removed?",
+      "response": "In Chana Masala, the main ingredient that must be removed if following strict Jain vegetarianism is the chickpea (garbanzo beans).",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "77",
+      "query": "Discuss the shift in tea production from medicinal to commercial in the 19th century.",
+      "response": "The shift from medicinal to commercial tea production in the 19th century was a significant transformation in tea cultivation and consumption practices. Prior to this period, tea was primarily used for its medicinal properties, which were recognized by many cultures as beneficial for various ailments such as coughs, colds, and digestive issues. However, with the advent of industrialization and urbanization, tea became more accessible and affordable, leading to increased demand for tea products.\n\nIn the 19th century, tea production shifted towards mass production and exportation. The introduction of new varieties like black tea and green tea allowed for greater variety and quality control, making tea more appealing to consumers. This shift also led to the development of specialized tea processing techniques that improved the taste and quality of tea leaves.\n\nAdditionally, the rise of trade routes facilitated the transportation of tea from tea-growing regions to markets in Europe, Asia, and other parts of the world. This expansion of tea distribution helped to increase the global market for tea, further driving its commercialization.\n\nThe 19th-century shift in tea production was characterized by technological advancements in tea processing, marketing strategies, and international trade networks, all contributing to the broader economic changes that occurred during this time.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "78",
+      "query": "Analyze the role of the Mughal Empire in popularizing tandoori-style cuisine.",
+      "response": "The Mughal Empire played a significant role in popularizing tandoori-style cuisine by introducing it to India through its influence on cooking techniques and food preparation methods. The empire's patronage for chefs and their culinary creations led to the development of tandoor cooking, which is characterized by slow, indirect heat that cooks food evenly without burning. This method allowed for the creation of flavorful, aromatic dishes that were then widely adopted across Indian cuisine. Additionally, the Mughals encouraged the use of spices like cumin, coriander, and turmeric, which became staples in tandoori recipes. Their cultural influence also spread to other parts of the world, influencing the development of tandoori cuisine worldwide.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "79",
+      "query": "Which Anglo-Indian dish is famously attributed to the UK rather than the subcontinent?",
+      "response": "The famous Anglo-Indian dish that is often credited to the UK but not the subcontinent is Chicken Tikka Masala. This dish originated in India but gained popularity in the UK during the 1980s when it was introduced to British cuisine through Indian restaurants.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "80",
+      "query": "Explain the linguistic evolution of the term 'curry' from Dravidian roots.",
+      "response": "The term \"curry\" originates from the Dravidian language family, which is a group of languages spoken primarily in southern India. Over time, these languages evolved into Tamil, which is the official language of India. The word \"curry\" has undergone several changes:\n\n1. **Original Meaning**: In its earliest form, \"curry\" referred to a dish made with spices and vegetables simmered in coconut milk or water.\n\n2. **Development of Specific Terms**: As the language developed, terms like \"kariyam\" (spice) and \"chai\" (coconut milk) were added to describe specific types of curries.\n\n3. **Influence of English**: The English language introduced the concept of curry through its use in cooking instruction books. This influence led to the modern usage of the term \"curry.\"\n\n4. **Modern Usage**: Today, \"curry\" refers broadly to any food prepared by combining various ingredients such as spices, vegetables, and sometimes meat or fish, often served over a hot sauce.\n\n5. **Cultural Impact**: The term has also been used in other cultures, particularly in Southeast Asia, where it carries similar meanings but may have different regional variations.\n\nThus, while the original meaning was about a dish,",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "81",
+      "query": "Justify why Raita is considered a functional accompaniment to spicy dishes.",
+      "response": "Raita, also known as yogurt-based Indian dip, is often used as a functional accompaniment to spicy dishes for several reasons:\n\n1. Flavor Balance: Yogurt provides a neutral flavor that helps balance the heat from the spiciness of the dish. The creamy texture of yogurt complements the tangy flavors of the spices without overpowering them.\n\n2. Texture Enhancement: The tangy yogurt adds a refreshing element to the dish, enhancing its overall taste experience.\n\n3. Savorability: The creamy consistency of raita allows for easy consumption while still enjoying the rich flavors of the dish.\n\n4. Nutritional Value: Yogurt contains probiotics which can help with digestion and support gut health when consumed alongside spicy foods.\n\n5. Cultural Significance: In many cultures, raita is associated with comfort food or as a symbol of hospitality, making it a versatile choice for various occasions.\n\n6. Health Benefits: Some studies suggest that consuming yogurt before or after spicy meals may provide some relief from digestive issues.\n\n7. Versatility: Raita can be made with different types of yogurt (e.g., plain, sour cream, coconut) to suit various dietary preferences and spice levels.\n\nBy combining these factors, raita enhances the enjoyment and nutritional value",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "82",
+      "query": "Identify the standard spices you should grind together for a Garam Masala that provides 'warmth'.",
+      "response": "For a Garam Masala that provides warmth, you can use cardamom powder as it adds a warm, aromatic flavor to dishes.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "83",
+      "query": "Which Pashtun meat dish is distinguished by pomegranate seeds and its flat form?",
+      "response": "The Pashtun meat dish you're referring to is Qaraqosh, which is a type of lamb stew or shawarma. It's known for its distinctive flat shape due to the large size of the lamb pieces. Pomegranate seeds are also commonly used in this dish as they add a vibrant color and texture to the meat.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "84",
+      "query": "How is a Karachi Biryani different from other types regarding spice and specific fruits?",
+      "response": "A Karachi Biryani differs from other types primarily due to its use of certain spices and fruits. It typically features a blend of cumin, coriander, turmeric, cardamom, cinnamon, cloves, and black pepper. The dish often includes raisins, almonds, or pistachios as garnishes. Additionally, it may incorporate lemons, oranges, or pomegranates for extra flavor and color. These elements contribute to the unique taste profile that sets Karachi Biryani apart from other Indian dishes.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "85",
+      "query": "Identify the specific community in Kerala responsible for the historical origin of Calicut Halwa.",
+      "response": "Calicut Halwa is a traditional Indian dish originating from the city of Calicut, which is located in the southern part of Kerala state in India. The history of this dish traces back to the region's rich culinary traditions and cultural heritage. It has been influenced by various influences over time but retains its authentic taste and preparation methods. Therefore, it can be said that the community in Kerala, particularly those living in or around Calicut, is primarily responsible for the historical origin of Calicut Halwa.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "86",
+      "query": "Explain the role of 'Chhena' in syrupy South Asian desserts.",
+      "response": "In South Asian desserts, 'Chhena' plays a crucial role as it is a key ingredient that contributes to the texture and flavor of the syrupy dessert. It acts as a thickener, helping to bind the other ingredients together while also providing moisture for the final product. The addition of chhena enhances the consistency of the syrup, making it easier to apply and spread over the surface of the dessert. Additionally, its presence can add a unique taste profile to the dish, enhancing the overall experience with each bite.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "87",
+      "query": "Describe the physical characteristics of a 'Tawa' and its utility.",
+      "response": "A tawa is a traditional cooking vessel used for preparing food on various Indian cooking methods such as roasting, grilling, or steaming. Its primary physical characteristic is its shape, which is typically cylindrical with a flat bottom. The body of the tawa is usually made from wood or metal, often featuring intricate carvings that indicate the type of food being prepared (e.g., meat, fish, vegetables).\n\nThe utility of a tawa lies in its versatility. It can be used to prepare a variety of dishes ranging from simple stews and curries to more complex dishes like biryani, samosas, and naan bread. Additionally, it serves as a tool for cooking over open flames, making it essential for cooking in kitchens without proper ventilation systems. Tawas also come in different sizes and shapes, allowing chefs to adjust their cooking techniques according to the dish they are preparing.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "88",
+      "query": "Identify the primary legume used as the structural base for Dosa.",
+      "response": "The primary legume used as the structural base for Dosa is rice. Rice provides the main ingredient that forms the core of the dish.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "89",
+      "query": "Why does Naan require a Tandoor for its specific texture compared to Roti?",
+      "response": "Naan is traditionally made with a tandoor oven because it allows for longer baking times without drying out the dough. This technique helps achieve a crispy crust on the outside while maintaining the soft, fluffy interior. The heat from the tandoor helps create a golden-brown color that contrasts beautifully with the white flour used in naan.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "90",
+      "query": "Identify the specific variety of carp traditionally preferred for Bengali fish curries.",
+      "response": "The specific variety of carp traditionally preferred for Bengali fish curries is the silver carp (Cyprinus carpio).",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "91",
+      "query": "Analyze the impact of Persian culinary traditions on the development of modern Biryani.",
+      "response": "Persian culinary traditions significantly influenced the development of modern Biryani by introducing several key elements that have become integral to this dish:\n\n1. **Ginger**: The use of ginger in Biryani is a direct result of its association with Persia. Ginger has been used for centuries in Indian cooking as a flavor enhancer and to add depth to dishes.\n\n2. **Saffron**: Saffron was introduced to India from Persia around 700 AD. It became a staple ingredient in Biryani due to its unique color and aroma, which complemented the spices used in the dish.\n\n3. **Cumin**: Cumin is another crucial spice in Biryani. Its use dates back to ancient times but gained prominence during the Mughal Empire under Shah Jahan.\n\n4. **Turmeric**: Turmeric is used extensively in Biryani to enhance flavors and give it a golden hue. It also adds a bright, earthy flavor to the dish.\n\n5. **Lime and Lemon**: These citrus fruits were imported from Persia and were incorporated into Biryani to balance out the richness of the spices and to provide freshness.\n\n6. **Chickpeas (Garbanzo beans)**: Chickpeas were brought to India",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "92",
+      "query": "Explain why Jaggery is often used in traditional sweets instead of white sugar.",
+      "response": "Jaggery is often used in traditional sweets rather than white sugar because it has a unique texture and flavor that enhances the taste of the sweets. White sugar lacks the natural sweetness and nutty flavor that jaggery provides. Additionally, jaggery is typically made from locally sourced cane sugar, which adds a distinctive aroma and color to the sweets. This makes it more appealing to consumers who prefer sweet treats over simple sugars.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "93",
+      "query": "Identify the city that became the hub for tandoori cuisine post-1947.",
+      "response": "The city that became the hub for tandoori cuisine post-1947 is Mumbai.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "94",
+      "query": "Which spices provide the signature 'warmth' in a Garam Masala blend?",
+      "response": "In a Garam Masala blend, the key spices that contribute to its warm and aromatic profile include:\n\n1. Cumin seeds (Cuminum cyminum)\n2. Coriander seeds (Caryophyllus eclogae)\n3. Turmeric powder (Curcuma longa)\n4. Cardamom pods (Elettaria cardamomoides)\n5. Cloves (Syzygium aromaticum)\n\nThese spices bring warmth and depth of flavor to the dish, enhancing the overall aroma and taste of the blend.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "95",
+      "query": "Identify the specific region where 'Haleem' is most culturally prominent.",
+      "response": "Haleem is a significant cultural region in Saudi Arabia, particularly known for its rich culinary traditions and historical significance. It is often associated with the spice trade and has played a crucial role in the country's economy. Haleem is also famous for its traditional dishes such as \"Haleem Chicken,\" which is a popular dish that reflects the region's agricultural heritage.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "96",
+      "query": "What is the difference between Garam Masala and Chaat Masala?",
+      "response": "Garam Masala and Chaat Masala are both types of Indian curries, but they differ in their preparation methods and ingredients used.\n\nGaram Masala:\n- It is a blend of spices that includes cumin seeds, coriander, turmeric, cardamom, cinnamon, cloves, and saffron.\n- The mixture is often seasoned with salt to achieve a milder flavor profile.\n- It can be prepared by simmering or roasting spices until fragrant.\n\nChaat Masala:\n- It is made from ground spices like garam masala, cumin, coriander, turmeric, cardamom, cinnamon, cloves, and other aromatic herbs.\n- The spices are typically roasted or fried before being added to hot water or milk to create a creamy texture.\n- It is often served as a side dish alongside chana dal (small chickpeas) or naan bread.\n\nIn summary, while both are curries, Garam Masala is more refined and has less spice intensity compared to Chaat Masala.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "97",
+      "query": "Identify the specific historical context for the creation of 'Mulligatawny' soup.",
+      "response": "The creation of 'Mulligatawny' soup is rooted in the culinary traditions of Ireland, particularly in the region known as Ulster. It was first introduced to the British Empire during the 18th century by Irish immigrants who brought their traditional Irish dishes with them. The name \"Mulligatawny\" likely refers to a dish that had been traditionally made from various ingredients such as pork, beef, potatoes, and carrots, which were often used in Irish cooking. This combination of ingredients allowed for a unique flavor profile that could be enjoyed throughout the year, making it a popular choice among British cooks.",
+      "retrieved_context": []
+    },
+    {
+      "query_id": "98",
+      "query": "Which Indo-Chinese dish uses battered chicken in a soy and green chilli sauce?",
+      "response": "The Indo-Chinese dish that uses battered chicken in a soy and green chili sauce is called \"Bak Kut Teh\".",
+      "retrieved_context": []
+    }
+  ]
+}
